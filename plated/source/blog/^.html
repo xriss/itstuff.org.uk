@@ -11,14 +11,14 @@ IT Stuff - That's some good stuff!
 
 {_list:blog_list}
 
-<div>{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>
+<div class="paging_wrap">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>
 
 #^-Paging for main blog list page
 #^link_older_page
-<a href="{_it}">Older posts</a>
+<a href="{_it}">Previous</a>
 
 #^link_newer_page
-<a href="{_it}">Newer posts</a>
+<a href="{_it}">Next</a>
 
 
 #^-This is for the blog list
@@ -28,7 +28,7 @@ IT Stuff - That's some good stuff!
 
 #^-This is a single blog post viewed on its own page
 #^_blog_post_body_one
-<div class="blog_wrap">
+<div class="blog_wrap" style="padding-top:0;">
 	{_blog_post_body}
 	<div class="blog_bit">
 		{showlinks||}
@@ -51,10 +51,10 @@ IT Stuff - That's some good stuff!
 </div>
 
 #^link_older_post
-<a href="{_it}">Older post</a>
+<a href="{_it}">Previous</a>
 
 #^link_newer_post
-<a href="{_it}">Newer post</a>
+<a href="{_it}">Next</a>
 
 #^script2 
 <a href="{odtlink2}"> {odtname2||}</a>

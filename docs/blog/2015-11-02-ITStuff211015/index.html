@@ -164,7 +164,6 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 
 .logo		{color:var(--base); font-family:"Rubik",Arial,sans-serif;}
 .logo p		{color:var(--white); font-size:2em; line-height:1.05em;}
-.nav a.logo {color:var(--base); display:block;}
 
 
 /*	
@@ -234,12 +233,13 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .blog_wrap a 	{color:var(--base); text-decoration:none;}
 .blog_wrap a:hover {color:var(--base_alt); cursor:pointer;}
 
+.paging_wrap,
 .blog_bit		{position:relative; margin:0 auto; width:860px;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
 
-.content .blog_wrap:first-of-type	{padding-top:0px;}
+.blog_wrap:nth-of-type(2)	{padding-top:0;}
 
 
 /*
@@ -301,7 +301,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 		</ul>
 	</div>
 </div>
-<div class="blog_wrap">
+<div class="blog_wrap" style="padding-top:0;">
 	<p>Greetings, lover of all things &quot;Stuff&quot;! We bring you bloopers of the IT kind, news from the Future and distant galaxies far, far away like ticketing system conspiracies, the lack of hoverboards, the day Yahoo killed Geocities, shocking revelations of the fake review industry and tips to become a lawyer for Amazon, Facebook&#39;s modest tax bill, Google&#39;s actual worth in currency <i>(a bit over $10)</i>, Microsoft doing a U2 to Windows 7 users and Twitter&#39;s new flavour with 8% less salt before we hasten to celebrate OpenBSD&#39;s 20th birthday with some light historical banter to get the buffer overflowing in LibreSSL. A quick mention of Ada Lovelace day and we&#39;re back to Samsung replacing people with robots, the recent government investment in the video games industry, Leed&#39;s new robot overlords, Bradford&#39;s l33T digital skillz and finally, the local events roundup including a fantastic Hammond Organ workshop by the Yorkshire Sound Women Network.</p>
 
 	<div class="blog_bit">
@@ -331,8 +331,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 
 	</div>
-	<div class="paging_wrap"><a href="../../blog/2015-10-02-ITStuff230915/">Older post</a>
- <a href="../../blog/2015-11-26-ITStuff171115/">Newer post</a>
+	<div class="paging_wrap"><a href="../../blog/2015-10-02-ITStuff230915/">Previous</a>
+ <a href="../../blog/2015-11-26-ITStuff171115/">Next</a>
 </div>
 </div>
 

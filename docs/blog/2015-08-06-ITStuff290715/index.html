@@ -164,7 +164,6 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 
 .logo		{color:var(--base); font-family:"Rubik",Arial,sans-serif;}
 .logo p		{color:var(--white); font-size:2em; line-height:1.05em;}
-.nav a.logo {color:var(--base); display:block;}
 
 
 /*	
@@ -234,12 +233,13 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .blog_wrap a 	{color:var(--base); text-decoration:none;}
 .blog_wrap a:hover {color:var(--base_alt); cursor:pointer;}
 
+.paging_wrap,
 .blog_bit		{position:relative; margin:0 auto; width:860px;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
 
-.content .blog_wrap:first-of-type	{padding-top:0px;}
+.blog_wrap:nth-of-type(2)	{padding-top:0;}
 
 
 /*
@@ -301,7 +301,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 		</ul>
 	</div>
 </div>
-<div class="blog_wrap">
+<div class="blog_wrap" style="padding-top:0;">
 	<p>Welcome back to another episode of I.T. Stuff where we treat you to John Hudson&#39;s report on Cybersecurity Futures and Dave Spencer&#39;s waffle on the recent Windows 10, not to mention lashings of Stagefright, the scary hijack Android bug, rant some more about that whole cd ripping malarkey, whisper about the highest bidder for Sourceforge&#39;s abyss sinking activities along with Slashdot, say toodlepips to both Google Code (Project Hosting) and Gitorious, guffaw at the Universal Pictures France petard hoisting ways, wax on and off about killer AI and megabots, the BBC micro:bit, mention a few local events like Badonkadonk, the 2015 British Science Festival and Sky(net)&#39;s new (or rebranded) tech hub in Leeds seeking souls before we end on your digital legacy - you know, what happens to your internet bits after you die, that sort of thing. See you next time!</p>
 
 	<div class="blog_bit">
@@ -333,8 +333,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 
 	</div>
-	<div class="paging_wrap"><a href="../../blog/2015-07-09-ITStuff010715/">Older post</a>
- <a href="../../blog/2015-09-03-ITStuff260815/">Newer post</a>
+	<div class="paging_wrap"><a href="../../blog/2015-07-09-ITStuff010715/">Previous</a>
+ <a href="../../blog/2015-09-03-ITStuff260815/">Next</a>
 </div>
 </div>
 

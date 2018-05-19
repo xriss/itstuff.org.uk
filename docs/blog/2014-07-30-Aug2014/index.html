@@ -164,7 +164,6 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 
 .logo		{color:var(--base); font-family:"Rubik",Arial,sans-serif;}
 .logo p		{color:var(--white); font-size:2em; line-height:1.05em;}
-.nav a.logo {color:var(--base); display:block;}
 
 
 /*	
@@ -234,12 +233,13 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .blog_wrap a 	{color:var(--base); text-decoration:none;}
 .blog_wrap a:hover {color:var(--base_alt); cursor:pointer;}
 
+.paging_wrap,
 .blog_bit		{position:relative; margin:0 auto; width:860px;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
 
-.content .blog_wrap:first-of-type	{padding-top:0px;}
+.blog_wrap:nth-of-type(2)	{padding-top:0;}
 
 
 /*
@@ -301,7 +301,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 		</ul>
 	</div>
 </div>
-<div class="blog_wrap">
+<div class="blog_wrap" style="padding-top:0;">
 	<p>Today&#39;s IT Stuff is jam packed with a flurry of local tech events for everyone featuring Leeds Hack at the Leeds City Museum on the 2nd - 3rd of August and Wuthering Bytes over at Hebden Bridge on the 15th - 17th August. We start the show with updates from the new Windows 8.1 Update 2 and rumours of the forthcoming Windows 9, we bid farewell to Ubuntu One where we share alternatives for cloud hosting your backups including the ever popular Dropbox but also Copy.com and Syncthing, discuss hacking adventures with Rick Astley coming to a Chromecast near you before more spooks update where we ponder over the recent &quot;emergency&quot; legislation and what they actually do up there in Spook Central at the GCHQ, all the while accompanied by murmurs of the banhammer wielded by the Wikipedia folks over the latest trolling efforts of bored civil servants in the US Congress (IP 143.231.249.138), we officially plug the IT Stuff website and briefly mention The Department of Dirty, highlighting the problems of government involvement in web filtering before we laugh off the technological incompetence of your friendly neighbourhood policeman ending on the world&#39;s premier hacker conference, Defcon that is taking place next weekend in Las Vegas.</p>
 
 	<div class="blog_bit">
@@ -330,8 +330,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 
 	</div>
-	<div class="paging_wrap"><a href="../../blog/2014-07-08-Jul2014/">Older post</a>
- <a href="../../blog/2014-09-04-ITStuff260814/">Newer post</a>
+	<div class="paging_wrap"><a href="../../blog/2014-07-08-Jul2014/">Previous</a>
+ <a href="../../blog/2014-09-04-ITStuff260814/">Next</a>
 </div>
 </div>
 
