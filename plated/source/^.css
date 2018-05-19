@@ -157,7 +157,7 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 */
 
 .logo		{color:var(--base); font-family:"Rubik",Arial,sans-serif;}
-.logo p		{color:var(--base_font); font-size:5em; line-height:0.8em;}
+.logo p		{color:var(--white); font-size:2em; line-height:1.05em;}
 .nav a.logo {color:var(--base); display:block;}
 
 
@@ -172,12 +172,16 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	
 */
 
+.presenter		{display:inline-block; vertical-align:top; text-align:center;}
+.name			{color:#fff; font-size:0.9em; padding:10px 0;}
+a.twit			{display:block; color:#398A2A; font-size:0.8em;}
+a.twit:hover	{text-decoration:none; color:#00ff00;}
 .block			{width:150px; height:190px;}
-.block.dave		{background:url('/data/stuff/dave.png') no-repeat center center; background-size:80px;}
+.block.dave		{background:url('/data/stuff/dave.png') no-repeat center center;}
+.block.shi		{background:url('/data/stuff/shi.png') no-repeat center center;}
+.block.kriss	{background:url('/data/stuff/kriss.png') no-repeat center center;}
+.block.dick		{background:url('/data/stuff/dick.png') no-repeat center center;}
 .block.david	{background:url('/data/stuff/david.png') no-repeat center center; background-size:80px;}
-.block.shi		{background:url('/data/stuff/shi.png') no-repeat center center; background-size:80px;}
-.block.kriss	{background:url('/data/stuff/kriss.png') no-repeat center center; background-size:80px;}
-.block.dick		{background:url('/data/stuff/dick.png') no-repeat center center; background-size:80px;}
 .block.brian	{background:url('/data/stuff/brian.png') no-repeat center center; background-size:80px;}
 .block.john		{background:url('/data/stuff/john.png') no-repeat center center; background-size:80px;}
 .block.steph	{background:url('/data/stuff/stephane.png') no-repeat center center; background-size:80px;}

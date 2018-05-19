@@ -163,7 +163,7 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 */
 
 .logo		{color:var(--base); font-family:"Rubik",Arial,sans-serif;}
-.logo p		{color:var(--base_font); font-size:5em; line-height:0.8em;}
+.logo p		{color:var(--white); font-size:2em; line-height:1.05em;}
 .nav a.logo {color:var(--base); display:block;}
 
 
@@ -178,12 +178,16 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	
 */
 
+.presenter		{display:inline-block; vertical-align:top; text-align:center;}
+.name			{color:#fff; font-size:0.9em; padding:10px 0;}
+a.twit			{display:block; color:#398A2A; font-size:0.8em;}
+a.twit:hover	{text-decoration:none; color:#00ff00;}
 .block			{width:150px; height:190px;}
-.block.dave		{background:url('/data/stuff/dave.png') no-repeat center center; background-size:80px;}
+.block.dave		{background:url('/data/stuff/dave.png') no-repeat center center;}
+.block.shi		{background:url('/data/stuff/shi.png') no-repeat center center;}
+.block.kriss	{background:url('/data/stuff/kriss.png') no-repeat center center;}
+.block.dick		{background:url('/data/stuff/dick.png') no-repeat center center;}
 .block.david	{background:url('/data/stuff/david.png') no-repeat center center; background-size:80px;}
-.block.shi		{background:url('/data/stuff/shi.png') no-repeat center center; background-size:80px;}
-.block.kriss	{background:url('/data/stuff/kriss.png') no-repeat center center; background-size:80px;}
-.block.dick		{background:url('/data/stuff/dick.png') no-repeat center center; background-size:80px;}
 .block.brian	{background:url('/data/stuff/brian.png') no-repeat center center; background-size:80px;}
 .block.john		{background:url('/data/stuff/john.png') no-repeat center center; background-size:80px;}
 .block.steph	{background:url('/data/stuff/stephane.png') no-repeat center center; background-size:80px;}
@@ -285,6 +289,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	.contents		{top:5.5em;}
 
 }
+body	{background-color:#111;}
 
 </style></head>
 <body><div class="content"><div class="nav_wrap">
@@ -304,11 +309,29 @@ only screen and (min-device-pixel-ratio: 1.5) {
 			<p>
 				Explaining the good stuff in IT & treating the bad stuff with the cynicism and contempt that it deserves.
 			</p>
-			<div class="block dave"></div><div class="block shi"></div><div class="block kriss"></div>
+			<div class="presenter">
+	<div class="block dave"></div>
+	<div class="name">Dave</div>
+	<a href="http://twitter.com/idlemoor" class="twit" target="_blank">@idlemoor</a>
+</div><div class="presenter">
+	<div class="block shi"></div>
+	<div class="name">shi</div>
+	<a href="http://twitter.com/shi" class="twit" target="_blank">@shi</a>
+</div><div class="presenter">
+	<div class="block kriss"></div>
+	<div class="name">Kriss</div>
+	<a href="http://twitter.com/wetgenes" class="twit" target="_blank">@wetgenes</a>
+</div><div class="presenter">
+	<div class="block dick"></div>
+	<div class="name">Dick</div>
+	<a href="http://twitter.com/DickWThomas" class="twit" target="_blank">@DickWThomas</a>
+</div>
+
+
 		</div>
-		<div class="line"></div>
 	</div>
 </div>
+
 </div>
 <div class="footer">
 	<ul>
