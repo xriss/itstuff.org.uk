@@ -73,6 +73,7 @@
  "ogg_podcast": "<a href=\"https://ia601505.us.archive.org/19/items/ITStuff110117/itstuff110117.ogg\">ITStuff-110117.ogg</a>\r\n\r",
  "poster": "it\r\n\r",
  "script2": ", <a href=\"{it.odtlink2}\">{odtname2}</a>\n",
+ "show_date": "12th & 13th January 2017\r\n\r\n\r",
  "show_links": "<a href=\"http://bradford-coderdojo.github.io\">Bradford Coderdojo</a>, <a href=\"https://www.digitalcatapultcentre.org.uk/event/bradford-lorawan-launch/\">Bradford LoRaWAN Launch</a>, <a href=\"https://www.raspberrypi.org/blog/compute-module-3-launch/\">Raspberry Pi Compute Module 3</a>\r\n\r\n\r\n\r",
  "showdate": "Broadcast: {show_date}\n",
  "showlinks": "<div class=\"ep_links\">\n\tLink mentions:\n\t<div class=\"ep_showlinks\">{show_links}</div>\n</div>\n",

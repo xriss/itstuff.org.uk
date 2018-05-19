@@ -72,6 +72,7 @@
  "odtname": "itstuff230817\r\n\r",
  "ogg_podcast": "<a href=\"https://ia601505.us.archive.org/12/items/ITStuff230817/itstuff230817.ogg\">ITStuff-230817.ogg</a>#^poster\r\nit\r\n\r",
  "script2": ", <a href=\"{it.odtlink2}\">{odtname2}</a>\n",
+ "show_date": "24th & 25th August 2017\r\n\r\n\r",
  "show_links": "<a href=\"https://pitchfork.com/features/overtones/10091-do-androids-dream-of-electric-guitars-exploring-the-future-of-musical-ai/\">Do Androids Dream of Electric Guitars? Exploring the Future of Musical A.I.</a>,\r\n<a href=\"https://archive.org/details/78_i-want-a-hippopotamus-for-christmas_vicki-dale-the-peter-pan-orchestra_gbia0000281a\">I Want A Hippopotamus For Christmas</a>,\r\n<a href=\"https://shiptracker.shodan.io/\">Internet of Ships</a>,\r\n<a href=\"https://www.meetup.com/Ladies-of-Code-Leeds/events/\">Ladies of Code Leeds event calendar</a>,\r\n<a href=\"https://archive.org/details/georgeblood\">78rpm Records Digitized by George Blood, L.P.</a>,\r\n<a href=\"https://purrli.com/\">The Internet has a Cat! Meet Purrli, the Online Cat Purr Generator.</a>,\r\n<a href=\"http://www.hull-coin.org/\">Hullcoin</a>\r\n\r\n\r",
  "showdate": "Broadcast: {show_date}\n",
  "showlinks": "<div class=\"ep_links\">\n\tLink mentions:\n\t<div class=\"ep_showlinks\">{show_links}</div>\n</div>\n",

@@ -72,6 +72,7 @@
  "odtname": "itstuff200917\r\n\r",
  "ogg_podcast": "<a href=\"https://ia801507.us.archive.org/10/items/ITStuff200917/itstuff200917.ogg\">ITStuff-200917.ogg</a>#^poster\r\nit\r\n\r",
  "script2": ", <a href=\"{it.odtlink2}\">{odtname2}</a>\n",
+ "show_date": "21st & 22nd September 2017\r\n\r\n\r",
  "show_links": "<a href=\"https://bradford-coderdojo.github.io/\">Bradford Coder Dojo</a>,\r\n<a href=\"https://www.youtube.com/watch?v=5hARDXYz2io\">Rocket Man by William Shatner</a>,\r\n<a href=\"https://www.youtube.com/watch?v=jmRQBugNDGQ\">KFC's New Virtual Reality Training Video</a>,\r\n<a href=\"http://wutheringbytes.com/\">Wuthering Bytes official site</a>,\r\n<a href=\"https://github.com/meatstuff/itstuff/blob/master/doc/2017/Wuthering_bytes_festival_day_2017.pdf\">Wuthering Bytes 2017 report by John Hudson (pdf)</a>\r\n\r\n\r",
  "showdate": "Broadcast: {show_date}\n",
  "showlinks": "<div class=\"ep_links\">\n\tLink mentions:\n\t<div class=\"ep_showlinks\">{show_links}</div>\n</div>\n",

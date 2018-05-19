@@ -73,6 +73,7 @@
  "ogg_podcast": "<a href=\"https://ia801502.us.archive.org/16/items/ITStuff151117/itstuff151117.ogg\">ITStuff-151117.ogg</a>\r\n\r",
  "poster": "it\r\n\r",
  "script2": ", <a href=\"{it.odtlink2}\">{odtname2}</a>\n",
+ "show_date": "16th & 17th November 2017\r\n\r",
  "show_links": "<a href=\"https://bradford-coderdojo.github.io/\">Bradford Coder Dojo</a>,\r\n<a href=\"https://neocities.org/\">Neocities</a>\r\n\r\n\r",
  "showdate": "Broadcast: {show_date}\n",
  "showlinks": "<div class=\"ep_links\">\n\tLink mentions:\n\t<div class=\"ep_showlinks\">{show_links}</div>\n</div>\n",

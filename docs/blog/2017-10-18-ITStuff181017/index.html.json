@@ -72,6 +72,7 @@
  "odtname": "itstuff181017\r\n\r",
  "ogg_podcast": "<a href=\"https://ia801500.us.archive.org/15/items/ITStuff181017/itstuff181017.ogg\">ITStuff-181017.ogg</a>#^poster\r\nit\r\n\r",
  "script2": ", <a href=\"{it.odtlink2}\">{odtname2}</a>\n",
+ "show_date": "19th & 20th October 2017\r\n\r\n\r",
  "show_links": "<a href=\"https://bradford-coderdojo.github.io/\">Bradford Coder Dojo</a>,\r\n<a href=\"https://www.youtube.com/watch?v=LX44iCGELxg\">[AMIGA CRACKTRO MUSIC] 4mat - Madness</a>,\r\n<a href=\"https://teachablemachine.withgoogle.com/\">Teachable Machine</a>,\r\n<a href=\"https://www.eventbrite.com/e/queer-code-yorkshire-tickets-38509138871#\">Queer Code Yorkshire</a>,\r\n\r\n\r",
  "showdate": "Broadcast: {show_date}\n",
  "showlinks": "<div class=\"ep_links\">\n\tLink mentions:\n\t<div class=\"ep_showlinks\">{show_links}</div>\n</div>\n",
