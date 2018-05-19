@@ -31,6 +31,8 @@ IT Stuff - That's some good stuff!
 <div class="blog_wrap" style="padding-top:0;">
 	{_blog_post_body}
 	<div class="blog_bit">
+		{blog_more}
+		{script||}
 		{showlinks||}
 		{showdate||}
 		{showmusic||}
@@ -43,11 +45,14 @@ IT Stuff - That's some good stuff!
 
 #^-This is for the blog list
 #^_blog_post_body_many
-<div class="blog_wrap">
+<div class="blog_wrap pod">
 	<div class="blog_bit">
 		<div class="blog_info"><a href="{_dirname}">{_blog_post_json.title}</a> by {_blog_post_json.author} on {_blog_post_json.datedash}</div>
 	</div>
 	{_blog_post_body}
+	<div class="blog_bit">
+		<a href="{_dirname}">Go on</a>
+	</div>
 </div>
 
 #^link_older_post

@@ -14,7 +14,7 @@
 	The bright highlight used for the logo and links on hover
 	------------------------------------------------------------------
 	
-	base 			- Blue				|	Logo
+	base 			- Kinda cyan		|	Highlight colour
 	base_alt 		- Light blue		|	Link hover
 	
 	------------------------------------------------------------------
@@ -227,9 +227,9 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
 .blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
-.blog_play		{padding:5.5em 20px; margin-bottom:30px; background-color:#000;}
+.blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
 
-.blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0; position:relative;}
+.blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
 .blog_wrap h2	{font-family:"Rubik",Arial,sans-serif; font-size:2.5em; line-height:1em; padding-bottom:1em;}
 .blog_wrap a	{overflow-wrap:break-word; word-wrap:break-word; word-break:break-word; -ms-hyphens:auto; -moz-hyphens:auto; -webkit-hyphens:auto; hyphens:auto;}
 .blog_wrap a 	{color:var(--base); text-decoration:none;}
@@ -241,7 +241,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
 
-.blog_wrap:nth-of-type(2)	{padding-top:0;}
+.blog_wrap.pod:nth-of-type(2)	{padding-top:0;}
 
 
 
@@ -318,48 +318,63 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	</div>
 </div>
 
-<div class="blog_wrap">
+<div class="blog_wrap pod">
 	<div class="blog_bit">
 		<div class="blog_info"><a href="../blog/2014-07-30-Aug2014">Episode August 2014</a> by {_blog_post_json.author} on 2014-07-30</div>
 	</div>
 	<p>Today&#39;s IT Stuff is jam packed with a flurry of local tech events for everyone featuring Leeds Hack at the Leeds City Museum on the 2nd - 3rd of August and Wuthering Bytes over at Hebden Bridge on the 15th - 17th August. We start the show with updates from the new Windows 8.1 Update 2 and rumours of the forthcoming Windows 9, we bid farewell to Ubuntu One where we share alternatives for cloud hosting your backups including the ever popular Dropbox but also Copy.com and Syncthing, discuss hacking adventures with Rick Astley coming to a Chromecast near you before more spooks update where we ponder over the recent &quot;emergency&quot; legislation and what they actually do up there in Spook Central at the GCHQ, all the while accompanied by murmurs of the banhammer wielded by the Wikipedia folks over the latest trolling efforts of bored civil servants in the US Congress (IP 143.231.249.138), we officially plug the IT Stuff website and briefly mention The Department of Dirty, highlighting the problems of government involvement in web filtering before we laugh off the technological incompetence of your friendly neighbourhood policeman ending on the world&#39;s premier hacker conference, Defcon that is taking place next weekend in Las Vegas.</p>
 
+	<div class="blog_bit">
+		<a href="../blog/2014-07-30-Aug2014">Go on</a>
+	</div>
 </div>
 
 
-<div class="blog_wrap">
+<div class="blog_wrap pod">
 	<div class="blog_bit">
 		<div class="blog_info"><a href="../blog/2014-07-08-Jul2014">Episode July 2014</a> by {_blog_post_json.author} on 2014-07-08</div>
 	</div>
 	<p>Dave &amp; co is joined by our very own, homegrown Youtube megastar, the eponymous Dick of Dick’s Installs where we discuss the ethics behind Facebook&#39;s social experiment and why people are still using the service, Brazil&#39;s federal police password sharing initiative in l33t speak, why Eugene Goostman isn&#39;t the first bot to pass the elusive Turing Test and why this isn&#39;t as impressive as it&#39;s made out to be, more bits &amp; bops about the arrival of the Google Glass in the UK, along with all things &quot;wearables&quot; or tech things you can wear before ending on a quick, &quot;live&quot; interview with Shi and Kriss at Leeds Metropolitan University where they are taking part in &quot;Le Game Jam&quot;, a 48 hour game jam in the spirit of Tour de France.</p>
 
+	<div class="blog_bit">
+		<a href="../blog/2014-07-08-Jul2014">Go on</a>
+	</div>
 </div>
 
 
-<div class="blog_wrap">
+<div class="blog_wrap pod">
 	<div class="blog_bit">
 		<div class="blog_info"><a href="../blog/2014-06-08-Jun2014">Episode June 2014</a> by {_blog_post_json.author} on 2014-06-08</div>
 	</div>
 	<p>Dave &amp; co reveal a Windows XP registry hack to get an extra five years worth of updates, reminding everyone about the ebay Password reset, wittle on about Youtube&#39;s notorious Content ID and their purchase of Twitch.tv, celebrate International Amiga Day with Swanky Art - a new kind of pixel art community, recite poetry about chromebooks and more Googly misdeamenours, including the right to be forgotten before ending on #LeedsArtCrawl, an Open Data game using twitter to crowdsource public art locations in Leeds.</p>
 
+	<div class="blog_bit">
+		<a href="../blog/2014-06-08-Jun2014">Go on</a>
+	</div>
 </div>
 
 
-<div class="blog_wrap">
+<div class="blog_wrap pod">
 	<div class="blog_bit">
 		<div class="blog_info"><a href="../blog/2014-05-11-May2014">Episode May 2014</a> by {_blog_post_json.author} on 2014-05-11</div>
 	</div>
 	<p>Dave &amp; co starts the show with Heartbleed bug repercussions (just 1.5 million casualties, no biggie), reminisce nostalgia to celebrate the fiftieth anniversary of BASIC, announce the winners of the &quot;Downtime of the month award&quot; which seems to have an airport theme followed by a bit of browser news including Internet Explorer vulnerabilities (surprise!) and observations of the rather strange makeover of the latest Firefox browser, Firefox 29, making it look like another popular browser unlike itself before discussing the perils of social media and why some people just don&#39;t get it and to egregious effect.</p>
 
+	<div class="blog_bit">
+		<a href="../blog/2014-05-11-May2014">Go on</a>
+	</div>
 </div>
 
 
-<div class="blog_wrap">
+<div class="blog_wrap pod">
 	<div class="blog_bit">
 		<div class="blog_info"><a href="../blog/2014-04-13-Apr2014">Episode April 2014</a> by {_blog_post_json.author} on 2014-04-13</div>
 	</div>
 	<p>Demonoid is back! This week introduces the OpenSSL ‘Heartbleed’ vulnerability, the 50th anniversary of the original Cobol 64 standard and the IBM 360, more website makeovers from Wikipedia, T&amp;A and Flickr, The Internet of Things which apparently costs a total of £73M, disappointments shared over the Oculus Rift being bought by Facebook (for 2 billion big ones), why Blackcoin is better than Bitcoin followed by some good news about a notorious scam before we end the show with the past and future of Windows and Manchester’s Civic Space Programme.</p>
 
+	<div class="blog_bit">
+		<a href="../blog/2014-04-13-Apr2014">Go on</a>
+	</div>
 </div>
 
 
