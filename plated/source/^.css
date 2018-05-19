@@ -90,7 +90,7 @@ h5 		{font-size:14px;}
 h6 		{font-size:13px;}
 
 b		{font-weight:bold;}
-p 		{font-size:22px; line-height:34px; margin-bottom:34px;}
+p 		{font-size:22px; line-height:34px; margin-bottom:34px; white-space:pre-wrap;}
 strong	{font-weight:bold;}
 
 .line, hr			{border-top:1px dashed var(--hr); margin-top:40px; margin-bottom:20px; position:relative;}
