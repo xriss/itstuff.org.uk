@@ -227,6 +227,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
 .blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_title:nth-of-type(2) {margin-top:30px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
@@ -240,6 +241,8 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
+
+.paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
 .blog_wrap.pod:nth-of-type(2)	{padding-top:0;}
 
@@ -306,6 +309,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 }
 
+.show_box			{background-color:#2c1950; margin-top:40px;}
+.show_date			{padding:1em 2em; color:#ccc; text-transform:uppercase;}
+.show_wrap			{background-color:#111;}
+.show_info			{display:inline-block; vertical-align:top; width:80%;}
+.show_info.source	{width:20%;}
+.show_music			{padding:1em 2em;}
+.show_music span	{display:block;}
+.show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
+.show_music p:before{display:inline-block; color:#c2a2ff; margin-right:10px; content:"♪";}
+
+.show_script a		{background-color:#123c3c;}
+.show_script a:hover{background-color:#176565;}
+.show_ogg a			{background-color:#7d510f;}
+.show_ogg a:hover	{background-color:#B26F09;}
+.show_ogg a,
+.show_ogg a:hover	{color:#FFEB3B;}
+.show_script a:hover{color:#00ffff;}
+.show_script a,
+.show_ogg a			{display:block; padding:1em; font-size:24px;}
+
 </style></head>
 <body><div class="content"><div class="nav_wrap">
 	<div class="nav">
@@ -320,26 +343,19 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2016-09-14-ITStuff240816">Episode 240816</a> by {_blog_post_json.author} on 2016-09-14</div>
+		<div class="blog_info"><a href="../blog/2016-09-14-ITStuff240816">Episode 240816</a> by shi on 2016-09-14</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 240816</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff240816" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>Join us as we explore a whole bunch of stuffs with David, Dick, Kriss, Shi and special guest, Stephane!</p>
-<p>Stories this month are</p>
-<ul>
-<li>Olympics and Pokemon GO</li>
-<li>No Mans Sky update</li>
-<li>Windows 10 news</li>
-<li>Microsoft open-sources Powershell</li>
-<li>Fail round up (security news roundup)</li>
-<li>Roomba vacuum hoover mess</li>
-<li>Linux hits 25 years old</li>
-<li>The Internet 25 years old (public access)</li>
-<li>Google talks about fuchsia </li>
-<li>Shi&#39;s world of stuff - Omega 2</li>
-</ul>
-<p>Upcoming events:
-Wuthering Bytes in Hebden Bridge, 2nd - 9th September
-Open Source Hardware Camp, 3rd - 4th September
-Leeds Hack returns in autumn this year, under new management</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2016-09-14-ITStuff240816">Go on</a>
@@ -349,25 +365,19 @@ Leeds Hack returns in autumn this year, under new management</p>
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2016-08-04-ITStuff270716">Episode 270716</a> by {_blog_post_json.author} on 2016-08-04</div>
+		<div class="blog_info"><a href="../blog/2016-08-04-ITStuff270716">Episode 270716</a> by shi on 2016-08-04</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 270716</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff270716" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>Join us as we explore a whole bunch of stuffs with David, Dick, Kriss, Shi and special guest, Stephane!</p>
-<p>No Man&#39;s Sky pushed back even further, soundtrack written by algorithms, performed by 65daysofstatic
-Type <i>/run RemoveExtraSpaces=RunScript</i>
 
- into World of Warcraft chat for shits &amp; giggles
-Yahoos sold to Verizon for 4.8 billion dollars
-Hacking Pokemon Go with fake gps signals, fun for the whole family
-ARM (yes, <i>that</i> one) sold to Japan&#39;s Softbank for 24 billion pounds, mostly in cash
-Nintendo not-so-new-but-new console, Classic Mini NES
-Kickass Torrents no more, owner arrested</p>
-<p>Anniversary corner: Happy birthday, Dick!</p>
-<p>World of stuff: Shi talks about the Bela
-A BeagleBone Black based embedded platform for ultra­low latency audio and sensor processing</p>
-<p>Upcoming events:
-Wuthering Bytes in Hebden Bridge, 2nd - 9th September
-Open Source Hardware Camp, 3rd - 4th September
-Leeds Hack returns in autumn this year, under new management</p>
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2016-08-04-ITStuff270716">Go on</a>
@@ -377,19 +387,23 @@ Leeds Hack returns in autumn this year, under new management</p>
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2016-07-07-ITStuff290616">Episode 290616</a> by {_blog_post_json.author} on 2016-07-07</div>
+		<div class="blog_info"><a href="../blog/2016-07-07-ITStuff290616">Episode 290616</a> by shi on 2016-07-07</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 290616</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff290616" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>This month&#39;s dollop of derp from Information Technology includes:</p>
 <p>No Man&#39;s Sky trademark problems, delayed release
 Mark Zuckerberg hacked on Twitter, Pinterest and LinkedIn
 Zuckerberg has also confirmed that he&#39;s not a lizard &amp; other shenanigans
 Reddit user FiletOfFish1066 sacked for automating his job for 6 years</p>
-<p>Anniversary corner: Twentieth Birthday of Quake
-We reminisce memorable moments of the game</p>
-<p>New! Singularity Watch: Keeping you up to date with Artificial Intelligence
-AI called Benjamin fed movie scripts generated the sci-fi movie, Sunspring, failed Bechdel test</p>
-<p>Leeds Hack update! Our roving reporter Brian talks to Wes &amp; Chris about complicated things
-Richard Cheese Gives away his back catalogue in response to BREXIT</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2016-07-07-ITStuff290616">Go on</a>
@@ -399,21 +413,24 @@ Richard Cheese Gives away his back catalogue in response to BREXIT</p>
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2016-06-11-ITStuff010616">Episode 010616</a> by {_blog_post_json.author} on 2016-06-11</div>
+		<div class="blog_info"><a href="../blog/2016-06-11-ITStuff010616">Episode 010616</a> by shi on 2016-06-11</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 010616</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff010616" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>This month&#39;s episode features the following!</p>
 <p>Data leaks coming out of the wazoo from LinkedIn, Myspace, Yahoo and Google
 Microsoft&#39;s one cool trick for Windows 10 upgrades
 Windows 10 upgrades will cost you a hundred squids (or more)
 Sci-Hub, #icanhazpdf &amp; the monopoly of publishers on academic journals
 Artificial intelligent poets</p>
-<p>Shi&#39;s World of Stuff includes:
-Project Ara &amp; the whole modular phones malarkey
-Microsoft killing Nokia
-Samsung hologram phones</p>
-<p>Leeds Hack update! Our roving reporter Brian talks to Alice</p>
-<p>Dr. Caligula&#39;s Pirate Willy Workshop - a Spectrum piracy workshop at Feral Vector in Hebden Bridge
-Happy International Amiga Day!</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2016-06-11-ITStuff010616">Go on</a>
@@ -423,18 +440,19 @@ Happy International Amiga Day!</p>
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2016-05-30-ITStuff040416">Episode 040416</a> by {_blog_post_json.author} on 2016-05-30</div>
+		<div class="blog_info"><a href="../blog/2016-05-30-ITStuff040416">Episode 040416</a> by shi on 2016-05-30</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 040416</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff040416" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>A special broadcast from the past with David, shi and Kriss!</p>
-<p>Google&#39;s April Fool gag gone wrong
-Microsoft&#39;s AI Twitter bot, Tay, is only human
-Microsoft&#39;s Linux compatibility layer for Windows
-Apple Computer is forty years old, Phil Schiller thinks poor people are sad
-Shi&#39;s world of all the VR things &amp; the BBC micro:bit
-Quick and dirty interviews from National Media Museum: Lates (Music)
-One cool trick to fool biometric scanners with a deskjet printer
-Reports from Leeds Hack 2015
-Panama Papers weigh a stonking two and a half terabytes</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2016-05-30-ITStuff040416">Go on</a>

@@ -227,6 +227,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
 .blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_title:nth-of-type(2) {margin-top:30px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
@@ -240,6 +241,8 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
+
+.paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
 .blog_wrap.pod:nth-of-type(2)	{padding-top:0;}
 
@@ -306,6 +309,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 }
 
+.show_box			{background-color:#2c1950; margin-top:40px;}
+.show_date			{padding:1em 2em; color:#ccc; text-transform:uppercase;}
+.show_wrap			{background-color:#111;}
+.show_info			{display:inline-block; vertical-align:top; width:80%;}
+.show_info.source	{width:20%;}
+.show_music			{padding:1em 2em;}
+.show_music span	{display:block;}
+.show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
+.show_music p:before{display:inline-block; color:#c2a2ff; margin-right:10px; content:"♪";}
+
+.show_script a		{background-color:#123c3c;}
+.show_script a:hover{background-color:#176565;}
+.show_ogg a			{background-color:#7d510f;}
+.show_ogg a:hover	{background-color:#B26F09;}
+.show_ogg a,
+.show_ogg a:hover	{color:#FFEB3B;}
+.show_script a:hover{color:#00ffff;}
+.show_script a,
+.show_ogg a			{display:block; padding:1em; font-size:24px;}
+
 </style></head>
 <body><div class="content"><div class="nav_wrap">
 	<div class="nav">
@@ -318,8 +341,23 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	</div>
 </div>
 <div class="blog_wrap" style="padding-top:0;">
+<!--	<div class="paging_wrap top_paging"><a href="../../blog/2016-11-03-ITStuff201016/">Previous</a>
+ <a href="../../blog/2016-12-14-ITStuff141216/">Next</a>
+</div>-->
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 161116</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff16116" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>Woah, it&#39;s November already? Buckle up boys and girls, it has been a hell of a month in technology!</p>
-<ul>
+
+</div>
+
+
+
+	<div class="blog_bit">
+		<ul>
 <li>IoT dos at Dyn takes down the internet</li>
 <li>Tesco Bank hack</li>
 <li>Epic fail of NHS email</li>
@@ -333,36 +371,38 @@ Blizzard &amp; Google = AI Machine learning games</p>
 C.H.I.P</p>
 <p>Youtube of the month:
 <a href="https://www.youtube.com/user/MITNewsOffice">https://www.youtube.com/user/MITNewsOffice</a></p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
 
-	<div class="blog_bit">
-		{blog_more}
 		
 		<div class="ep_links">
-	Link mentions:
+	Links:
 	<div class="ep_showlinks"><a href="https://getchip.com/">C.H.I.P</a>
 
 
 </div>
 </div>
 
-		Broadcast: 17th & 18th November 2016
+		<div class="show_box">
+	<div class="show_date"><span>Broadcast</span> 17th & 18th November 2016
 
 
-
-		<div class="ep_music"><span>Music:</span> <p>Weightless by Marconi Union</p>
-</div>
-
-		<div class="ep_script">
-	Download transcript <i>(.odt file)</i>: <a href="https://github.com/meatstuff/itstuff/blob/master/odt/2016/itstuff161116.odt
-">itstuff161116
-</a><a href="{odtlink2}"> </a>
+</div>
+	<div class="show_wrap">
+		<div class="show_info music_wrap">
+			<div class="show_music">
+	<span>End Music</span>
+	Weightless by Marconi Union
 
 </div>
 
-		<div class="ep_ogg">
-	Ogg: <a href="https://ia601509.us.archive.org/2/items/ITStuff16116/itstuff161116.ogg">ITStuff-161116.ogg</a>
+		</div><div class="show_info source">
+			<div class="show_script"><a href="https://github.com/meatstuff/itstuff/blob/master/odt/2016/itstuff161116.odt
+">script</a>
+</div>
+			<div class="show_ogg"><a href="https://ia601509.us.archive.org/2/items/ITStuff16116/itstuff161116.ogg">ogg</a>
 
+</div>
+		</div>
+	</div>
 </div>
 
 

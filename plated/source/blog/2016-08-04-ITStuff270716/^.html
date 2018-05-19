@@ -1,10 +1,24 @@
 #^_blog_post_json
 {
 	"title":"Episode 270716",
+	"author":"shi",
 }
-#^_blog_post_body form=markdown
+#^_blog_post_body
+
+<div class="blog_play">
+	<div class="blog_title">{_blog_post_json.title}</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff270716" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
+	{blog_bit}
+</div>
+
+
+
+#^blog_bit form=markdown
 Join us as we explore a whole bunch of stuffs with David, Dick, Kriss, Shi and special guest, Stephane!
 
+#^blog_more form=markdown
 No Man's Sky pushed back even further, soundtrack written by algorithms, performed by 65daysofstatic
 Type {wowcode} into World of Warcraft chat for shits & giggles
 Yahoos sold to Verizon for 4.8 billion dollars
@@ -22,6 +36,7 @@ Upcoming events:
 Wuthering Bytes in Hebden Bridge, 2nd - 9th September
 Open Source Hardware Camp, 3rd - 4th September
 Leeds Hack returns in autumn this year, under new management
+
 #^media trim=ends
 https://ia801501.us.archive.org/27/items/ITStuff270716/itstuff270716.ogg
 
@@ -29,7 +44,7 @@ https://ia801501.us.archive.org/27/items/ITStuff270716/itstuff270716.ogg
 
 
 #^music_name
-<p>65daysofstatic - Supermoon</p>
+Supermoon by 65daysofstatic
 
 #^music_video
 videoseries?list=PL6F00ZBNWllfAQY0_rbhtotPCtpX7sIlm
@@ -42,7 +57,7 @@ https://drive.google.com/file/d/0B-EcDVPirelzN1dLMFRzLVQwQUk/view
 itstuff270716
 
 #^ogg_podcast
-<a href="https://ia801501.us.archive.org/27/items/ITStuff270716/itstuff270716.ogg">ITStuff-270716.ogg</a>
+<a href="https://ia801501.us.archive.org/27/items/ITStuff270716/itstuff270716.ogg">ogg</a>
 
 #^poster
 it
@@ -57,6 +72,7 @@ it
 
 #^title trim=ends
 {_blog_post_json.title}
+
 #^wowcode form=raw
 <i>/run RemoveExtraSpaces=RunScript</i>
 

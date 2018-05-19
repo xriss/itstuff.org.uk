@@ -29,15 +29,13 @@ IT Stuff - That's some good stuff!
 #^-This is a single blog post viewed on its own page
 #^_blog_post_body_one
 <div class="blog_wrap" style="padding-top:0;">
+<!--	<div class="paging_wrap top_paging">{_blog_post_older:link_older_post} {_blog_post_newer:link_newer_post}</div>-->
 	{_blog_post_body}
 	<div class="blog_bit">
-		{blog_more}
+		{blog_more||}
 		{script||}
 		{showlinks||}
-		{showdate||}
-		{showmusic||}
-		{showscript||}
-		{showogg||}
+		{showbox||}
 	</div>
 	<div class="paging_wrap">{_blog_post_older:link_older_post} {_blog_post_newer:link_newer_post}</div>
 </div>
@@ -61,27 +59,10 @@ IT Stuff - That's some good stuff!
 #^link_newer_post
 <a href="{_it}">Next</a>
 
-#^script2 
-<a href="{odtlink2}"> {odtname2||}</a>
-
 #^showlinks 
 <div class="ep_links">
-	Link mentions:
-	<div class="ep_showlinks">{show_links}</div>
-</div>
-
-#^showmusic 
-<div class="ep_music"><span>Music:</span> {music_name}</div>
-
-#^showogg 
-<div class="ep_ogg">
-	Ogg: {ogg_podcast}
-</div>
-
-
-#^showscript 
-<div class="ep_script">
-	Download transcript <i>(.odt file)</i>: <a href="{odtlink}">{odtname}</a>{script2||}
+	Links:
+	<div class="ep_showlinks">{show_links||}</div>
 </div>
 
 #^showtube 
@@ -90,4 +71,55 @@ IT Stuff - That's some good stuff!
 </div>
 
 #^showdate
-Broadcast: {show_date}
+<span>Broadcast</span> {show_date}
+
+#^showmusic 
+<div class="show_music">
+	<span>End Music</span>
+	{music_name||}
+</div>
+
+#^showogg 
+{ogg_podcast||}
+
+#^script2 
+<a href="{odtlink2}"> {odtname2||}</a>
+
+#^showscript 
+<a href="{odtlink||}">script</a>
+
+#^showbox
+<div class="show_box">
+	<div class="show_date">{showdate||}</div>
+	<div class="show_wrap">
+		<div class="show_info music_wrap">
+			{showmusic||}
+		</div><div class="show_info source">
+			<div class="show_script">{showscript||}</div>
+			<div class="show_ogg">{showogg||}</div>
+		</div>
+	</div>
+</div>
+
+
+#^css same=append
+
+.show_box			{background-color:#2c1950; margin-top:40px;}
+.show_date			{padding:1em 2em; color:#ccc; text-transform:uppercase;}
+.show_wrap			{background-color:#111;}
+.show_info			{display:inline-block; vertical-align:top; width:80%;}
+.show_info.source	{width:20%;}
+.show_music			{padding:1em 2em;}
+.show_music span	{display:block;}
+.show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
+.show_music p:before{display:inline-block; color:#c2a2ff; margin-right:10px; content:"♪";}
+
+.show_script a		{background-color:#123c3c;}
+.show_script a:hover{background-color:#176565;}
+.show_ogg a			{background-color:#7d510f;}
+.show_ogg a:hover	{background-color:#B26F09;}
+.show_ogg a,
+.show_ogg a:hover	{color:#FFEB3B;}
+.show_script a:hover{color:#00ffff;}
+.show_script a,
+.show_ogg a			{display:block; padding:1em; font-size:24px;}

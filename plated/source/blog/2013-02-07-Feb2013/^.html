@@ -1,8 +1,20 @@
 #^_blog_post_json
 {
 	"title":"IT Stuff: 7th February 2013",
+	"author":"David",
 }
-#^_blog_post_body form=markdown
+#^_blog_post_body
+
+<div class="blog_play">
+	<div class="blog_title">{_blog_post_json.title}</div>
+</div>
+<div class="blog_bit">
+	{blog_bit}
+</div>
+
+
+
+#^blog_bit form=markdown
 This month’s show covers:
 
 Going Linux:
@@ -22,8 +34,32 @@ http://www.ubuntu.com
 
 
 #^poster
-it#^show_date
+it
+
+#^show_date
 07 February 2013
 
 #^title trim=ends
 {_blog_post_json.title}
+
+#^media trim=ends
+
+#^mix
+
+#^showmusic
+
+#^music_name
+
+#^odtlink
+
+#^odtname
+
+#^ogg_podcast
+
+#^show_links
+
+#^showlinks
+
+#^script
+
+#^showscript

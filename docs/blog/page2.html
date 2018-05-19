@@ -227,6 +227,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
 .blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_title:nth-of-type(2) {margin-top:30px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
@@ -240,6 +241,8 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
+
+.paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
 .blog_wrap.pod:nth-of-type(2)	{padding-top:0;}
 
@@ -306,6 +309,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 }
 
+.show_box			{background-color:#2c1950; margin-top:40px;}
+.show_date			{padding:1em 2em; color:#ccc; text-transform:uppercase;}
+.show_wrap			{background-color:#111;}
+.show_info			{display:inline-block; vertical-align:top; width:80%;}
+.show_info.source	{width:20%;}
+.show_music			{padding:1em 2em;}
+.show_music span	{display:block;}
+.show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
+.show_music p:before{display:inline-block; color:#c2a2ff; margin-right:10px; content:"♪";}
+
+.show_script a		{background-color:#123c3c;}
+.show_script a:hover{background-color:#176565;}
+.show_ogg a			{background-color:#7d510f;}
+.show_ogg a:hover	{background-color:#B26F09;}
+.show_ogg a,
+.show_ogg a:hover	{color:#FFEB3B;}
+.show_script a:hover{color:#00ffff;}
+.show_script a,
+.show_ogg a			{display:block; padding:1em; font-size:24px;}
+
 </style></head>
 <body><div class="content"><div class="nav_wrap">
 	<div class="nav">
@@ -320,27 +343,19 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2017-05-31-ITStuff310517">Episode 310517</a> by {_blog_post_json.author} on 2017-05-31</div>
+		<div class="blog_info"><a href="../blog/2017-05-31-ITStuff310517">Episode 310517</a> by shi on 2017-05-31</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 310517</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff310517" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>Today&#39;s delirious rambling is an incident themed special Stuff!</p>
-<iframe class="archive" src="https://archive.org/embed/ITStuff310517" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
-<p>Downtime of the month - British Airways
-Wannacry ransomware
-Political advertising on Facebook
-Bose headphones alleged spying
-HP Laptops keylogger in the audio driver
-Giant poo emoji pool inflatables</p>
-<p>Anniversary Corner - Google Street View</p>
-<p>Shi&#39;s world of stuff: 
-MagPi Magazine free AIY Projects for Pi
-Chromebook GalliumOS update</p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
-<p><b>Local events:</b>
-<a href="http://feral-vector.com/">Feral Vector Game Design Festival</a>, Hebden Bridge 1st - 3rd June
-Badonkadonk has moved to the Turls Green! 14th June 19:00 - 21:00
-Bradford Coder Dojo <a href="https://bradford-coderdojo.github.io/">https://bradford-coderdojo.github.io/</a> 17th June
-BradLUG <a href="http://bradlug.co.uk/">http://bradlug.co.uk/</a> 12th June</p>
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2017-05-31-ITStuff310517">Go on</a>
@@ -350,22 +365,19 @@ BradLUG <a href="http://bradlug.co.uk/">http://bradlug.co.uk/</a> 12th June</p>
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2017-05-03-ITStuff030517">Episode 030517</a> by {_blog_post_json.author} on 2017-05-03</div>
+		<div class="blog_info"><a href="../blog/2017-05-03-ITStuff030517">Episode 030517</a> by shi on 2017-05-03</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 030517</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff030517" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>What a treat! It&#39;s the IT Stuff Artificial Intelligence Special!</p>
-<p>Lyrebird
-Adobe&#39;s Project Voco
-Google&#39;s Wavenet speech synthesiser
-Amazon Alexa horror
-David Hasselhoff stars in &#39;It&#39;s No Game&#39;, the follow-up to &#39;Sunspring&#39;
-Anniversary Corner - Basic is 53 years old
-Pinebook based on Pine64
-Monit Smart Diaper Monitor
-LETSROBOT</p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
-<p><b>Local events:</b>
-Badonkadonk has moved to the Turls Green! Wed, 10th May 19:00 - 21:00
-Bradford Coder Dojo <a href="https://bradford-coderdojo.github.io/">https://bradford-coderdojo.github.io/</a> 20th May</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2017-05-03-ITStuff030517">Go on</a>
@@ -375,17 +387,19 @@ Bradford Coder Dojo <a href="https://bradford-coderdojo.github.io/">https://brad
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2017-04-05-ITStuff050417">Episode 050417</a> by {_blog_post_json.author} on 2017-04-05</div>
+		<div class="blog_info"><a href="../blog/2017-04-05-ITStuff050417">Episode 050417</a> by shi on 2017-04-05</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 050417</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff050417" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>This month takes us through these topics - some brief, others not so brief.</p>
-<p>Cooking with AI
-Twitter eggs
-Terror in our electrical devices
-Two drone Pooper scooper
-Demise of Club Penguin</p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
-<p><b>Local events:</b>
-Bradford Coder Dojo <a href="https://bradford-coderdojo.github.io/">https://bradford-coderdojo.github.io/</a> 29th April</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2017-04-05-ITStuff050417">Go on</a>
@@ -395,20 +409,19 @@ Bradford Coder Dojo <a href="https://bradford-coderdojo.github.io/">https://brad
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2017-03-19-ITStuff080317">Episode 080317</a> by {_blog_post_json.author} on 2017-03-19</div>
+		<div class="blog_info"><a href="../blog/2017-03-19-ITStuff080317">Episode 080317</a> by shi on 2017-03-19</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 080317</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff080317" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>Oh boy, have we got some tech news for you this month! Are you sitting comfortably?</p>
-<p>CIA Wikileaks
-Evil TeddyBears
-April the giraffe
-Bitter Nintendo Cartridges </p>
-<p>Youtube of the month:
-<a href="https://www.youtube.com/user/mediacccde">https://www.youtube.com/user/mediacccde</a></p>
-<p><i>Sorry! Due to technical issues, the lip sync is out at the last part of the show.</i></p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
-<p><b>Local events:</b>
-Leeds International Festival <a href="http://leedsinternationalfestival.com/">http://leedsinternationalfestival.com/</a> 22/30 April
-Leeds Digital Festival <a href="http://leedsdigitalfestival.org">http://leedsdigitalfestival.org</a> 22/29 April</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2017-03-19-ITStuff080317">Go on</a>
@@ -418,19 +431,19 @@ Leeds Digital Festival <a href="http://leedsdigitalfestival.org">http://leedsdig
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2017-02-08-ITStuff080217">Episode 080217</a> by {_blog_post_json.author} on 2017-02-08</div>
+		<div class="blog_info"><a href="../blog/2017-02-08-ITStuff080217">Episode 080217</a> by shi on 2017-02-08</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 080217</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff080217" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>Another month, another show. Listen to us babble about the digitals. </p>
-<p><em>Drive-by hacking
-</em>Cyber squirrels</p>
-<p>Shi&#39;s World of stuff:
-Raspberry Pi Compute Module 3</p>
-<p>Youtube of the month:
-<a href="https://www.youtube.com/user/megabotsinc">https://www.youtube.com/user/megabotsinc</a></p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
-<p>Local events:
-Bradford Coderdojo
-Bradford LoRaWAN Launch</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2017-02-08-ITStuff080217">Go on</a>

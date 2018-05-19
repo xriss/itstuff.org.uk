@@ -227,6 +227,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
 .blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_title:nth-of-type(2) {margin-top:30px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
@@ -240,6 +241,8 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
+
+.paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
 .blog_wrap.pod:nth-of-type(2)	{padding-top:0;}
 
@@ -306,6 +309,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 }
 
+.show_box			{background-color:#2c1950; margin-top:40px;}
+.show_date			{padding:1em 2em; color:#ccc; text-transform:uppercase;}
+.show_wrap			{background-color:#111;}
+.show_info			{display:inline-block; vertical-align:top; width:80%;}
+.show_info.source	{width:20%;}
+.show_music			{padding:1em 2em;}
+.show_music span	{display:block;}
+.show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
+.show_music p:before{display:inline-block; color:#c2a2ff; margin-right:10px; content:"♪";}
+
+.show_script a		{background-color:#123c3c;}
+.show_script a:hover{background-color:#176565;}
+.show_ogg a			{background-color:#7d510f;}
+.show_ogg a:hover	{background-color:#B26F09;}
+.show_ogg a,
+.show_ogg a:hover	{color:#FFEB3B;}
+.show_script a:hover{color:#00ffff;}
+.show_script a,
+.show_ogg a			{display:block; padding:1em; font-size:24px;}
+
 </style></head>
 <body><div class="content"><div class="nav_wrap">
 	<div class="nav">
@@ -318,6 +341,9 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	</div>
 </div>
 <div class="blog_wrap" style="padding-top:0;">
+<!--	<div class="paging_wrap top_paging"><a href="../../blog/2017-09-20-ITStuff200917/">Previous</a>
+ <a href="../../blog/2017-11-15-ITStuff151117/">Next</a>
+</div>-->
 	
 <div class="blog_play">
 	<div class="blog_title">Episode 181017</div>
@@ -326,7 +352,13 @@ only screen and (min-device-pixel-ratio: 1.5) {
 <div class="blog_bit">
 	<p>Welcome to Negativity Month! Wherein the first half of the show we&#39;ll celebrate the misery of autumn with negative technology stories and security fails.</p>
 <p>We conclude the show with AI and local events in an attempt to cheer ourselves up. Will it work?</p>
-<p><b>Our topics include:</b>
+
+</div>
+
+
+
+	<div class="blog_bit">
+		<p><b>Our topics include:</b>
 WPA2 Krack attack
 Adobe Flash emergency patch
 Key fobs on Subaru cars
@@ -343,20 +375,13 @@ Disqus data breaches
 Twitter doubles word count and revised abuse policy</p>
 <p><b>Singularity Watch:</b>
 Google&#39;s teachable machine - using your camera, live in the browser</p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
 <p><b>Local events:</b>
 Bradford Coder Dojo 3rd Birthday - Sat, 28th Oct 2017 9:30am-12pm at Little Germany
 Queer Code Yorkshire - 2nd Nov at Sky Betting &amp; Gaming Wellington Place Leeds</p>
 
-</div>
-
-
-
-	<div class="blog_bit">
-		{blog_more}
 		
 		<div class="ep_links">
-	Link mentions:
+	Links:
 	<div class="ep_showlinks"><a href="https://bradford-coderdojo.github.io/">Bradford Coder Dojo</a>,
 <a href="https://www.youtube.com/watch?v=LX44iCGELxg">[AMIGA CRACKTRO MUSIC] 4mat - Madness</a>,
 <a href="https://teachablemachine.withgoogle.com/">Teachable Machine</a>,
@@ -365,24 +390,29 @@ Queer Code Yorkshire - 2nd Nov at Sky Betting &amp; Gaming Wellington Place Leed
 </div>
 </div>
 
-		Broadcast: 19th & 20th October 2017
+		<div class="show_box">
+	<div class="show_date"><span>Broadcast</span> 19th & 20th October 2017
 
 
+</div>
+	<div class="show_wrap">
+		<div class="show_info music_wrap">
+			<div class="show_music">
+	<span>End Music</span>
+	A bit of Cracktro, played on the chipophone as used on Lemmings and Silkworm 4 by 4mat
 
-		<div class="ep_music"><span>Music:</span> <p>A bit of Cracktro, played on the chipophone as used on Lemmings and Silkworm 4 by 4mat</p>
-
-</div>
-
-		<div class="ep_script">
-	Download transcript <i>(.odt file)</i>: <a href="https://github.com/meatstuff/itstuff/blob/master/odt/2017/itstuff181017.odt
-">itstuff181017
-</a><a href="{odtlink2}"> </a>
 
 </div>
 
-		<div class="ep_ogg">
-	Ogg: <a href="https://ia801500.us.archive.org/15/items/ITStuff181017/itstuff181017.ogg">ITStuff-181017.ogg</a>
+		</div><div class="show_info source">
+			<div class="show_script"><a href="https://github.com/meatstuff/itstuff/blob/master/odt/2017/itstuff181017.odt
+">script</a>
+</div>
+			<div class="show_ogg"><a href="https://ia801500.us.archive.org/15/items/ITStuff181017/itstuff181017.ogg">ogg</a>
 
+</div>
+		</div>
+	</div>
 </div>
 
 

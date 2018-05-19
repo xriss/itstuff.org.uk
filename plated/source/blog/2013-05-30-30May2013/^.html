@@ -1,11 +1,20 @@
 #^_blog_post_json
 {
 	"title":"IT Stuff: 2nd May 2013",
+	"author":"David",
 }
-#^_blog_post_body form=markdown
-Broadcast on: 30th May 2013 18:00 and 31st May 2013 13:30
-BCB 106.6FM
+#^_blog_post_body
 
+<div class="blog_play">
+	<div class="blog_title">{_blog_post_json.title}</div>
+</div>
+<div class="blog_bit">
+	{blog_bit}
+</div>
+
+
+
+#^blog_bit form=markdown
 The show includes:
 
 A discussion about the <a href="http://www.liberty-human-rights.org.uk/campaigns/no-snoopers-charter/index.php">Communications Data Bill</a> with a cameo from the Queen
@@ -20,8 +29,32 @@ If you have any feedback, we’d love to hear it.
 
 
 #^poster
-it#^show_date
-30 and 31 May 2013
+it
+
+#^show_date
+30th & 31st May 2013
 
 #^title trim=ends
 {_blog_post_json.title}
+
+#^media trim=ends
+
+#^mix
+
+#^showmusic
+
+#^music_name
+
+#^odtlink
+
+#^odtname
+
+#^ogg_podcast
+
+#^show_links
+
+#^showlinks
+
+#^script
+
+#^showscript

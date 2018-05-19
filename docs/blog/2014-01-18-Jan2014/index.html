@@ -227,6 +227,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
 .blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_title:nth-of-type(2) {margin-top:30px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
@@ -240,6 +241,8 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
+
+.paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
 .blog_wrap.pod:nth-of-type(2)	{padding-top:0;}
 
@@ -306,6 +309,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 }
 
+.show_box			{background-color:#2c1950; margin-top:40px;}
+.show_date			{padding:1em 2em; color:#ccc; text-transform:uppercase;}
+.show_wrap			{background-color:#111;}
+.show_info			{display:inline-block; vertical-align:top; width:80%;}
+.show_info.source	{width:20%;}
+.show_music			{padding:1em 2em;}
+.show_music span	{display:block;}
+.show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
+.show_music p:before{display:inline-block; color:#c2a2ff; margin-right:10px; content:"♪";}
+
+.show_script a		{background-color:#123c3c;}
+.show_script a:hover{background-color:#176565;}
+.show_ogg a			{background-color:#7d510f;}
+.show_ogg a:hover	{background-color:#B26F09;}
+.show_ogg a,
+.show_ogg a:hover	{color:#FFEB3B;}
+.show_script a:hover{color:#00ffff;}
+.show_script a,
+.show_ogg a			{display:block; padding:1em; font-size:24px;}
+
 </style></head>
 <body><div class="content"><div class="nav_wrap">
 	<div class="nav">
@@ -318,32 +341,57 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	</div>
 </div>
 <div class="blog_wrap" style="padding-top:0;">
+<!--	<div class="paging_wrap top_paging"><a href="../../blog/2013-11-21-November2013/">Previous</a>
+ <a href="../../blog/2014-02-15-Feb2014/">Next</a>
+</div>-->
+	
+<div class="blog_play">
+	<div class="blog_title">Episode January 2014</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff2014MayPod/ITStuff-2014-Jan-pod.ogg" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>It&#39;s Anger Month! Today we talk about opting out of NHS data sharing and Google+ where anyone can email you directly, something Facebook users put up with as a default. The government&#39;s new CyberStreetWise initiative including more money wasting activities on failing IT projects, spooks, spooks, spooks, Sky&#39;s brand new government approved smut filter, Snapchat ignoring a vulnerability warning that followed a hacking of their system, releasing 4.6 million user&#39;s details, Demonoid&#39;s tracker being back online before ending on the Gagging Bill and Youtube&#39;s Content ID malarkey. Bleurgh.</p>
 
+</div>
+
+
+
 	<div class="blog_bit">
-		{blog_more}
+		<p>This month we’re angry about a lot of stuff, so tune in to hear us twitter on about:</p>
+<p>The NHS sharing of your personal data and how to opt out
+How Google are ‘helping’ you reach more people than you know
+The Government’s cyberstreetwise initiative
+The gagging, erm we mean lobbying bill
+…and the speaking computer failing to maintain control or order on the show.</p>
+
 		
 		<div class="ep_links">
-	Link mentions:
+	Links:
 	<div class="ep_showlinks"><a href="https://www.cyberstreetwise.com/" target="_blank">Cyber Street Wise</a>, <a href="http://medconfidential.org/" target="_blank">Med Confidential</a>, <a href="http://blog.38degrees.org.uk/" target="_blank">Gagging Bill & other news</a>
 </div>
 </div>
 
-		Broadcast: 16 January 2014
+		<div class="show_box">
+	<div class="show_date"><span>Broadcast</span> 16th & 17th January 2014
 
-
-		<div class="ep_music"><span>Music:</span> FUCK CONTENT ID (YouTube diss track) by Dan Bull
-</div>
-
-		<div class="ep_script">
-	Download transcript <i>(.odt file)</i>: <a href="https://drive.google.com/file/d/0B-EcDVPirelzYWR0eHc1WXNYQjNpQ3FtV1BDYzFyeEUzcGcw/edit?usp=sharing
-">itstuff2014jan
-</a><a href="{odtlink2}"> </a>
+</div>
+	<div class="show_wrap">
+		<div class="show_info music_wrap">
+			<div class="show_music">
+	<span>End Music</span>
+	FUCK CONTENT ID (YouTube diss track) by Dan Bull
 
 </div>
 
-		<div class="ep_ogg">
-	Ogg: <a href="https://ia902302.us.archive.org/9/items/ITStuff2014MayPod/ITStuff-2014-Jan-pod.ogg">ITStuff-2014-Jan-pod.ogg</a>
+		</div><div class="show_info source">
+			<div class="show_script"><a href="https://drive.google.com/file/d/0B-EcDVPirelzYWR0eHc1WXNYQjNpQ3FtV1BDYzFyeEUzcGcw/edit?usp=sharing
+">script</a>
+</div>
+			<div class="show_ogg"><a href="https://ia902302.us.archive.org/9/items/ITStuff2014MayPod/ITStuff-2014-Jan-pod.ogg">ogg</a>
+
+</div>
+		</div>
+	</div>
 </div>
 
 

@@ -1,9 +1,23 @@
 #^_blog_post_json
 {
 	"title":"IT Stuff: 4th April 2013",
+	"author":"David",
 }
-#^_blog_post_body form=markdown
+#^_blog_post_body
+
+<div class="blog_play">
+	<div class="blog_title">{_blog_post_json.title}</div>
+</div>
+<div class="blog_bit">
+	{blog_bit}
+</div>
+
+
+
+#^blog_bit form=markdown
 The bulk of the show is based around an interview Brian did at a RepRap workshop in Hebden Bridge recently.
+
+#^blog_more form=markdown
 Links from the feature:
 
 http://reprap.org
@@ -15,8 +29,33 @@ http://www.actionfraud.police.uk/
 
 
 #^poster
-it#^show_date
+it
+
+#^show_date
 04 April 2013
 
 #^title trim=ends
 {_blog_post_json.title}
+
+#^media trim=ends
+
+#^mix
+
+#^showmusic
+
+#^music_name
+
+#^odtlink
+
+#^odtname
+
+#^ogg_podcast
+
+#^show_links
+
+#^showlinks
+
+#^script
+
+#^showscript
+

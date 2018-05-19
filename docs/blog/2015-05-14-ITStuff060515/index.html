@@ -227,6 +227,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
 .blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_title:nth-of-type(2) {margin-top:30px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
@@ -240,6 +241,8 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
+
+.paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
 .blog_wrap.pod:nth-of-type(2)	{padding-top:0;}
 
@@ -306,6 +309,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 }
 
+.show_box			{background-color:#2c1950; margin-top:40px;}
+.show_date			{padding:1em 2em; color:#ccc; text-transform:uppercase;}
+.show_wrap			{background-color:#111;}
+.show_info			{display:inline-block; vertical-align:top; width:80%;}
+.show_info.source	{width:20%;}
+.show_music			{padding:1em 2em;}
+.show_music span	{display:block;}
+.show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
+.show_music p:before{display:inline-block; color:#c2a2ff; margin-right:10px; content:"♪";}
+
+.show_script a		{background-color:#123c3c;}
+.show_script a:hover{background-color:#176565;}
+.show_ogg a			{background-color:#7d510f;}
+.show_ogg a:hover	{background-color:#B26F09;}
+.show_ogg a,
+.show_ogg a:hover	{color:#FFEB3B;}
+.show_script a:hover{color:#00ffff;}
+.show_script a,
+.show_ogg a			{display:block; padding:1em; font-size:24px;}
+
 </style></head>
 <body><div class="content"><div class="nav_wrap">
 	<div class="nav">
@@ -318,33 +341,55 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	</div>
 </div>
 <div class="blog_wrap" style="padding-top:0;">
-	<p>Starting strong with puns and a slight nod to the misadventures of the pilot from Hello Kitty Airways, this episode includes plenty of fails. On the flip side, there are also plenty of local events happening this month like the Saltaire Arts Trail on the 23rd to 25th of May, Bradford CoderDojo on the 23rd, Feral Vector on the 29th &amp; 30th and Halifax Mini Maker Faire on the 30th &amp; 31st so there should be something for everyone, hopefully. Join us as we watch Apple Watch say no-no to watch apps and tattoos, squabble a little bit about the new Windows browser, Microsoft Edge, which has surprisingly good emoji support, ramble on about how <em>not</em> to engineer a jet engine and other delicious security holes including a certain Password3 leaked via a signaller&#39;s control desk at Waterloo, on national television. Ooh and we&#39;ve also a separate podcast about online voting if you&#39;re into that sort of thing.</p>
+<!--	<div class="paging_wrap top_paging"><a href="../../blog/2015-04-16-ITStuff080415/">Previous</a>
+ <a href="../../blog/2015-06-15-ITStuff030615/">Next</a>
+</div>-->
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 060515</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff060515" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<div class="blog_title">Election Babble</div>
+	<iframe class="archive" src="https://archive.org/embed/ITSTUFFElectionBabble" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
+	<p>Starting strong with puns and a slight nod to the misadventures of the pilot from Hello Kitty Airways, this episode includes plenty of fails.</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
-		{blog_more}
+		<p>On the flip side, there are also plenty of local events happening this month like the Saltaire Arts Trail on the 23rd to 25th of May, Bradford CoderDojo on the 23rd, Feral Vector on the 29th &amp; 30th and Halifax Mini Maker Faire on the 30th &amp; 31st so there should be something for everyone, hopefully. Join us as we watch Apple Watch say no-no to watch apps and tattoos, squabble a little bit about the new Windows browser, Microsoft Edge, which has surprisingly good emoji support, ramble on about how <em>not</em> to engineer a jet engine and other delicious security holes including a certain Password3 leaked via a signaller&#39;s control desk at Waterloo, on national television. Ooh and we&#39;ve also a separate podcast about online voting if you&#39;re into that sort of thing.</p>
+
 		
 		<div class="ep_links">
-	Link mentions:
+	Links:
 	<div class="ep_showlinks"><a href="http://www.theregister.co.uk/2015/05/01/london_rail_station_exposes_signal_system_passwords/" target="_blank">Password3</a>, <a href="http://hextechsecurity.com/?p=123" target="_blank">Hospira PCA3 Drug Infusion Pump</a>, <a href="http://webrootsdemocracy.org/" target="_blank">WebRoots Democracy</a>, <a href="http://www.theregister.co.uk/2015/04/28/apple_watch_apps/" target="_blank">Apple Watch &lt;/3 watch apps</a>, <a href="https://support.apple.com/en-us/HT204666" target="_blank">Apple Watch &lt;/3 tattoos</a>, <a href="http://feral-vector.com/" target="_blank">Feral Vector</a>, <a href="http://www.ticbradford.com/coderdojo" target="_blank">Bradford CoderDojo</a>, <a href="http://makerfairehalifax.com/" target="_blank">Halifax Mini Maker Faire 2015</a>, <a href="http://www.saltaireinspired.org.uk/fuse-art-space-at-saltaire/" target="_blank">Saltaire Arts Trail 2015 : DRIFT</a>
 </div>
 </div>
 
-		Broadcast: 7th & 8th May 2015
+		<div class="show_box">
+	<div class="show_date"><span>Broadcast</span> 7th & 8th May 2015
 
-
-		<div class="ep_music"><span>Music:</span> Something Better Change by The Stranglers
-</div>
-
-		<div class="ep_script">
-	Download transcript <i>(.odt file)</i>: <a href="https://drive.google.com/file/d/0B-EcDVPirelzTFQ2VktVS3U4UE0/view?usp=sharing
-">itstuff060515
-</a><a href="{odtlink2}"> </a>
+</div>
+	<div class="show_wrap">
+		<div class="show_info music_wrap">
+			<div class="show_music">
+	<span>End Music</span>
+	Something Better Change by The Stranglers
 
 </div>
 
-		<div class="ep_ogg">
-	Ogg: <a href="https://ia801507.us.archive.org/9/items/ITStuff060515/ITStuff-060515.ogg">ITStuff-060515.ogg</a>
-<a href="https://ia600307.us.archive.org/12/items/ITSTUFFElectionBabble/ITSTUFF-electionbabble.ogg">ITStuff-electionbabble.ogg</a>
+		</div><div class="show_info source">
+			<div class="show_script"><a href="https://drive.google.com/file/d/0B-EcDVPirelzTFQ2VktVS3U4UE0/view?usp=sharing
+">script</a>
+</div>
+			<div class="show_ogg"><a href="https://ia801507.us.archive.org/9/items/ITStuff060515/ITStuff-060515.ogg">ogg</a>
+<a href="https://ia600307.us.archive.org/12/items/ITSTUFFElectionBabble/ITSTUFF-electionbabble.ogg">ogg</a>
+
+</div>
+		</div>
+	</div>
 </div>
 
 

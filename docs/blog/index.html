@@ -227,6 +227,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
 .blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_title:nth-of-type(2) {margin-top:30px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
@@ -240,6 +241,8 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
+
+.paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
 .blog_wrap.pod:nth-of-type(2)	{padding-top:0;}
 
@@ -306,6 +309,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 }
 
+.show_box			{background-color:#2c1950; margin-top:40px;}
+.show_date			{padding:1em 2em; color:#ccc; text-transform:uppercase;}
+.show_wrap			{background-color:#111;}
+.show_info			{display:inline-block; vertical-align:top; width:80%;}
+.show_info.source	{width:20%;}
+.show_music			{padding:1em 2em;}
+.show_music span	{display:block;}
+.show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
+.show_music p:before{display:inline-block; color:#c2a2ff; margin-right:10px; content:"♪";}
+
+.show_script a		{background-color:#123c3c;}
+.show_script a:hover{background-color:#176565;}
+.show_ogg a			{background-color:#7d510f;}
+.show_ogg a:hover	{background-color:#B26F09;}
+.show_ogg a,
+.show_ogg a:hover	{color:#FFEB3B;}
+.show_script a:hover{color:#00ffff;}
+.show_script a,
+.show_ogg a			{display:block; padding:1em; font-size:24px;}
+
 </style></head>
 <body><div class="content"><div class="nav_wrap">
 	<div class="nav">
@@ -354,27 +377,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
 <div class="blog_bit">
 	<p>Welcome to Negativity Month! Wherein the first half of the show we&#39;ll celebrate the misery of autumn with negative technology stories and security fails.</p>
 <p>We conclude the show with AI and local events in an attempt to cheer ourselves up. Will it work?</p>
-<p><b>Our topics include:</b>
-WPA2 Krack attack
-Adobe Flash emergency patch
-Key fobs on Subaru cars
-Microsoft Outlook plain text attachment in encrypted mail
-Adobe Security Team blogs their own PGP Private key
-Deloitte login details leaked
-Monero bitcoin miners
-WeChat bffs the Chinese Govt
-US mobile phone shares anything for money
-Pornhub advert spyware
-Equifax fake flash upgrade
-Mattel withdraws kid-focused “smart hub” Aristotle
-Disqus data breaches
-Twitter doubles word count and revised abuse policy</p>
-<p><b>Singularity Watch:</b>
-Google&#39;s teachable machine - using your camera, live in the browser</p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
-<p><b>Local events:</b>
-Bradford Coder Dojo 3rd Birthday - Sat, 28th Oct 2017 9:30am-12pm at Little Germany
-Queer Code Yorkshire - 2nd Nov at Sky Betting &amp; Gaming Wellington Place Leeds</p>
 
 </div>
 
@@ -388,27 +390,21 @@ Queer Code Yorkshire - 2nd Nov at Sky Betting &amp; Gaming Wellington Place Leed
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2017-09-20-ITStuff200917">Episode 200917</a> by {_blog_post_json.author} on 2017-09-20</div>
+		<div class="blog_info"><a href="../blog/2017-09-20-ITStuff200917">Episode 200917</a> by shi on 2017-09-20</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 200917</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff200917" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>Hello everybody, this is IT Stuff on BCB Radio. We get together once a month and we talk about the wonder, the magic of information technology, tomorrow’s world today ... with a few bugs here and there.</p>
 <p>Today we are joined by <b>John Hudson</b> with a special report on the recent Wuthering Bytes event!</p>
-<iframe class="archive" src="https://archive.org/embed/ITStuff200917" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-
 <p>Ooh and this month&#39;s secret phrase is, &quot;<i>watermelon head puppets</i>&quot;.</p>
-<p><b>Our topics include:</b>
-Apple&#39;s new shiny things
-CEX breach
-Equifax breach
-CCleaner
-Pirate Bay bitcoin miner</p>
-<p><b>Singularity Watch:</b>
-Artificial face reconstruction
-Apple FaceID
-KFC Training on the Oculus Rift</p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
-<p><b>Local events:</b>
-Badonkadonk - Wed, 11th October 7-9pm at Turls Green, Bradford
-Bradford Coder Dojo - Sat, 30th Sept 2017 9:30am-12pm at Little Germany</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2017-09-20-ITStuff200917">Go on</a>
@@ -418,27 +414,19 @@ Bradford Coder Dojo - Sat, 30th Sept 2017 9:30am-12pm at Little Germany</p>
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2017-08-23-ITStuff230817">Episode 230817</a> by {_blog_post_json.author} on 2017-08-23</div>
+		<div class="blog_info"><a href="../blog/2017-08-23-ITStuff230817">Episode 230817</a> by shi on 2017-08-23</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 230817</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff230817" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>Hey hey hey it&#39;s time for IT Stuff. And the big question this month: is it a terms of service violation to threaten nuclear war on Twitter?</p>
-<iframe class="archive" src="https://archive.org/embed/ITStuff230817" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
-<p>Smart gun hacked
-Ship tracker
-Killer car wash
-Worst Data Leak Ever
-Hullcoin
-Safestyle and Virgo Home Improvements
-Siggraph 2017
-Lazy Game Reviews</p>
-<p>Youtube of the Month:
-<a href="https://www.youtube.com/user/phreakindee">https://www.youtube.com/user/phreakindee</a></p>
-<p><b>Singularity Watch:</b>
-Purrli, the online cat-purr generator</p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
-<p><b>Local events:</b>
-Ladies of Code Summer Night Out - Thur, 31st August 7pm at Bundobust, Leeds
-Badonkadonk - Wed, 13th September 7-9pm at Turls Green, Bradford</p>
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2017-08-23-ITStuff230817">Go on</a>
@@ -448,26 +436,19 @@ Badonkadonk - Wed, 13th September 7-9pm at Turls Green, Bradford</p>
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2017-07-27-ITStuff260717">Episode 260717</a> by {_blog_post_json.author} on 2017-07-27</div>
+		<div class="blog_info"><a href="../blog/2017-07-27-ITStuff260717">Episode 260717</a> by shi on 2017-07-27</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 260717</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff260717" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>We&#39;ve got Artificial Intelligence, Artificial Information, local spammers and plenty of death foretold!</p>
-<p>O&#39;Reilly are ending sales of paper books
-Goodbye Adobe Flash!
-Goodbye MS Paint!
-ISPs to block access to pornographic websites
-Local Spammers fined by Information Commisioner
-162kg of drones stuck together to a chair
-NASA&#39;s soundcloud channel</p>
-<p>Youtube of the Month:
-<a href="https://www.youtube.com/user/amazingdiyprojects">https://www.youtube.com/user/amazingdiyprojects</a></p>
-<p><b>Singularity Watch:</b>
-US funding research into Advanced Brain-Computer Interfaces (DARPA)
-Spat between Elon Musk and Mark Zuckerberg on AI regulations
-The watery end of security guard robot, &quot;Knightscope K5&quot;</p>
-<p><a href="https://techcrunch.com/2017/07/25/elon-musk-mark-zuckerberg-artificial-intelligence/"><img src="http://itstuff.org.uk/data/spat/Screenshot_2017-08-01_01-23-41.png"/></a></p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
-<p><b>Local events:</b>
-Badonkadonk 9th August 19:00 - 21:00</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2017-07-27-ITStuff260717">Go on</a>

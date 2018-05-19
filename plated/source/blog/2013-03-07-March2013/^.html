@@ -1,14 +1,27 @@
 #^_blog_post_json
 {
 	"title":"IT Stuff: 7th March 2013",
+	"author":"David",
 }
-#^_blog_post_body form=markdown
+#^_blog_post_body
+
+<div class="blog_play">
+	<div class="blog_title">{_blog_post_json.title}</div>
+</div>
+<div class="blog_bit">
+	{blog_bit}
+</div>
+
+
+
+#^blog_bit form=markdown
 In the March 2013 edition of IT Stuff:
 
 David C talks briefly about technology and some projects he is involved in.
 http://cyclebradford.org.uk/
 http://www.recordclub.org.uk/
 
+#^blog_more form=markdown
 News
 City Wifi in City Park
 http://www.thetelegraphandargus.co.uk/news/local/localbrad/10266125.Free_Wi_Fi_is_launched_in_Bradford/
@@ -51,8 +64,33 @@ Broadcast:
 Tune in on on 106.6FM or via the web http://bcbradio.co.uk
 
 #^poster
-it#^show_date
+it
+
+#^show_date
 07 March 2013
 
 #^title trim=ends
 {_blog_post_json.title}
+
+#^media trim=ends
+
+#^mix
+
+#^showmusic
+
+#^music_name
+
+#^odtlink
+
+#^odtname
+
+#^ogg_podcast
+
+#^show_links
+
+#^showlinks
+
+#^script
+
+#^showscript
+

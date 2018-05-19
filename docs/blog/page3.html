@@ -227,6 +227,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
 .blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_title:nth-of-type(2) {margin-top:30px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
@@ -240,6 +241,8 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
+
+.paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
 .blog_wrap.pod:nth-of-type(2)	{padding-top:0;}
 
@@ -306,6 +309,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 }
 
+.show_box			{background-color:#2c1950; margin-top:40px;}
+.show_date			{padding:1em 2em; color:#ccc; text-transform:uppercase;}
+.show_wrap			{background-color:#111;}
+.show_info			{display:inline-block; vertical-align:top; width:80%;}
+.show_info.source	{width:20%;}
+.show_music			{padding:1em 2em;}
+.show_music span	{display:block;}
+.show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
+.show_music p:before{display:inline-block; color:#c2a2ff; margin-right:10px; content:"♪";}
+
+.show_script a		{background-color:#123c3c;}
+.show_script a:hover{background-color:#176565;}
+.show_ogg a			{background-color:#7d510f;}
+.show_ogg a:hover	{background-color:#B26F09;}
+.show_ogg a,
+.show_ogg a:hover	{color:#FFEB3B;}
+.show_script a:hover{color:#00ffff;}
+.show_script a,
+.show_ogg a			{display:block; padding:1em; font-size:24px;}
+
 </style></head>
 <body><div class="content"><div class="nav_wrap">
 	<div class="nav">
@@ -320,21 +343,19 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2017-01-11-ITStuff110117">Episode 110117</a> by {_blog_post_json.author} on 2017-01-11</div>
+		<div class="blog_info"><a href="../blog/2017-01-11-ITStuff110117">Episode 110117</a> by shi on 2017-01-11</div>
 	</div>
-	<iframe src="https://archive.org/embed/ITStuff110117" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 110117</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff110117" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
+	<p>Another month, another show. Listen to us babble about the digitals. </p>
 
-<p>Another month, another show. Listen to us babble about the digitals. </p>
-<p><em>Drive-by hacking
-</em>Cyber squirrels</p>
-<p>Shi&#39;s World of stuff:
-Raspberry Pi Compute Module 3</p>
-<p>Youtube of the month:
-<a href="https://www.youtube.com/user/megabotsinc">https://www.youtube.com/user/megabotsinc</a></p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
-<p>Local events:
-Bradford Coderdojo
-Bradford LoRaWAN Launch</p>
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2017-01-11-ITStuff110117">Go on</a>
@@ -344,19 +365,19 @@ Bradford LoRaWAN Launch</p>
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2016-12-14-ITStuff141216">Episode 141216</a> by {_blog_post_json.author} on 2016-12-14</div>
+		<div class="blog_info"><a href="../blog/2016-12-14-ITStuff141216">Episode 141216</a> by shi on 2016-12-14</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 141216</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff141216" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>Wahey! It&#39;s that time again, you know, the good stuffs time with yer ol&#39; band of geeks, spilling out the deeds on this month&#39;s information technology scene.</p>
-<p><em>Popcorn-time ransom-ware 
-</em>Twitter CEO get banned from twitter
-<em>Boeing Dream-liner
-</em>Snoopers charter &amp; Uber
-*Tweet of the month</p>
-<p>Shi&#39;s World of Stuff:
-reMarkable - The paper tablet for people who prefer paper. Here to replace your notebooks, sketchbooks and printouts. Paper-like reading, writing and sketching with digital powers.</p>
-<p>Youtube of the month:
-<a href="https://www.youtube.com/user/bigclivedotcom">https://www.youtube.com/user/bigclivedotcom</a></p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
+
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2016-12-14-ITStuff141216">Go on</a>
@@ -366,24 +387,19 @@ reMarkable - The paper tablet for people who prefer paper. Here to replace your 
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2016-11-16-ITStuff161116">Episode 161116</a> by {_blog_post_json.author} on 2016-11-16</div>
+		<div class="blog_info"><a href="../blog/2016-11-16-ITStuff161116">Episode 161116</a> by shi on 2016-11-16</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 161116</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff16116" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>Woah, it&#39;s November already? Buckle up boys and girls, it has been a hell of a month in technology!</p>
-<ul>
-<li>IoT dos at Dyn takes down the internet</li>
-<li>Tesco Bank hack</li>
-<li>Epic fail of NHS email</li>
-<li>Facebook says you are dead??</li>
-<li>The Apple Book</li>
-<li>and much more</li>
-</ul>
-<p>Singularity watch:
-Blizzard &amp; Google = AI Machine learning games</p>
-<p>Shi&#39;s world of stuff:
-C.H.I.P</p>
-<p>Youtube of the month:
-<a href="https://www.youtube.com/user/MITNewsOffice">https://www.youtube.com/user/MITNewsOffice</a></p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
+
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2016-11-16-ITStuff161116">Go on</a>
@@ -393,32 +409,19 @@ C.H.I.P</p>
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2016-11-03-ITStuff201016">Episode 201016</a> by {_blog_post_json.author} on 2016-11-03</div>
+		<div class="blog_info"><a href="../blog/2016-11-03-ITStuff201016">Episode 201016</a> by shi on 2016-11-03</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 201016</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff201016" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>Welcome to I T Stuff for October 2016, our mature and serious reflection on the world of information technology.</p>
-<ul>
-<li>Ada Lovelace day</li>
-<li>4chan for sale</li>
-<li>First Computer-Generated music</li>
-<li>Denotational Semantics</li>
-<li>github.audio - realtime Github feed into music</li>
-<li>listen.hatnote.com - listen to Wikipedia</li>
-<li>Samsung Galaxy Note 7</li>
-<li>Grand Theft Auto 5 Note 7 grenade mod</li>
-<li>Cyber Crime unit</li>
-<li>Britain’s official Investigatory Powers Tribunal</li>
-<li>Yahoo hacks and the NSA</li>
-<li>Talk Talk fined £400,000 for theft</li>
-<li>Artificial Intelligence at Leeds University</li>
-<li>Manchester Science Festival Sensory Soundpit</li>
-<li>and much more</li>
-</ul>
-<p>Anniversary corner:
-26th October 2009 - Yahoo killed Geocities
-Saturday 22nd October - INTERNATIONAL CAPS LOCK DAY</p>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
-<p>Upcoming events:
-Yorkshire Games Festival at the National Media Museum - 9th to 13th November</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2016-11-03-ITStuff201016">Go on</a>
@@ -428,24 +431,19 @@ Yorkshire Games Festival at the National Media Museum - 9th to 13th November</p>
 
 <div class="blog_wrap pod">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2016-10-02-ITStuff210916">Episode 210916</a> by {_blog_post_json.author} on 2016-10-02</div>
+		<div class="blog_info"><a href="../blog/2016-10-02-ITStuff210916">Episode 210916</a> by shi on 2016-10-02</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 210916</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff210916" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>Hey, hey, hey listeners! Another month of tech has whizzed us by but here&#39;s a few stuff that&#39;s caught our radar at Stuff HQ.</p>
-<ul>
-<li>A No Man&#39;s Sky parody snappily entitled No Mario’s Sky</li>
-<li>Pokémon GO, anyone still playing that?</li>
-<li>Facebook gets carried away</li>
-<li>HP printers</li>
-<li>PornHub gets banned in Russia</li>
-<li>Internauts day isn&#39;t a thing, but we knew that</li>
-<li>The Oculus Rift goes into the shops</li>
-<li>ESP32 is coming</li>
-<li>and some Apple news</li>
-</ul>
-<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
-<p>Upcoming events:
-Yorkshire Games Festival at the National Media Museum - 9th to 13th November
-Leeds Hack at Futurelabs - 8th to 9th October</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
 		<a href="../blog/2016-10-02-ITStuff210916">Go on</a>

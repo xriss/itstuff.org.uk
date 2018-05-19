@@ -1,12 +1,20 @@
 #^_blog_post_json
 {
 	"title":"IT Stuff: 29th August 2013",
+	"author":"David",
 }
-#^_blog_post_body form=markdown
+#^_blog_post_body
 
-Broadcast on: 29th August 2013 18:00 and 30th August 2013 13:30
-BCB 106.6FM
+<div class="blog_play">
+	<div class="blog_title">{_blog_post_json.title}</div>
+</div>
+<div class="blog_bit">
+	{blog_bit}
+</div>
 
+
+
+#^blog_bit form=markdown
 The show includes:
 
 News about Steve Ballmer, hacked toilets and baby cams.
@@ -17,8 +25,31 @@ If you have any feedback, we’d love to hear it.
 
 #^poster
 it
+
 #^show_date
-29 and 30 August 2013
+29th & 30th August 2013
 
 #^title trim=ends
 {_blog_post_json.title}
+
+#^media trim=ends
+
+#^mix
+
+#^showmusic
+
+#^music_name
+
+#^odtlink
+
+#^odtname
+
+#^ogg_podcast
+
+#^show_links
+
+#^showlinks
+
+#^script
+
+#^showscript

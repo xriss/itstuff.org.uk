@@ -1,10 +1,24 @@
 #^_blog_post_json
 {
 	"title":"Episode 030517",
+	"author":"shi",
 }
-#^_blog_post_body form=markdown
+#^_blog_post_body
+
+<div class="blog_play">
+	<div class="blog_title">{_blog_post_json.title}</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff030517" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
+	{blog_bit}
+</div>
+
+
+
+#^blog_bit form=markdown
 What a treat! It's the IT Stuff Artificial Intelligence Special!
 
+#^blog_more form=markdown
 Lyrebird
 Adobe's Project Voco
 Google's Wavenet speech synthesiser
@@ -15,11 +29,10 @@ Pinebook based on Pine64
 Monit Smart Diaper Monitor
 LETSROBOT
 
-Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a>
-
 <b>Local events:</b>
 Badonkadonk has moved to the Turls Green! Wed, 10th May 19:00 - 21:00
 Bradford Coder Dojo https://bradford-coderdojo.github.io/ 20th May
+
 #^media trim=ends
 https://ia601501.us.archive.org/6/items/ITStuff030517/itstuff030517.ogg
 
@@ -41,7 +54,8 @@ https://github.com/meatstuff/itstuff/blob/master/odt/2017/itstuff030517.odt
 itstuff030517
 
 #^ogg_podcast
-<a href="https://ia601501.us.archive.org/6/items/ITStuff030517/itstuff030517.ogg">ITStuff-030517.ogg</a>
+<a href="https://ia601501.us.archive.org/6/items/ITStuff030517/itstuff030517.ogg">ogg</a>
+
 #^poster
 it
 

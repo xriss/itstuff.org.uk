@@ -227,6 +227,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
 .blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_title:nth-of-type(2) {margin-top:30px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
@@ -240,6 +241,8 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
+
+.paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
 .blog_wrap.pod:nth-of-type(2)	{padding-top:0;}
 
@@ -306,6 +309,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 }
 
+.show_box			{background-color:#2c1950; margin-top:40px;}
+.show_date			{padding:1em 2em; color:#ccc; text-transform:uppercase;}
+.show_wrap			{background-color:#111;}
+.show_info			{display:inline-block; vertical-align:top; width:80%;}
+.show_info.source	{width:20%;}
+.show_music			{padding:1em 2em;}
+.show_music span	{display:block;}
+.show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
+.show_music p:before{display:inline-block; color:#c2a2ff; margin-right:10px; content:"♪";}
+
+.show_script a		{background-color:#123c3c;}
+.show_script a:hover{background-color:#176565;}
+.show_ogg a			{background-color:#7d510f;}
+.show_ogg a:hover	{background-color:#B26F09;}
+.show_ogg a,
+.show_ogg a:hover	{color:#FFEB3B;}
+.show_script a:hover{color:#00ffff;}
+.show_script a,
+.show_ogg a			{display:block; padding:1em; font-size:24px;}
+
 </style></head>
 <body><div class="content"><div class="nav_wrap">
 	<div class="nav">
@@ -318,33 +341,53 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	</div>
 </div>
 <div class="blog_wrap" style="padding-top:0;">
-	<p>Join us in this episode as we discover Gene Roddenberry&#39;s floppies, the repercussions of a buggy babelfish, the non-ethics of piracy, listen on as we wax lyrical about Debian, Slackware and everything GNU/Linux with our studio guest, Stephane Urdy, discuss the recent hacking of Hello Kitty, celebrate IPV6 turning 20 and Roy Batty, infamous replicant of Bladerunner, tuning 0 before reviewing a bunch of stuff including a new kind of subscription to satiate both hardware and puzzle cravings, a very handy device to replace your old OTG connector and the brand, spanking new Oculus Rift devices that are being given away free to backers of the original Kickstarter campaign where we end the show with reports from the previous Leeds Hack event from our roving reporter, Brian Ackroyd and an extra special shoutout to John Leach who kindly donated two very nice monitors to BCB!</p>
+<!--	<div class="paging_wrap top_paging"><a href="../../blog/2015-12-25-ITStuff161215/">Previous</a>
+ <a href="../../blog/2016-02-03-BonusContent-LeedsHack2015/">Next</a>
+</div>-->
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 130116</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff130116" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
+	<p>Join us in this episode as we discover Gene Roddenberry&#39;s floppies, the repercussions of a buggy babelfish and the non-ethics of piracy.</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
-		{blog_more}
+		<p>Listen on as we wax lyrical about Debian, Slackware and everything GNU/Linux with our studio guest, Stephane Urdy, discuss the recent hacking of Hello Kitty, celebrate IPV6 turning 20 and Roy Batty, infamous replicant of Bladerunner, tuning 0 before reviewing a bunch of stuff including a new kind of subscription to satiate both hardware and puzzle cravings, a very handy device to replace your old OTG connector and the brand, spanking new Oculus Rift devices that are being given away free to backers of the original Kickstarter campaign where we end the show with reports from the previous Leeds Hack event from our roving reporter, Brian Ackroyd and an extra special shoutout to John Leach who kindly donated two very nice monitors to BCB!</p>
+
 		
 		<div class="ep_links">
-	Link mentions:
+	Links:
 	<div class="ep_showlinks"><a href="https://boldport.cratejoy.com/" target="_blank">Boldport Club</a>, <a href="http://www.wired.co.uk/news/archive/2015-12/21/33-million-hello-kitty-user-accounts-exposed-by-database-leak" target="_blank">Hello Kitty hacked</a>, <a href="http://arstechnica.com/information-technology/2016/01/files-on-nearly-200-floppy-disks-belonging-to-star-trek-creator-recovered/" target="_blank">Star Trek Floppies</a>, <a href="http://www.theregister.co.uk/2016/01/07/reverser_laments_crypto_game_protection_says_wares_dead_after_2018/" target="_blank">WAREZ R DED</a>, <a href="http://www.bbc.co.uk/news/technology-35251478" target="_blank">Russia is Mordor</a>, <a href="http://arstechnica.com/information-technology/2015/12/ian-murdock-father-of-debian-dead-at-42/" target="_blank">RIP Ian Murdock</a>, <a href="http://arstechnica.com/business/2016/01/ipv6-celebrates-its-20th-birthday-by-reaching-10-percent-deployment/" target="_blank">IPv6 celebrates its 20th birthday by reaching 10 percent deployment</a>, <a href="https://www.oculus.com/en-us/blog/oculus-rift-pre-orders-now-open-first-shipments-march-28/" target="_blank">Oculus Rift</a>
 
 </div>
 </div>
 
-		Broadcast: 14th & 15th January 2016
+		<div class="show_box">
+	<div class="show_date"><span>Broadcast</span> 14th & 15th January 2016
 
-
-		<div class="ep_music"><span>Music:</span> Space Oddity by Seu Jorge
-</div>
-
-		<div class="ep_script">
-	Download transcript <i>(.odt file)</i>: <a href="https://drive.google.com/file/d/0B8XUMpOzfPXmMlkyXzFzWEtIR2M/view?usp=sharing
-">itstuff130116
-</a><a href="{odtlink2}"> </a>
+</div>
+	<div class="show_wrap">
+		<div class="show_info music_wrap">
+			<div class="show_music">
+	<span>End Music</span>
+	Space Oddity by Seu Jorge
 
 </div>
 
-		<div class="ep_ogg">
-	Ogg: <a href="https://ia601509.us.archive.org/31/items/ITStuff130116/itstuff130116.ogg">ITStuff-130116.ogg</a>
+		</div><div class="show_info source">
+			<div class="show_script"><a href="https://drive.google.com/file/d/0B8XUMpOzfPXmMlkyXzFzWEtIR2M/view?usp=sharing
+">script</a>
+</div>
+			<div class="show_ogg"><a href="https://ia601509.us.archive.org/31/items/ITStuff130116/itstuff130116.ogg">ogg</a>
+
+</div>
+		</div>
+	</div>
 </div>
 
 

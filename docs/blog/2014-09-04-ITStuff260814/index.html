@@ -227,6 +227,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
 .blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_title:nth-of-type(2) {margin-top:30px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
@@ -240,6 +241,8 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
+
+.paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
 .blog_wrap.pod:nth-of-type(2)	{padding-top:0;}
 
@@ -306,6 +309,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 }
 
+.show_box			{background-color:#2c1950; margin-top:40px;}
+.show_date			{padding:1em 2em; color:#ccc; text-transform:uppercase;}
+.show_wrap			{background-color:#111;}
+.show_info			{display:inline-block; vertical-align:top; width:80%;}
+.show_info.source	{width:20%;}
+.show_music			{padding:1em 2em;}
+.show_music span	{display:block;}
+.show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
+.show_music p:before{display:inline-block; color:#c2a2ff; margin-right:10px; content:"♪";}
+
+.show_script a		{background-color:#123c3c;}
+.show_script a:hover{background-color:#176565;}
+.show_ogg a			{background-color:#7d510f;}
+.show_ogg a:hover	{background-color:#B26F09;}
+.show_ogg a,
+.show_ogg a:hover	{color:#FFEB3B;}
+.show_script a:hover{color:#00ffff;}
+.show_script a,
+.show_ogg a			{display:block; padding:1em; font-size:24px;}
+
 </style></head>
 <body><div class="content"><div class="nav_wrap">
 	<div class="nav">
@@ -318,32 +341,52 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	</div>
 </div>
 <div class="blog_wrap" style="padding-top:0;">
-	<p>Today&#39;s show features cats, fish, gnomes, walruses and Brian! Sixty percent of that list was at the recent Leeds Hack event and we&#39;ll have special reports to prove it. We talk about the surprise buyout of Twitch.tv by Amazon where previously it was thought that Google was buying it, we pussyfoot around footie issues, frown upon BBC&#39;s cease and desist tactics on 25,000 member-strong, over 4 years old independent fan site, &quot;Doctor Who Media&quot;, giggle at Microsoft&#39;s patches, get schooled about War Driving, Dialing and uhm, Kitteh-ing and then turn on, tune in, drop out with Grayson Hopper before Brian gives us the down low on the hacky happenings at the recent Leeds Hack event. There will be plenty of interviews from the event in upcoming episodes so you&#39;re in for a treat!</p>
+<!--	<div class="paging_wrap top_paging"><a href="../../blog/2014-07-30-Aug2014/">Previous</a>
+ <a href="../../blog/2014-09-15-BonusContent-LeedsHack2014/">Next</a>
+</div>-->
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 260814</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff260814" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
+	<p>Today&#39;s show features cats, fish, gnomes, walruses and Brian! Sixty percent of that list was at the recent Leeds Hack event and we&#39;ll have special reports to prove it. We talk about the surprise buyout of Twitch.tv by Amazon where previously it was thought that Google was buying it.</p>
+
+</div>
+
+
 
 	<div class="blog_bit">
-		{blog_more}
+		<p>Later, we pussyfoot around footie issues, frown upon BBC&#39;s cease and desist tactics on 25,000 member-strong, over 4 years old independent fan site, &quot;Doctor Who Media&quot;, giggle at Microsoft&#39;s patches, get schooled about War Driving, Dialing and uhm, Kitteh-ing and then turn on, tune in, drop out with Grayson Hopper before Brian gives us the down low on the hacky happenings at the recent Leeds Hack event. There will be plenty of interviews from the event in upcoming episodes so you&#39;re in for a treat!</p>
+
 		
 		<div class="ep_links">
-	Link mentions:
+	Links:
 	<div class="ep_showlinks"><a href="http://paint.lo4d.net/blog" target="_blank">Swanky Paint Updates</a>, <a href="http://lightnightleeds.co.uk/" target="_blank">Light Night Leeds</a>, <a href="http://speccyjam.com/" target="_blank">SpeccyJAM</a>, <a href="https://www.youtube.com/watch?v=93vFVALXDUU" target="_blank">War Kitteh</a>, <a href="http://itstuff.org.uk/" target="_blank">IT Stuff New URL</a>
 </div>
 </div>
 
-		Broadcast: 28th August 2014
+		<div class="show_box">
+	<div class="show_date"><span>Broadcast</span> 28th & 29th August 2014
 
-
-		<div class="ep_music"><span>Music:</span> The First Day Of Autumn by Screeching Weasel
-</div>
-
-		<div class="ep_script">
-	Download transcript <i>(.odt file)</i>: <a href="https://drive.google.com/file/d/0B-EcDVPirelzMzBQNGNfdTVCZkxwd2ZibmRkRGVpZk9mWDNZ/edit?usp=sharing
-">itstuff260814
-</a><a href="{odtlink2}"> </a>
+</div>
+	<div class="show_wrap">
+		<div class="show_info music_wrap">
+			<div class="show_music">
+	<span>End Music</span>
+	The First Day Of Autumn by Screeching Weasel
 
 </div>
 
-		<div class="ep_ogg">
-	Ogg: <a href="https://ia801400.us.archive.org/3/items/ITStuff260814/ITStuff-260814.ogg">ITStuff-260814.ogg</a>
+		</div><div class="show_info source">
+			<div class="show_script"><a href="https://drive.google.com/file/d/0B-EcDVPirelzMzBQNGNfdTVCZkxwd2ZibmRkRGVpZk9mWDNZ/edit?usp=sharing
+">script</a>
+</div>
+			<div class="show_ogg"><a href="https://ia801400.us.archive.org/3/items/ITStuff260814/ITStuff-260814.ogg">ogg</a>
+
+</div>
+		</div>
+	</div>
 </div>
 
 

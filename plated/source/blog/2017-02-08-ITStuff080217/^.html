@@ -1,10 +1,24 @@
 #^_blog_post_json
 {
 	"title":"Episode 080217",
+	"author":"shi",
 }
-#^_blog_post_body form=markdown
+#^_blog_post_body
+
+<div class="blog_play">
+	<div class="blog_title">{_blog_post_json.title}</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff080217" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
+	{blog_bit}
+</div>
+
+
+
+#^blog_bit form=markdown
 Another month, another show. Listen to us babble about the digitals. 
 
+#^blog_more form=markdown
 *Drive-by hacking
 *Cyber squirrels
 
@@ -14,11 +28,10 @@ Raspberry Pi Compute Module 3
 Youtube of the month:
 https://www.youtube.com/user/megabotsinc
 
-Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a>
-
 Local events:
 Bradford Coderdojo
 Bradford LoRaWAN Launch
+
 #^media trim=ends
 https://ia801504.us.archive.org/0/items/ITStuff080217/itstuff080217.ogg
 
@@ -40,7 +53,7 @@ https://github.com/meatstuff/itstuff/blob/master/odt/2017/itstuff080217.odt
 itstuff080217
 
 #^ogg_podcast
-<a href="https://ia801504.us.archive.org/0/items/ITStuff080217/itstuff080217.ogg">ITStuff-080217.ogg</a>
+<a href="https://ia801504.us.archive.org/0/items/ITStuff080217/itstuff080217.ogg">ogg</a>
 
 #^poster
 it
