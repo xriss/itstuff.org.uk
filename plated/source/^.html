@@ -1,4 +1,3 @@
-#^#This is the wrapper for a SINGLE blog post. This is REPLICATED.
 #^anal 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -12,352 +11,46 @@
 </script>
 
  
-#^cake.blog_bar 
-<div class="cake_blog_bar"><a href="{-opts.link_prev}"  class="cake_blog_bar_prev" >previous podcasts</a><a href="{-opts.link_next}" class="cake_blog_bar_next" >newer podcasts</a></div>
-
-#^cake.html.head 
-
-<!DOCTYPE html>
+#^html trim=ends
 <html>
-<head>
-<meta charset="UTF-8"/>
+<head>{head}</head>
+<body>{content}{foot}</body>
+</html>
+
+#^head trim=ends
+<title>{title}</title>
+<meta name="theme-color" content="#2a3133">
 <meta name="google-site-verification" content="wwHX7osRtV4Bkz8EpOeWaTCr4dYo8jgNqCFC-oCTCGs" />
-<title>{-cake.html.title}</title>
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="/css/base/pagecake.css" />
-{-cake.html.extra}
-{cake.html.js}
-<style type="text/css">{cake.html.css}</style>
-</head>
-<body>
+<style>
+{css}
+</style>
 
 
-#^cake.note.post_text 
-Post it!
+#^content
+<div class="content">{nav}{body}</div>
 
-#^css same=append
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:top;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}	/* Resets */
-
-a,img{border:0; outline:none;}textarea:focus,input:focus{outline:0;}*:focus{outline:0;}
-
-body, html	{background-color:#111; font-family: 'Rubik', sans-serif; font-size:18px;}
-a			{-webkit-transition:all .2s ease-in-out; -moz-transition:all .2s ease-in-out; -o-transition:all .2s ease-in-out; -ms-transition:all .2s ease-in-out; transition:all .2s ease-in-out; cursor:pointer;}
-	
-	a {word-break:break-all;}
-a, img		{border:0; outline:none;}
-a:focus		{color:#999; text-decoration:none;}
-a:link  	{color:#999; text-decoration:none;}
-a:visited	{color:#999; text-decoration:none;}
-a:hover		{color:#fff; text-decoration:none;}
-a:active	{color:#999; text-decoration:none;}
-b			{font-weight:bold;}
-i			{font-style:italic;}
-h1			{display:none;}
-
-/*	Default styles	*/
-.cake_body					{width:100%; min-width:960px;}
-.cake_bars, .cake_blog_bar	{width:960px; margin:0 auto; padding:20px 0; color:#ccc;}
-.cake_bars a, .cake_blog_bar a	{color:#36792D;}
-.cake_bars a:hover, .cake_blog_bar a:hover	{text-decoration:none; color:#00ff00; text-shadow:0 1px 10px #00ff00;}
-.wetnote_main				{margin:0 auto;}
-.wetnote_comment_post		{width:500px;}
-.wetnote_comment_form_text	{background-color:#000; color:#ff00ff;}
-.wetnote_comment_post		{background-color:#353535; border-bottom:1px solid #000; border-right:1px solid #000; border-top:1px solid #616161; border-left:1px solid #616161; color:#8F9E8F; padding-top:5px; cursor:pointer;}
-.wetnote_comment_post:hover {background-color:#424242;}
-.wetnote_comment_post		{width:506px;}
-
-
-.default		{width:960px; margin:0 auto;}
-.default.post	{margin-bottom:100px;}
-.default.plist	{margin-bottom:80px;}
-.padtop60		{margin:0 auto; padding-top:60px;}
-.noir			{background-color:rgba(0,0,0,0.6);}
-.now			{display:inline-block; vertical-align:top; width:200px; margin-right:20px; height:200px; background-repeat:no-repeat; background-position:center center;}
-
-.now.jan14		{background:url('/data/poster_jan14/poster_jan14.png');}
-.now.feb14		{background:url('/data/poster_feb14/poster_feb14.png');}
-.now.mar14		{background:url('/data/poster_mar14/poster_mar14.png');}
-.now.apr14		{background:url('/data/poster_apr14/poster_apr14.png');}
-.now.may14		{background:url('/data/poster_may14/poster_may14.png');}
-.now.jun14		{background:url('/data/poster_jun14/poster_jun14.png');}
-.now.jul14		{background:url('/data/poster_jul14/poster_jul14.png');}
-.now.aug14		{background:url('/data/poster_aug14/poster_aug14.png');}
-.now.its260814	{background:url('/data/poster_260814/poster_260814.png');}
-.now.its230914	{background:url('/data/poster_230914/poster_230914.png');}
-.now.its221014	{background:url('/data/poster_221014/poster_221014.png');}
-.now.its181114	{background:url('/data/poster_181114/poster_181114.png');}
-.now.its171214	{background:url('/data/poster_171214/poster_171214.png');}
-.now.its140115	{background:url('/data/poster_140115/poster_140115.png');}
-.now.its100215	{background:url('/data/poster_100215/poster_100215.png');}
-.now.its110315	{background:url('/data/poster_110315/poster_110315.png');}
-.now.its080415	{background:url('/data/poster_080415/poster_080415.png');}
-.now.its060515	{background:url('/data/poster_060515/poster_060515.png');}
-.now.its030615	{background:url('/data/poster_030615/poster_030615.png');}
-.now.its010715	{background:url('/data/poster_010715/poster_010715.png');}
-.now.its290715	{background:url('/data/poster_290715/poster_290715.png');}
-.now.its260815	{background:url('/data/poster_260815/poster_260815.png');}
-.now.its230915	{background:url('/data/poster_230915/poster_230915.png');}
-.now.its211015	{background:url('/data/poster_211015/poster_211015.png');}
-.now.its171115	{background:url('/data/poster_171115/poster_171115.png');}
-.now.its161215	{background:url('/data/poster_161215/poster_161215.png');}
-.now.its130116	{background:url('/data/poster_130116/poster_130116.png');}
-	
-.now.it			{background:url('/data/poster_it/poster_it.png');}
-.now.its201016	{background:url('/data/partay/partay.jpg');}
-
-
-.now.lates		{background:url('/data/poster_lates/poster_lates.png');}
-.now.leedshack2015	{background:url('/data/poster_leedshack2015/poster_leedshack2015.png');}
-.now.davecast	{background:url('/data/poster_dave_cast/poster_dave_cast.png');}
-.now.y2016		{background:url('/data/poster_2016/poster_2016.png')center center;}
-.now.y2015		{background:url('/data/poster_2015/poster_2015.png');}
-.now.y2014		{background:url('/data/poster_2014/poster_2014.png');}
-.now.y2013		{background:url('/data/poster_2013/poster_2013.png');}
-.now.y2012		{background:url('/data/poster_2012/poster_2012.png');}
-.now.default	{background:url('/data/poster_default/poster_default.png');}
-.now.xtras		{background:url('/data/poster_xtras/poster_xtras.png');}
-.now.xtras1		{background:url('/data/poster_xtras1/poster_xtras1.png');}
-
-
-.now			{background-repeat:no-repeat; background-position:center center;}
-
-
-a.bcb_wrap		{display:block; width:600px; padding:5px 0 5px 20px; background-color:rgb(4,49,230); border-radius:4px; margin:0 auto; margin-bottom:20px;}
-.bcb_text		{display:inline-block; vertical-align:middle; width:400px; color:#fff; font-size:16px; padding-right:40px; line-height:1.4em;}
-.bcb_logo		{display:inline-block; vertical-align:middle; width:160px; background:url(/data/bcb17/bcb17.jpg)center center; height:55px; background-size:90%;}
-
-
-.wall			{width:100%; margin:0 auto; background:url('/data/back_960/back_960.png')top center; background-attachment:fixed;}
-.wall.f			{background:url('/data/back_960/back_960.png')bottom center; border-top:5px solid #090C09; background-attachment:fixed;}
-.floor			{width:100%; min-width:960px; margin:0 auto; position:relative; background-color:#161817; height:170px; border-bottom:5px solid #090C09; background:linear-gradient(to bottom, rgba(22, 24, 23, 0) 0%,rgba(0, 0, 0, 1) 90%,#000 100%);
-background: -prefix-linear-gradient(to bottom, rgba(22, 24, 23, 0) 0%,rgba(0, 0, 0, 1) 90%,#000 100%);}
-.past			{margin:0 auto; width:960px; padding-top:60px; font-size:1.1em; color:#666;}
-.past.list		{padding:60px 0 20px 0;}
-.latest			{margin:0 auto; width:960px; padding:220px 0 20px 0; font-size:1.1em; color:#666;}
-.head_wrap		{margin:0 auto; width:100%; padding:40px 0 20px 0; text-align:center;}
-a.head			{display:block; color:#00ff00; font-size:4.2em; font-weight:bold; margin:0 auto; width:600px; padding:20px 0; text-shadow:0 1px 10px #00ff00;}
-a.head:hover	{text-decoration:none; color:#00ff00; text-shadow:0 1px 30px #00ff00;}
-.tag			{width:700px; margin:0 auto; text-align:center; font-size:13px; line-height:1.2em; color:#fff; text-shadow:1px 1px 3px #000;}
-.present_wrap	{width:100%; margin:0 auto; text-align:center; padding:40px 0;}
-.presenter		{display:inline-block; vertical-align:top;}
-.block			{width:150px; height:190px;}
-.block.dave		{background:url('/data/stuff/dave.png') no-repeat center center;}
-.block.david	{background:url('/data/stuff/david.png') no-repeat center center;}
-.block.shi		{background:url('/data/stuff/shi.png') no-repeat center center;}
-.block.kriss	{background:url('/data/stuff/kriss.png') no-repeat center center;}
-.block.dick		{background:url('/data/stuff/dick.png') no-repeat center center;}
-.block.brian	{background:url('/data/stuff/brian.png') no-repeat center center;}
-.block.john		{background:url('/data/stuff/john.png') no-repeat center center;}
-.block.stephane		{background:url('/data/stuff/stephane.png') no-repeat center center;}
-.name			{color:#fff; font-size:0.9em; padding:10px 0;}
-.sub			{font-size:0.8em; color:#666; font-style:italic; padding-bottom:10px;}
-a.twit			{display:block; color:#398A2A; font-size:0.8em;}
-a.twit:hover	{text-decoration:none; color:#00ff00;}
-
-.play			{display:inline-block; vertical-align:top; width:300px; padding:15px 30px 15px 0;}
-.play.right		{padding-right:0;}
-.listen			{display:inline-block; vertical-align:top; width:740px;}
-
-.footer_wrap	{width:960px; margin:0 auto; padding:40px 0 60px 0; font-size:0.8em; color:#aaa;}
-.sched			{padding:10px 0; text-align:center; color:#06FF00; background-color:#070707; margin:10px 0 20px 0; font-size:16px; line-height:22px; border:1px solid #191f19;}
-.subs			{width:960px; padding:20px 0; font-size:1em; color:#666; margin:auto; margin-bottom:20px;}
-span.left		{display:inline-block; width:200px; vertical-align:baseline; margin-top:20px;}
-.foot			{display:inline-block; width:60%; vertical-align:top; font-size:18px; line-height:24px; text-shadow:1px 1px 2px rgba(0,0,0,1);}
-.foot.r			{text-align:right; width:40%;}
-.foot p			{margin-top:15px;}
-span.mid		{display:inline-block; width:560px; text-align:center; vertical-align:baseline;}
-span.right		{display:inline-block; width:200px; text-align:right; vertical-align:baseline; margin-top:10px;}
-span.subtxt		{vertical-align:baseline;}
-span.suburl		{display:inline-block; vertical-align:baseline; padding:10px 20px; margin-left:10px; background-color:#000;}
-
-.broad			{color:#666; font-size:0.8em; padding:10px 0;}
-.broad_info		{display:inline-block; vertical-align:top; width:50%;}
-.broad_info.by	{text-align:right;}
-.pad			{padding-bottom:40px;}
-
-.ep_title		{color:#13BE2F; font-size:1.8em; padding:15px 0 10px 0; border-bottom:3px solid #222;}
-a.ep_title		{display:block; color:#13BE2F; font-size:1.8em; padding:15px 0 10px 0; border-bottom:3px solid #222;}
-a.ep_title:hover	{text-decoration:underline;}
-.ep_info		{color:#fff; font-size:1.1em; line-height:1.4em; padding-top:10px;}
-.ep_links		{color:#ccc; font-size:0.9em; line-height:1.4em;}
-.ep_showlinks	{padding:20px 0 10px 30px; color:#111; line-height:12px;}
-.ep_showlinks a	{display:list-item; list-style-type:decimal;}
-.ep_music		{font-size:0.9em; line-height:1.4em; padding:40px 0 20px 0; color:#D62DD6;}
-.ep_music span	{color:#ccc;}
-.ep_info a, .ep_links a		{color:#44D329;}
-.ep_info a:hover, .ep_links a:hover	{text-decoration:none; color:#00ff00;}
-.ep_info p		{margin:10px 0;}
-.ep_script		{color:#ccc; font-size:0.9em; padding-top:10px;}
-.ep_script a	{color:#DAC038;}
-.ep_script a:hover	{text-decoration:none; color:#FFFF00;}
-.ep_ogg			{color:#ccc; font-size:0.9em; padding-top:10px;}
-.ep_ogg a		{color:#D62DD6;}
-.ep_ogg a:hover	{text-decoration:none; color:#FF00FF;}
-.ep_tube		{padding-bottom:30px;}
-
-a.more_blog		{margin:0 auto; width:920px; display:block; text-align:center; color:#808183; padding:20px; background-color:#1F2224;}
-a.more_blog:hover	{color:#fff; background-color:#282D30;}
-a.banner		{display:block; margin:0 auto; text-align:center; width:100%; background:url(/data/banner_960/banner_960.png); height:60px;}
-
-a.cake_blog_bar_next, a.cake_blog_bar_prev	{display:inline-block; vertical-align:baseline; width:480px;}
-a.cake_blog_bar_next	{text-align:right;}
-
-a.twits			{display:inline-block; color:#5EB5FF;}
-a.twits:hover	{color:#EBF6FF;}
-
-a.top			{display:inline-block; font-size:0.8em;}
-
-
-a.load, a.read	{display:inline-block; vertical-align:top; width:50%; color:#aaa; font-size:1.8em; border-bottom:5px solid transparent;}
-a.read			{text-align:right;}
-a.load:hover, a.read:hover	{color:#00FF00;}
-
-a.rss_sub		{position:fixed; z-index:666; top:0; left:0; display:block; width:100px; height:100px; background:url('/data/rssimg/rssimg.png');}
-a.rss_sub:hover	{background:url('/data/rssimg_over/rssimg_over.png')}
-	
-.foot span		{display:block; padding-top:20px;}
-a.swank			{color:#2c57ff;}
-a.user			{color:#00ff00;}
-	
-a.user:hover, a.swank:hover	{color:#fff;}
-	
-a.youtube		{color:#fff; display:inline-block; padding:5px 10px; vertical-align:middle; background-color:#cc181e; border-radius:8px; margin-left:10px;}
-a.youtube:hover	{background-color:#ff3f3f;}
-
-	
-
-
-/* Phones to tablets 1024px and below
--------------------------------------------------------------- */
-@media screen and (max-width: 1024px) {
-	
-/*	Logo	*/
-a.head 			{width:100%; display:block; color:#00ff00; font-size:160px; text-shadow:0 1px 23px #00ff00;}
-
-/*	Tag line header	*/
-.tag			{width:60%; font-size:48px; line-height:56px;}
-
-.presenter.row	{display:block; padding-top:20px;}
-.latest			{padding-top:420px; text-align:center; color:#111;}
-	
-/* Post chunk	*/
-.now			{display:none;}
-.listen			{width:90%; margin:0 auto; display:block;}
-.post .listen iframe	{width:100%; height:510px;}
-.post .listen iframe.archive	{height:initial;}
-.broad			{font-size:1.8em;}
-	
-.ep_showlinks	{font-size:13px; line-height:13px; padding:40px;}
-.broad_info		{display:block; width:100%; font-size:15px;}
-.broad_info.by	{display:none;}
-	
-.ep_music, .ep_script, .ep_ogg	{font-size:15px;}
-.ep_info		{font-size:16px; line-height:36px;}
-
-br				{line-height:100px;}
-	
-	
-/*	Footer	*/
-.foot, .foot.r	{display:block; margin:0 auto; width:95%; text-align:center; padding:20px 0;}
-.foot p			{padding:20px 0;}
-a.twits			{display:block;}
-a.top			{display:block; font-size:1em;}
-.foot span		{padding:40px 0 20px 0;}
-	
-/*	Playlist	*/
-.past.list		{text-align:center;}
-	
-	
-}
-#^footer 
-<div class="subs">
-	<span class="left">{subrss}</span><span class="mid">{suburl}</span><span class="right">{subemail}</span>
-</div>
-<div class="wall f">
-	<div class="noir">
-		<div class="footer_wrap">
-			<div class="sched">Listen live on BCB Radio (106.6 FM) every 4 weeks on Thursday, 6:00pm - 6:30pm GMT. <p>Repeated the next day on Friday at 1:30pm - 2:00pm GMT.</p></div>
-			<div class="foot">
-				<p>IT Stuff is brought to you by the <a href="http://www.bradlug.co.uk/" target="_blank">Bradford Linux Users Group</a>.</p>
-				<p>site by <a href="http://twitter.com/shi" class="user">shi</a>, videos by <a href="http://twitter.com/DickWThomas" class="user">Dick</a>, pixels using <a href="http://paint.wetgenes.com" target="_blank" class="swank">Swanky Paint</a>{outreach}</p>
-				<p>Updates <i>(at least)</i> a week after live broadcast.</p>
-			</div><div class="foot r">
-				<p>Broadcast on <a href="http://www.bcbradio.co.uk/" target="_blank">BCB Radio 106.6FM</a></p>
-				<p><a href="https://twitter.com/itstuffradio" class="twits"><img src="/data/twit/twit.png" width="16"/> We're @itstuffradio on Twitter!</a></p>
-				<p><a href="https://www.youtube.com/channel/UCZNBdwhgMg64D5ohlRLMPyQ" target="_blank" class="youtube">Subscribe on Youtube</a></p>
-				<p><a href="#" class="top">^ TOP</a></p>
-			</div>
-		</div>
+#^nav
+<div class="nav_wrap">
+	<div class="nav">
+		<a href="{_root}" class="logo">ITSTUFF</a>
+		<ul>
+			<li><a href="http://feeds.feedburner.com/itstuffbradford">RSS</a></li>
+			<li><a href="{_root}about">About</a></li>
+			<li><a href="{_root}blog">Episodes</a></li>
+		</ul>
 	</div>
 </div>
 
-#^opts flame=off
-
-
-#^outreach form=raw
-<span><a href="https://github.com/meatstuff/itstuff/issues" target="_blank">Would you like to contribute? Report a bug?</a></span>
-
-#^plate_blogbody form=raw
-<div class="default post">
-	<div class="now {it.poster}"></div><div class="listen">
-		{-it.mix}
-		<div class="broad">
-			<div class="broad_info">Broadcast: {it.show_date}</div><div class="broad_info by">{it.date} by {it.author_name}</div>
-		</div>
-		<a href="{it.link}" class="ep_title">{it.title}</a>
-		<div class="ep_info">
-			{-showtube}
-			{it.body}
-		</div>
-		{-showmusic}
-		{-showlinks}
-		{-showscript}
-		{-showogg}
-	</div>
+#^foot
+<div class="footer">
+	<ul>
+		<li>Created with <a href="https://xriss.github.io/plated/" class="logo">plated^</a></li>
+		<li><a href="#">^.^</a></li>
+		<li><a href="https://github.com/xriss/gamecake/blob/master/LICENSE">Explaining the good stuff in IT & treating the bad stuff with the cynicism and contempt that it deserves.</a></li>
+	</ul>
 </div>
 
-#^rsslink 
-<a href="http://feeds.feedburner.com/itstuffbradford" rel="alternate" type="application/rss+xml" class="rss_sub" title="Subscribe to RSS Feed"></a>
-
-#^script2 
-, <a href="{it.odtlink2}">{it.odtname2}</a>
-
-#^showlinks 
-<div class="ep_links">
-	Link mentions:
-	<div class="ep_showlinks">{it.show_links}</div>
-</div>
-
-#^showmusic 
-<div class="ep_music"><span>Music:</span> {it.music_name}</div>
-
-#^showogg 
-<div class="ep_ogg">
-	Ogg: {it.ogg_podcast}
-</div>
-
-
-#^showscript 
-<div class="ep_script">
-	Download transcript <i>(.odt file)</i>: <a href="{it.odtlink}">{it.odtname}</a>{-script2}
-</div>
-
-#^showtube 
-<div class="ep_tube">
-	<iframe width="100%" height="420" src="//www.youtube.com/embed/{it.music_video}" frameborder="0" allowfullscreen></iframe>
-</div>
-
-#^subemail 
-<a href="http://feedburner.google.com/fb/a/mailverify?uri=itstuffbradford&amp;loc=en_US">Subscribe by Email</a>
-
-#^subrss 
-<a href="http://feeds.feedburner.com/itstuffbradford" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/itstuffbradford" rel="alternate" type="application/rss+xml">Subscribe in a reader</a>
-
-#^suburl 
-<span class="subtxt">Feed URL</span> <span class="suburl">http://feeds.feedburner.com/itstuffbradford</span>
-
-
-
-#^title trim=ends
-IT Stuff - That's some good stuff!
+#^body trim=ends
 

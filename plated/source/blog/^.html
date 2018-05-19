@@ -1,14 +1,85 @@
-#^body form=raw
-
-#^html_body
-{rsslink}<a href="/" class="banner" title="Back to Home"></a>
-{body}
-{-cake.comments}
-{footer}
-{anal}
-
-
-#^css same=append
-.cake_bars		{display:none;}
 #^title trim=ends
 IT Stuff - That's some good stuff!
+
+
+#^_blog_json
+{
+	posts_per_page:5,
+}
+
+#^_blog_page_body
+
+{_list:blog_list}
+
+<div>{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>
+
+#^-Paging for main blog list page
+#^link_older_page
+<a href="{_it}">Older posts</a>
+
+#^link_newer_page
+<a href="{_it}">Newer posts</a>
+
+
+#^-This is for the blog list
+#^blog_list
+{_it._body}
+
+
+#^-This is a single blog post viewed on its own page
+#^_blog_post_body_one
+<div class="blog_wrap">
+	{_blog_post_body}
+	
+	{showlinks||}
+	{showmdate||}
+	{showmusic||}
+	{showscript||}
+	{showogg||}
+	<div class="paging_wrap">{_blog_post_older:link_older_post} {_blog_post_newer:link_newer_post}</div>
+</div>
+
+
+#^-This is for the blog list
+#^_blog_post_body_many
+<div class="blog_wrap">
+	<div class="blog_info"><a href="{_dirname}">{_blog_post_json.title}</a> by {_blog_post_json.author} on {_blog_post_json.datedash}</div>
+	{_blog_post_body}
+</div>
+
+#^link_older_post
+<a href="{_it}">Older post</a>
+
+#^link_newer_post
+<a href="{_it}">Newer post</a>
+
+#^script2 
+, <a href="{it.odtlink2}">{odtname2}</a>
+
+#^showlinks 
+<div class="ep_links">
+	Link mentions:
+	<div class="ep_showlinks">{show_links}</div>
+</div>
+
+#^showmusic 
+<div class="ep_music"><span>Music:</span> {music_name}</div>
+
+#^showogg 
+<div class="ep_ogg">
+	Ogg: {ogg_podcast}
+</div>
+
+
+#^showscript 
+<div class="ep_script">
+	Download transcript <i>(.odt file)</i>: <a href="{it.odtlink}">{odtname}</a>{script2||}
+</div>
+
+#^showtube 
+<div class="ep_tube">
+	<iframe width="100%" height="420" src="//www.youtube.com/embed/{it.music_video}" frameborder="0" allowfullscreen></iframe>
+</div>
+
+#^showdate
+Broadcast: {show_date}
