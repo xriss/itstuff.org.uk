@@ -15,6 +15,34 @@
 #^cake.blog_bar 
 <div class="cake_blog_bar"><a href="{-opts.link_prev}"  class="cake_blog_bar_prev" >previous podcasts</a><a href="{-opts.link_next}" class="cake_blog_bar_next" >newer podcasts</a></div>
 
+#^cake.blog_list form=raw
+{anal}
+<div class="padtop60">
+	{plate_blogbody}
+</div>
+
+#^cake.blog_page form=raw
+{anal}
+<div class="padtop60">
+	<div class="default post">
+		<div class="now {it.poster}"></div><div class="listen">
+			{-it.mix}
+			<div class="broad">
+				<div class="broad_info">Broadcast: {it.show_date}</div><div class="broad_info by">{it.date} by {it.author_name}</div>
+				</div>
+			<div class="ep_title">{it.title}</div>
+			<div class="ep_info">
+				{-showtube}
+				{it.body}
+			</div>
+			{-showmusic}
+			{-showlinks}
+			{-showscript}
+			{-showogg}
+		</div>
+	</div>
+</div>
+
 #^cake.html.head 
 
 <!DOCTYPE html>
