@@ -96,7 +96,8 @@ h5 		{font-size:14px;}
 h6 		{font-size:13px;}
 
 b		{font-weight:bold;}
-p 		{font-size:22px; line-height:34px; margin-bottom:34px; white-space:pre-wrap;}
+p 		{font-size:22px; line-height:34px; margin-bottom:34px;}
+
 strong	{font-weight:bold;}
 
 .line, hr			{border-top:1px dashed var(--hr); margin-top:40px; margin-bottom:20px; position:relative;}
@@ -221,6 +222,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 	blog_wrap 		|	Wrapper for a blog post
 	blog_wrap a		|	Fix long urls with these rules
 	paging_wrap		|	Wrapper for paging links
+	blog_bit		|	Blog posts that are hidden under the fold
 	
 */
 
@@ -238,6 +240,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 
 .paging_wrap,
 .blog_bit		{position:relative; margin:0 auto; width:860px;}
+.blog_bit p		{white-space:pre-wrap;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
