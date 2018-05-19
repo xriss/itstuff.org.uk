@@ -15,9 +15,10 @@
 	Basic colours for background and fonts
 	------------------------------------------------------------------
 	
-	base_back		- Off white			|	Main body background
+	base_back		- Almost black		|	Main body background
 	base_back_alt 	- Dark white		|	Docs column background
 	base_back_code	- Dark blue grey	|	Code background
+	base_back_script- Off white			|	Script background
 	base_link		- Medium grey		|	Link
 	base_font		- Dark grey			|	Body font
 	base_code		- White				|	Code font
@@ -38,6 +39,7 @@
   --base_back:#141b1b;
   --base_back_alt:#efefef;
   --base_back_code:#282a36;
+  --base_back_script:#F7F4FD;
   --base_link:#666;
   --base_font:#484848;
   --base_code:#fff;
@@ -234,6 +236,20 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .paging_wrap a	{font-size:80%; display:block;}
 
 .blog_wrap:nth-of-type(2)	{padding-top:0;}
+
+
+
+/*
+
+	Script:
+	
+	script_wrap 	|	Off-white wrapper
+	span	 		|	Each paragraph will start with a bolder font
+	
+*/
+
+.script_wrap		{font-size:16px; line-height:26px; background-color:var(--base_back_script); color:var(--base_font); padding:40px; font-family:georgia,serif; margin:32px 0; white-space:pre-line; word-wrap:break-word;}
+.script_wrap span	{font-family:'Patua One',georgia,serif; font-size:18px;}
 
 
 /*
