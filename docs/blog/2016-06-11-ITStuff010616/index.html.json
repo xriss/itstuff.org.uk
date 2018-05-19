@@ -6,7 +6,7 @@
  "_blog_page_body": "\n{_list:blog_list}\n\n<div>{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n",
  "_blog_post_body": "<p>This month&#39;s episode features the following!</p>\n<p>Data leaks coming out of the wazoo from LinkedIn, Myspace, Yahoo and Google\nMicrosoft&#39;s one cool trick for Windows 10 upgrades\nWindows 10 upgrades will cost you a hundred squids (or more)\nSci-Hub, #icanhazpdf &amp; the monopoly of publishers on academic journals\nArtificial intelligent poets</p>\n<p>Shi&#39;s World of Stuff includes:\nProject Ara &amp; the whole modular phones malarkey\nMicrosoft killing Nokia\nSamsung hologram phones</p>\n<p>Leeds Hack update! Our roving reporter Brian talks to Alice</p>\n<p>Dr. Caligula&#39;s Pirate Willy Workshop - a Spectrum piracy workshop at Feral Vector in Hebden Bridge\nHappy International Amiga Day!</p>\n",
  "_blog_post_body_many": "<div class=\"blog_wrap\">\n\t<div class=\"blog_info\"><a href=\"{_dirname}\">{_blog_post_json.title}</a> by {_blog_post_json.author} on {_blog_post_json.datedash}</div>\n\t{_blog_post_body}\n</div>\n",
- "_blog_post_body_one": "<div class=\"blog_wrap\">\n\t{_blog_post_body}\n\t\n\t{showlinks||}\n\t{showmdate||}\n\t{showmusic||}\n\t{showscript||}\n\t{showogg||}\n\t<div class=\"paging_wrap\">{_blog_post_older:link_older_post} {_blog_post_newer:link_newer_post}</div>\n</div>\n\n",
+ "_blog_post_body_one": "<div class=\"blog_wrap\">\n\t{_blog_post_body}\n\t\n\t{showlinks||}\n\t{showdate||}\n\t{showmusic||}\n\t{showscript||}\n\t{showogg||}\n\t<div class=\"paging_wrap\">{_blog_post_older:link_older_post} {_blog_post_newer:link_newer_post}</div>\n</div>\n\n",
  "_blog_post_json": {
   "datedash": "2016-06-11",
   "datetime": [

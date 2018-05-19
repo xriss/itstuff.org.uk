@@ -6,7 +6,7 @@
  "_blog_page_body": "\n{_list:blog_list}\n\n<div>{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n",
  "_blog_post_body": "<p>This month on IT STUFF with David, Kriss and Dick!</p>\n<p>Bitcoin ramblings, strategy and Craig Wright \nMillions of Mexican voter records leaked\nBT internet email forwarding error\nNuclear power station virus infection\nRadio Head Vanish from the Twitters\nWindows 10 upgrade during the weather\nAnniversary corner - 100th Birthday of Claude Shannon\nThe C.H.I.P. is now shipping\nMore reports from Leeds Hack 2015</p>\n",
  "_blog_post_body_many": "<div class=\"blog_wrap\">\n\t<div class=\"blog_info\"><a href=\"{_dirname}\">{_blog_post_json.title}</a> by {_blog_post_json.author} on {_blog_post_json.datedash}</div>\n\t{_blog_post_body}\n</div>\n",
- "_blog_post_body_one": "<div class=\"blog_wrap\">\n\t{_blog_post_body}\n\t\n\t{showlinks||}\n\t{showmdate||}\n\t{showmusic||}\n\t{showscript||}\n\t{showogg||}\n\t<div class=\"paging_wrap\">{_blog_post_older:link_older_post} {_blog_post_newer:link_newer_post}</div>\n</div>\n\n",
+ "_blog_post_body_one": "<div class=\"blog_wrap\">\n\t{_blog_post_body}\n\t\n\t{showlinks||}\n\t{showdate||}\n\t{showmusic||}\n\t{showscript||}\n\t{showogg||}\n\t<div class=\"paging_wrap\">{_blog_post_older:link_older_post} {_blog_post_newer:link_newer_post}</div>\n</div>\n\n",
  "_blog_post_json": {
   "datedash": "2016-05-22",
   "datetime": [

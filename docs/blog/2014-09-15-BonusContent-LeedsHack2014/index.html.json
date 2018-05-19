@@ -6,7 +6,7 @@
  "_blog_page_body": "\n{_list:blog_list}\n\n<div>{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n",
  "_blog_post_body": "<p>Xtra, Xtra, Hear all about it! This is a &quot;Bonus Content!&quot; podcast featuring all the interviews of the hackers and participants at <a href=\"http://leedshack.org/\">Leeds Hack 2014</a> by none other than our roving reporter, Brian Ackroyd for IT Stuff.</p>\n<p>You can hear Brian&#39;s report in <a href=\"http://itstuff.org.uk/blog/ITStuff260814\">IT Stuff Episode 260814</a> and in upcoming episodes!</p>\n<p>More of Xtras by Brian Ackroyd is found <a href=\"http://itstuff.org.uk/welcome#xtras\">in this dedicated playlist</a>.</p>\n\n",
  "_blog_post_body_many": "<div class=\"blog_wrap\">\n\t<div class=\"blog_info\"><a href=\"{_dirname}\">{_blog_post_json.title}</a> by {_blog_post_json.author} on {_blog_post_json.datedash}</div>\n\t{_blog_post_body}\n</div>\n",
- "_blog_post_body_one": "<div class=\"blog_wrap\">\n\t{_blog_post_body}\n\t\n\t{showlinks||}\n\t{showmdate||}\n\t{showmusic||}\n\t{showscript||}\n\t{showogg||}\n\t<div class=\"paging_wrap\">{_blog_post_older:link_older_post} {_blog_post_newer:link_newer_post}</div>\n</div>\n\n",
+ "_blog_post_body_one": "<div class=\"blog_wrap\">\n\t{_blog_post_body}\n\t\n\t{showlinks||}\n\t{showdate||}\n\t{showmusic||}\n\t{showscript||}\n\t{showogg||}\n\t<div class=\"paging_wrap\">{_blog_post_older:link_older_post} {_blog_post_newer:link_newer_post}</div>\n</div>\n\n",
  "_blog_post_json": {
   "datedash": "2014-09-15",
   "datetime": [

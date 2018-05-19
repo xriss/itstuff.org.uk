@@ -6,7 +6,7 @@
  "_blog_page_body": "\n{_list:blog_list}\n\n<div>{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n",
  "_blog_post_body": "<p>The bulk of the show is based around an interview Brian did at a RepRap workshop in Hebden Bridge recently.\nLinks from the feature:</p>\n<p><a href=\"http://reprap.org\">http://reprap.org</a>\n<a href=\"http://www.openscad.org/\">http://www.openscad.org/</a>\n<a href=\"http://tvrrug.org.uk/\">http://tvrrug.org.uk/</a>\nThe rest is news, and a couple of articles about on-line security, ‘cyber’ this and that, fake sites and the such like.</p>\n<p><a href=\"http://www.actionfraud.police.uk/\">http://www.actionfraud.police.uk/</a></p>\n",
  "_blog_post_body_many": "<div class=\"blog_wrap\">\n\t<div class=\"blog_info\"><a href=\"{_dirname}\">{_blog_post_json.title}</a> by {_blog_post_json.author} on {_blog_post_json.datedash}</div>\n\t{_blog_post_body}\n</div>\n",
- "_blog_post_body_one": "<div class=\"blog_wrap\">\n\t{_blog_post_body}\n\t\n\t{showlinks||}\n\t{showmdate||}\n\t{showmusic||}\n\t{showscript||}\n\t{showogg||}\n\t<div class=\"paging_wrap\">{_blog_post_older:link_older_post} {_blog_post_newer:link_newer_post}</div>\n</div>\n\n",
+ "_blog_post_body_one": "<div class=\"blog_wrap\">\n\t{_blog_post_body}\n\t\n\t{showlinks||}\n\t{showdate||}\n\t{showmusic||}\n\t{showscript||}\n\t{showogg||}\n\t<div class=\"paging_wrap\">{_blog_post_older:link_older_post} {_blog_post_newer:link_newer_post}</div>\n</div>\n\n",
  "_blog_post_json": {
   "datedash": "2013-04-04",
   "datetime": [
