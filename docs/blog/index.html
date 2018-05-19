@@ -145,7 +145,7 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 */
 
 .nav		{align-items:center; display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; -moz-box-align:center; -ms-box-align:center; -webkit-box-align:center;}
-.nav ul		{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:flex-end; width:100%;}
+.nav ul		{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:center; width:100%;}
 .nav a		{color:var(--base_link); font-size:1.5em; margin:0 1rem;}
 .nav a:hover{color:var(--base);}
 
@@ -164,7 +164,29 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 
 .logo		{color:var(--base); font-family:"Rubik",Arial,sans-serif;}
 .logo p		{color:var(--base_font); font-size:5em; line-height:0.8em;}
-.nav a.logo {color:var(--base); display:block; font-size:1.8em;}
+.nav a.logo {color:var(--base); display:block;}
+
+
+/*	
+
+	Pixel peeps:
+	
+	True representation of the actual crew
+	
+	block	 		|	default size
+	.name	 		|	peeps
+	
+*/
+
+.block			{width:150px; height:190px;}
+.block.dave		{background:url('/data/stuff/dave.png') no-repeat center center; background-size:80px;}
+.block.david	{background:url('/data/stuff/david.png') no-repeat center center; background-size:80px;}
+.block.shi		{background:url('/data/stuff/shi.png') no-repeat center center; background-size:80px;}
+.block.kriss	{background:url('/data/stuff/kriss.png') no-repeat center center; background-size:80px;}
+.block.dick		{background:url('/data/stuff/dick.png') no-repeat center center; background-size:80px;}
+.block.brian	{background:url('/data/stuff/brian.png') no-repeat center center; background-size:80px;}
+.block.john		{background:url('/data/stuff/john.png') no-repeat center center; background-size:80px;}
+.block.steph	{background:url('/data/stuff/stephane.png') no-repeat center center; background-size:80px;}
 
 
 /*
@@ -200,7 +222,7 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 
 .blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
 .blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
-.blog_play		{padding:1.5em 20px; margin-bottom:30px; background-color:#000;}
+.blog_play		{padding:5.5em 20px; margin-bottom:30px; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0; position:relative;}
 .blog_wrap h2	{font-family:"Rubik",Arial,sans-serif; font-size:2.5em; line-height:1em; padding-bottom:1em;}
@@ -212,6 +234,8 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
+
+.content .blog_wrap:first-of-type	{padding-top:0px;}
 
 
 /*
@@ -265,8 +289,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 </style></head>
 <body><div class="content"><div class="nav_wrap">
 	<div class="nav">
-		<a href="../" class="logo">ITSTUFF</a>
 		<ul>
+			<li><a href="../" class="logo">Home</a></li>
 			<li><a href="http://feeds.feedburner.com/itstuffbradford">RSS</a></li>
 			<li><a href="../about">About</a></li>
 			<li><a href="../blog">Episodes</a></li>
@@ -284,13 +308,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	<iframe class="archive" src="https://archive.org/embed/ITStuff151117" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 </div>
 <div class="blog_bit">
-IT Stuff is installing updates, zero percent completed, do not turn off your radio.
-
-In this month&#39;s Stuff Update we&#39;ll be mocking the powerful and then plugging the empowerment of our local events. So that&#39;s the usual then. Save you looking at the knowlege base innit.
-
-Do not turn off your radio. Eighteen percent completed.
-
-<b>Our topics include:</b>
+	<p>IT Stuff is installing updates, zero percent completed, do not turn off your radio.</p>
+<p>In this month&#39;s Stuff Update we&#39;ll be mocking the powerful and then plugging the empowerment of our local events. So that&#39;s the usual then. Save you looking at the knowlege base innit.</p>
+<p>Do not turn off your radio. Eighteen percent completed.</p>
+<p><b>Our topics include:</b>
 Facebook fail auto-translate results in arrest and account blocking
 Apple FaceID fooled by 3D printed face and facial similarities
 China developing tech to recognise any citizen’s face in 3 seconds
@@ -299,17 +320,14 @@ Google&#39;s Android forced &#39;permission&#39; activity recognition
 Mark Karpeles and MtGox bitcoin malarkey
 Plague of stealth miners in your apps &amp; browser
 Ethereum updates
-Twitter 280 character limit examplifies quantity over quality
-
-
-<b>World of Stuff:</b>
-Compuserve forums shutting down along with AOL Instant Messenger
-
-Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a>
-
-<b>Local events:</b>
+Twitter 280 character limit examplifies quantity over quality</p>
+<p><b>World of Stuff:</b>
+Compuserve forums shutting down along with AOL Instant Messenger</p>
+<p>Contact us via <a href="http://twitter.com/itstuffradio">@itstuffradio on the twitters</a></p>
+<p><b>Local events:</b>
 Bradford Coder Dojo - Sat, 18th Nov 2017 9:30am-12pm at Little Germany
-Get into Tech, Leeds - Work experience Jan to April 2018, closing date for applications is 17th Nov
+Get into Tech, Leeds - Work experience Jan to April 2018, closing date for applications is 17th Nov</p>
+
 </div>
 
 
@@ -319,12 +337,16 @@ Get into Tech, Leeds - Work experience Jan to April 2018, closing date for appli
 
 <div class="blog_wrap">
 	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2017-10-18-ITStuff181017">Episode 181017</a> by {_blog_post_json.author} on 2017-10-18</div>
+		<div class="blog_info"><a href="../blog/2017-10-18-ITStuff181017">Episode 181017</a> by shi on 2017-10-18</div>
 	</div>
+	
+<div class="blog_play">
+	<div class="blog_title">Episode 181017</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff181017" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<div class="blog_bit">
 	<p>Welcome to Negativity Month! Wherein the first half of the show we&#39;ll celebrate the misery of autumn with negative technology stories and security fails.</p>
 <p>We conclude the show with AI and local events in an attempt to cheer ourselves up. Will it work?</p>
-<iframe class="archive" src="https://archive.org/embed/ITStuff181017" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-
 <p><b>Our topics include:</b>
 WPA2 Krack attack
 Adobe Flash emergency patch
@@ -346,6 +368,10 @@ Google&#39;s teachable machine - using your camera, live in the browser</p>
 <p><b>Local events:</b>
 Bradford Coder Dojo 3rd Birthday - Sat, 28th Oct 2017 9:30am-12pm at Little Germany
 Queer Code Yorkshire - 2nd Nov at Sky Betting &amp; Gaming Wellington Place Leeds</p>
+
+</div>
+
+
 
 </div>
 

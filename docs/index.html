@@ -1,5 +1,5 @@
 <html>
-<head><title>IT Stuff - That's some good stuff!</title>
+<head><title>IT STUFF</title>
 <meta name="theme-color" content="#2a3133">
 <meta name="google-site-verification" content="wwHX7osRtV4Bkz8EpOeWaTCr4dYo8jgNqCFC-oCTCGs" />
 <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
@@ -145,7 +145,7 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 */
 
 .nav		{align-items:center; display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; -moz-box-align:center; -ms-box-align:center; -webkit-box-align:center;}
-.nav ul		{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:flex-end; width:100%;}
+.nav ul		{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:center; width:100%;}
 .nav a		{color:var(--base_link); font-size:1.5em; margin:0 1rem;}
 .nav a:hover{color:var(--base);}
 
@@ -164,7 +164,29 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 
 .logo		{color:var(--base); font-family:"Rubik",Arial,sans-serif;}
 .logo p		{color:var(--base_font); font-size:5em; line-height:0.8em;}
-.nav a.logo {color:var(--base); display:block; font-size:1.8em;}
+.nav a.logo {color:var(--base); display:block;}
+
+
+/*	
+
+	Pixel peeps:
+	
+	True representation of the actual crew
+	
+	block	 		|	default size
+	.name	 		|	peeps
+	
+*/
+
+.block			{width:150px; height:190px;}
+.block.dave		{background:url('/data/stuff/dave.png') no-repeat center center; background-size:80px;}
+.block.david	{background:url('/data/stuff/david.png') no-repeat center center; background-size:80px;}
+.block.shi		{background:url('/data/stuff/shi.png') no-repeat center center; background-size:80px;}
+.block.kriss	{background:url('/data/stuff/kriss.png') no-repeat center center; background-size:80px;}
+.block.dick		{background:url('/data/stuff/dick.png') no-repeat center center; background-size:80px;}
+.block.brian	{background:url('/data/stuff/brian.png') no-repeat center center; background-size:80px;}
+.block.john		{background:url('/data/stuff/john.png') no-repeat center center; background-size:80px;}
+.block.steph	{background:url('/data/stuff/stephane.png') no-repeat center center; background-size:80px;}
 
 
 /*
@@ -200,7 +222,7 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 
 .blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
 .blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
-.blog_play		{padding:1.5em 20px; margin-bottom:30px; background-color:#000;}
+.blog_play		{padding:5.5em 20px; margin-bottom:30px; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0; position:relative;}
 .blog_wrap h2	{font-family:"Rubik",Arial,sans-serif; font-size:2.5em; line-height:1em; padding-bottom:1em;}
@@ -212,6 +234,8 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
 .paging_wrap a	{font-size:80%; display:block;}
+
+.content .blog_wrap:first-of-type	{padding-top:0px;}
 
 
 /*
@@ -265,8 +289,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 </style></head>
 <body><div class="content"><div class="nav_wrap">
 	<div class="nav">
-		<a href="./" class="logo">ITSTUFF</a>
 		<ul>
+			<li><a href="./" class="logo">Home</a></li>
 			<li><a href="http://feeds.feedburner.com/itstuffbradford">RSS</a></li>
 			<li><a href="./about">About</a></li>
 			<li><a href="./blog">Episodes</a></li>
@@ -274,11 +298,16 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	</div>
 </div>
 <div class="blog_wrap">
-	<div class="logo">
-		<h1>IT Stuff - That's some good stuff!</h1>
-		<p></p>
+	<div class="blog_bit">
+		<div class="logo">
+			<h1>IT STUFF</h1>
+			<p>
+				Explaining the good stuff in IT & treating the bad stuff with the cynicism and contempt that it deserves.
+			</p>
+			<div class="block dave"></div><div class="block shi"></div><div class="block kriss"></div>
+		</div>
+		<div class="line"></div>
 	</div>
-	<div class="line"></div>
 </div>
 </div>
 <div class="footer">
