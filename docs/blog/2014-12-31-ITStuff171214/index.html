@@ -15,7 +15,7 @@
 	------------------------------------------------------------------
 	
 	base 			- Kinda cyan		|	Highlight colour
-	base_alt 		- Light blue		|	Link hover
+	base_alt 		- Kinda yellow		|	Link hover
 	
 	------------------------------------------------------------------
 	Basic colours for background and fonts
@@ -41,7 +41,7 @@
 
 :root {
   --base:#00ffff;
-  --base_alt:#3F2FFF;
+  --base_alt:#FFDF00;
   --base_back:#141b1b;
   --base_back_alt:#efefef;
   --base_back_code:#282a36;
@@ -181,8 +181,8 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 */
 
 .presenter		{display:inline-block; vertical-align:top; text-align:center;}
-.name			{color:#fff; font-size:0.9em; padding:10px 0;}
-a.twit			{display:block; color:#398A2A; font-size:0.8em;}
+.name			{color:#fff; padding:10px 0 0 0;}
+a.twit			{display:block; color:#398A2A; font-size:0.8em; line-height:1em;}
 a.twit:hover	{text-decoration:none; color:#00ff00;}
 .block			{width:150px; height:190px;}
 .block.dave		{background:url('/data/stuff/dave.png') no-repeat center center;}
@@ -227,9 +227,12 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 */
 
 
-.blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
-.blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_info		{font-size:70%; position:absolute; right:0; top:0;}
+.blog_info a	{display:block;}
+.blog_info a:before {content:"🍙"; color:#ccc; margin-right:5px;}
+.blog_title		{font-size:3em; line-height:1em; color:#3ba8ff; padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
 .blog_title:nth-of-type(2) {margin-top:30px;}
+.blog_title:before {content:"👻"; color:#ff685d; margin-right:10px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
@@ -241,8 +244,11 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .paging_wrap,
 .blog_bit		{position:relative; margin:0 auto; width:860px;}
 
-.paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
-.paging_wrap a	{font-size:80%; display:block;}
+.blog_bit p b	{color:#FFC107;}
+.blog_bit p b:before {content:"🌠"; margin-right:10px; color:#945cff;}
+
+.paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em; padding-bottom:2em;}
+.paging_wrap a	{font-size:20px; display:block;}
 
 .paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
@@ -311,7 +317,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 }
 
-.ep_showlinks a		{display:block;}
+.ep_showlinks	{border-top:1px solid #676767; padding-top:10px; margin-top:10px;}
+.ep_showlinks a	{display:block; font-size:85%; line-height:1.5em; color:#ccc;}
 .blog_bit p		{white-space:pre-wrap;}
 
 .show_box			{background-color:#2c1950; margin-top:40px;}
@@ -366,7 +373,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 		
 		<div class="ep_links">
-	Links:
+	<span>Links</span>
 	<div class="ep_showlinks"><a href="http://paddle8.com/auction/unitednationsdevelopmentprogramme" target="_blank">UNDP GIF Benefit Auction (now closed)</a> <a href="https://oldpiratebay.org/" target="_blank">Old Pirate Bay</a> <a href="http://www.ubuntu-trading.com/our-fairtrade-cola" target="_blank">Ubuntu Cola</a>
 </div>
 </div>

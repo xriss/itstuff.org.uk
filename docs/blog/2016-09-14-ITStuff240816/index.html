@@ -15,7 +15,7 @@
 	------------------------------------------------------------------
 	
 	base 			- Kinda cyan		|	Highlight colour
-	base_alt 		- Light blue		|	Link hover
+	base_alt 		- Kinda yellow		|	Link hover
 	
 	------------------------------------------------------------------
 	Basic colours for background and fonts
@@ -41,7 +41,7 @@
 
 :root {
   --base:#00ffff;
-  --base_alt:#3F2FFF;
+  --base_alt:#FFDF00;
   --base_back:#141b1b;
   --base_back_alt:#efefef;
   --base_back_code:#282a36;
@@ -181,8 +181,8 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 */
 
 .presenter		{display:inline-block; vertical-align:top; text-align:center;}
-.name			{color:#fff; font-size:0.9em; padding:10px 0;}
-a.twit			{display:block; color:#398A2A; font-size:0.8em;}
+.name			{color:#fff; padding:10px 0 0 0;}
+a.twit			{display:block; color:#398A2A; font-size:0.8em; line-height:1em;}
 a.twit:hover	{text-decoration:none; color:#00ff00;}
 .block			{width:150px; height:190px;}
 .block.dave		{background:url('/data/stuff/dave.png') no-repeat center center;}
@@ -227,9 +227,12 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 */
 
 
-.blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
-.blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_info		{font-size:70%; position:absolute; right:0; top:0;}
+.blog_info a	{display:block;}
+.blog_info a:before {content:"🍙"; color:#ccc; margin-right:5px;}
+.blog_title		{font-size:3em; line-height:1em; color:#3ba8ff; padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
 .blog_title:nth-of-type(2) {margin-top:30px;}
+.blog_title:before {content:"👻"; color:#ff685d; margin-right:10px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
@@ -241,8 +244,11 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .paging_wrap,
 .blog_bit		{position:relative; margin:0 auto; width:860px;}
 
-.paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
-.paging_wrap a	{font-size:80%; display:block;}
+.blog_bit p b	{color:#FFC107;}
+.blog_bit p b:before {content:"🌠"; margin-right:10px; color:#945cff;}
+
+.paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em; padding-bottom:2em;}
+.paging_wrap a	{font-size:20px; display:block;}
 
 .paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
@@ -311,7 +317,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 }
 
-.ep_showlinks a		{display:block;}
+.ep_showlinks	{border-top:1px solid #676767; padding-top:10px; margin-top:10px;}
+.ep_showlinks a	{display:block; font-size:85%; line-height:1.5em; color:#ccc;}
 .blog_bit p		{white-space:pre-wrap;}
 
 .show_box			{background-color:#2c1950; margin-top:40px;}
@@ -372,17 +379,18 @@ only screen and (min-device-pixel-ratio: 1.5) {
 <li>Roomba vacuum hoover mess</li>
 <li>Linux hits 25 years old</li>
 <li>The Internet 25 years old (public access)</li>
-<li>Google talks about fuchsia </li>
-<li>Shi&#39;s world of stuff - Omega 2</li>
+<li>Google talks about fuchsia</li>
 </ul>
-<p>Upcoming events:
+<p><b>World of Stuff:</b>
+Omega 2</p>
+<p><b>Local events:</b>
 Wuthering Bytes in Hebden Bridge, 2nd - 9th September
 Open Source Hardware Camp, 3rd - 4th September
 Leeds Hack returns in autumn this year, under new management</p>
 
 		
 		<div class="ep_links">
-	Links:
+	<span>Links</span>
 	<div class="ep_showlinks"><a href="http://motherboard.vice.com/read/no-mans-sky-footage-pornhub">No Mans Sky leaked on Pornhub</a> <a href="https://www.theguardian.com/technology/2016/aug/15/roomba-robot-vacuum-poopocalypse-facebook-post">Poopocalypse</a> <a href="http://www.theregister.co.uk/2016/08/18/microsoft_brings_powershell_to_linux_and_mac_publishes_as_open_source/">M$ brings powershell to linux and mac as Open Source</a> <a href="http://www.snopes.com/2016/08/23/internaut-day-the-webs-birthday/">Happy Internaut Day</a> <a href="https://github.com/chrislgarry/Apollo-11">Apollo 11</a> <a href="https://www.kickstarter.com/projects/onion/omega2-5-iot-computer-with-wi-fi-powered-by-linux">Omega 2</a> <a href="https://www.linux.com/news/linus-torvalds-reflects-25-years-linux">Linus Torvalds Reflects on 25 Years of Linux</a> 
 
 

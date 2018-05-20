@@ -8,10 +8,10 @@ IT Stuff - That's some good stuff!
 }
 
 #^_blog_page_body
-
 {_list:blog_list}
-
-<div class="paging_wrap">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>
+<div class="blog_wrap" style="padding-top:0;">
+	<div class="paging_wrap">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>
+</div>
 
 #^-Paging for main blog list page
 #^link_older_page
@@ -44,12 +44,9 @@ IT Stuff - That's some good stuff!
 #^-This is for the blog list
 #^_blog_post_body_many
 <div class="blog_wrap pod">
-	<div class="blog_bit">
-		<div class="blog_info"><a href="{_dirname}">{_blog_post_json.title}</a> by {_blog_post_json.author} on {_blog_post_json.datedash}</div>
-	</div>
 	{_blog_post_body}
 	<div class="blog_bit">
-		<a href="{_dirname}">Go on</a>
+		<a href="{_dirname}">Go on</a><div class="blog_info"><a href="{_dirname}">Post by {_blog_post_json.author} on {_blog_post_json.datedash}</a></div>
 	</div>
 </div>
 
@@ -61,7 +58,7 @@ IT Stuff - That's some good stuff!
 
 #^showlinks 
 <div class="ep_links">
-	Links:
+	<span>Links</span>
 	<div class="ep_showlinks">{show_links||}</div>
 </div>
 
@@ -104,7 +101,8 @@ IT Stuff - That's some good stuff!
 
 #^css same=append
 
-.ep_showlinks a		{display:block;}
+.ep_showlinks	{border-top:1px solid #676767; padding-top:10px; margin-top:10px;}
+.ep_showlinks a	{display:block; font-size:85%; line-height:1.5em; color:#ccc;}
 .blog_bit p		{white-space:pre-wrap;}
 
 .show_box			{background-color:#2c1950; margin-top:40px;}

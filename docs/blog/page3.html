@@ -15,7 +15,7 @@
 	------------------------------------------------------------------
 	
 	base 			- Kinda cyan		|	Highlight colour
-	base_alt 		- Light blue		|	Link hover
+	base_alt 		- Kinda yellow		|	Link hover
 	
 	------------------------------------------------------------------
 	Basic colours for background and fonts
@@ -41,7 +41,7 @@
 
 :root {
   --base:#00ffff;
-  --base_alt:#3F2FFF;
+  --base_alt:#FFDF00;
   --base_back:#141b1b;
   --base_back_alt:#efefef;
   --base_back_code:#282a36;
@@ -181,8 +181,8 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 */
 
 .presenter		{display:inline-block; vertical-align:top; text-align:center;}
-.name			{color:#fff; font-size:0.9em; padding:10px 0;}
-a.twit			{display:block; color:#398A2A; font-size:0.8em;}
+.name			{color:#fff; padding:10px 0 0 0;}
+a.twit			{display:block; color:#398A2A; font-size:0.8em; line-height:1em;}
 a.twit:hover	{text-decoration:none; color:#00ff00;}
 .block			{width:150px; height:190px;}
 .block.dave		{background:url('/data/stuff/dave.png') no-repeat center center;}
@@ -227,9 +227,12 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 */
 
 
-.blog_info		{font-size:70%; position:absolute; right:10px; top:0; background-color:var(--base_back); padding:0 20px;}
-.blog_title		{font-size:3em; line-height:1em; color:var(--white); padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_info		{font-size:70%; position:absolute; right:0; top:0;}
+.blog_info a	{display:block;}
+.blog_info a:before {content:"🍙"; color:#ccc; margin-right:5px;}
+.blog_title		{font-size:3em; line-height:1em; color:#3ba8ff; padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
 .blog_title:nth-of-type(2) {margin-top:30px;}
+.blog_title:before {content:"👻"; color:#ff685d; margin-right:10px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
 
 .blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
@@ -241,8 +244,11 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .paging_wrap,
 .blog_bit		{position:relative; margin:0 auto; width:860px;}
 
-.paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em;}
-.paging_wrap a	{font-size:80%; display:block;}
+.blog_bit p b	{color:#FFC107;}
+.blog_bit p b:before {content:"🌠"; margin-right:10px; color:#945cff;}
+
+.paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em; padding-bottom:2em;}
+.paging_wrap a	{font-size:20px; display:block;}
 
 .paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
@@ -311,7 +317,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 }
 
-.ep_showlinks a		{display:block;}
+.ep_showlinks	{border-top:1px solid #676767; padding-top:10px; margin-top:10px;}
+.ep_showlinks a	{display:block; font-size:85%; line-height:1.5em; color:#ccc;}
 .blog_bit p		{white-space:pre-wrap;}
 
 .show_box			{background-color:#2c1950; margin-top:40px;}
@@ -345,11 +352,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 		</ul>
 	</div>
 </div>
-
 <div class="blog_wrap pod">
-	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2017-01-11-ITStuff110117">Episode 110117</a> by shi on 2017-01-11</div>
-	</div>
 	
 <div class="blog_play">
 	<div class="blog_title">Episode 110117</div>
@@ -363,15 +366,12 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 
 	<div class="blog_bit">
-		<a href="../blog/2017-01-11-ITStuff110117">Go on</a>
+		<a href="../blog/2017-01-11-ITStuff110117">Go on</a><div class="blog_info"><a href="../blog/2017-01-11-ITStuff110117">Post by shi on 2017-01-11</a></div>
 	</div>
 </div>
 
 
 <div class="blog_wrap pod">
-	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2016-12-14-ITStuff141216">Episode 141216</a> by shi on 2016-12-14</div>
-	</div>
 	
 <div class="blog_play">
 	<div class="blog_title">Episode 141216</div>
@@ -385,15 +385,12 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 
 	<div class="blog_bit">
-		<a href="../blog/2016-12-14-ITStuff141216">Go on</a>
+		<a href="../blog/2016-12-14-ITStuff141216">Go on</a><div class="blog_info"><a href="../blog/2016-12-14-ITStuff141216">Post by shi on 2016-12-14</a></div>
 	</div>
 </div>
 
 
 <div class="blog_wrap pod">
-	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2016-11-16-ITStuff161116">Episode 161116</a> by shi on 2016-11-16</div>
-	</div>
 	
 <div class="blog_play">
 	<div class="blog_title">Episode 161116</div>
@@ -407,15 +404,12 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 
 	<div class="blog_bit">
-		<a href="../blog/2016-11-16-ITStuff161116">Go on</a>
+		<a href="../blog/2016-11-16-ITStuff161116">Go on</a><div class="blog_info"><a href="../blog/2016-11-16-ITStuff161116">Post by shi on 2016-11-16</a></div>
 	</div>
 </div>
 
 
 <div class="blog_wrap pod">
-	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2016-11-03-ITStuff201016">Episode 201016</a> by shi on 2016-11-03</div>
-	</div>
 	
 <div class="blog_play">
 	<div class="blog_title">Episode 201016</div>
@@ -429,15 +423,12 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 
 	<div class="blog_bit">
-		<a href="../blog/2016-11-03-ITStuff201016">Go on</a>
+		<a href="../blog/2016-11-03-ITStuff201016">Go on</a><div class="blog_info"><a href="../blog/2016-11-03-ITStuff201016">Post by shi on 2016-11-03</a></div>
 	</div>
 </div>
 
 
 <div class="blog_wrap pod">
-	<div class="blog_bit">
-		<div class="blog_info"><a href="../blog/2016-10-02-ITStuff210916">Episode 210916</a> by shi on 2016-10-02</div>
-	</div>
 	
 <div class="blog_play">
 	<div class="blog_title">Episode 210916</div>
@@ -451,16 +442,17 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 
 	<div class="blog_bit">
-		<a href="../blog/2016-10-02-ITStuff210916">Go on</a>
+		<a href="../blog/2016-10-02-ITStuff210916">Go on</a><div class="blog_info"><a href="../blog/2016-10-02-ITStuff210916">Post by shi on 2016-10-02</a></div>
 	</div>
 </div>
 
 
 
-
-<div class="paging_wrap"><a href="../blog/page4.html">Previous</a>
+<div class="blog_wrap" style="padding-top:0;">
+	<div class="paging_wrap"><a href="../blog/page4.html">Previous</a>
  <a href="../blog/page2.html">Next</a>
 
+</div>
 </div>
 </div>
 <div class="footer">
