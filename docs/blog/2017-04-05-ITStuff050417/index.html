@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#2a3133">
 <meta name="google-site-verification" content="wwHX7osRtV4Bkz8EpOeWaTCr4dYo8jgNqCFC-oCTCGs" />
 <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700" rel="stylesheet">
 <style>
 
 /*
@@ -15,7 +15,7 @@
 	------------------------------------------------------------------
 	
 	base 			- Kinda cyan		|	Highlight colour
-	base_alt 		- Kinda yellow		|	Link hover
+	base_alt 		- Warm gold			|	Link hover
 	
 	------------------------------------------------------------------
 	Basic colours for background and fonts
@@ -25,32 +25,64 @@
 	base_back_alt 	- Dark white		|	Docs column background
 	base_back_code	- Dark blue grey	|	Code background
 	base_back_script- Off white			|	Script background
-	base_link		- Medium grey		|	Link
-	base_font		- Dark grey			|	Body font
-	base_code		- White				|	Code font
+	base_link_box	- Tongue red		|	Link box background
 	base_src		- Light grey		|	Source link background
+	
+	base_font		- White				|	Body font
+	base_link		- Medium grey		|	Link navigation bar
+	base_code		- White				|	Code font
+	
+	base_cast_back	- Dark purple		|	Broadcast date background
+	base_cast		- Grey				|	Broadcast date font
+	base_odt_back	- Vary dark cyan	|	Script download background
+	base_odt_back_alt	- Dark cyan		|	Background hover
+	base_odt		- Kinda cyan		|	Script download link
+	base_ogg_back	- Very dark gold	|	Ogg download background
+	base_ogg_back_alt	- Dark gold		|	Background hover
+	base_ogg		- Warm gold			|	Ogg download link
+	base_emoji		- Light purple		|	End music font & emojis
 	
 	------------------------------------------------------------------
 	Extra bits
 	------------------------------------------------------------------
 	
-	white 			- White				|	Navigation bar
+	spacer			- Dark grey			|	Spacer and borders
+	white 			- White				|	White
+	black			- Black				|	Black
+	not_black		- Not black			|	Not black
 	hr		 		- Blue				|	Horizontal line
 
 */
 
 :root {
   --base:#00ffff;
-  --base_alt:#FFDF00;
+  --base_alt:#FFC107;
+  
   --base_back:#141b1b;
   --base_back_alt:#efefef;
   --base_back_code:#282a36;
-  --base_back_script:#F7F4FD;
-  --base_link:#666;
-  --base_font:#484848;
-  --base_code:#fff;
+  --base_back_script:#F7F4FD; 
+  --base_link_box:#ff382a;
   --base_src:#d8d8d8;
+  
+  --base_font:#fff;
+  --base_link:#9a9a9a;
+  --base_code:#fff;
+
+  --base_cast_back:#2c1950;
+  --base_cast:#ccc;
+  --base_odt_back:#123c3c;
+  --base_odt_back_alt:#176565;
+  --base_odt:#00ffff;
+  --base_ogg_back:#7d510f;
+  --base_ogg_back_alt:#B26F09;
+  --base_ogg:#FFC107;
+  --base_emoji:#945cff;
+  
+  --spacer:#495252;
   --white:#fff;
+  --black:#000;
+  --not_black:#111;
   --hr:#1400ff;
 }
 
@@ -99,6 +131,7 @@ b		{font-weight:bold;}
 p 		{font-size:22px; line-height:34px; margin-bottom:34px;}
 
 strong	{font-weight:bold;}
+em		{font-style:italic;}
 
 .line, hr			{border-top:1px dashed var(--hr); margin-top:40px; margin-bottom:20px; position:relative;}
 
@@ -130,6 +163,7 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 
 .content	{flex:1 0 auto;}
 .default	{margin:0 auto;}
+.land_wrap	{position:relative; margin:0 auto; width:860px;}
 .nav_wrap	{background-color:var(--base_back); left:0; padding:1.5em 3em; position:fixed; top:0; width:100%; z-index:100;}
 .right		{text-align:right;}
 
@@ -180,7 +214,7 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	
 */
 
-.presenter		{display:inline-block; vertical-align:top; text-align:center;}
+.presenter		{display:inline-block; vertical-align:top; text-align:center; margin-bottom:3em;}
 .name			{color:#fff; padding:10px 0 0 0;}
 a.twit			{display:block; color:#398A2A; font-size:0.8em; line-height:1em;}
 a.twit:hover	{text-decoration:none; color:#00ff00;}
@@ -189,29 +223,11 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .block.shi		{background:url('/data/stuff/shi.png') no-repeat center center;}
 .block.kriss	{background:url('/data/stuff/kriss.png') no-repeat center center;}
 .block.dick		{background:url('/data/stuff/dick.png') no-repeat center center;}
-.block.david	{background:url('/data/stuff/david.png') no-repeat center center; background-size:80px;}
-.block.brian	{background:url('/data/stuff/brian.png') no-repeat center center; background-size:80px;}
-.block.john		{background:url('/data/stuff/john.png') no-repeat center center; background-size:80px;}
-.block.steph	{background:url('/data/stuff/stephane.png') no-repeat center center; background-size:80px;}
-
-
-/*
-
-	Install:
-	
-	Installation instructions on the splash page
-	
-	install 		|	Main wrapper
-	install div		|	Wrapper for installation divs
-	install code	|	Bigger fonts for code div
-	
-*/
-
-.install 					{display:flex; justify-content:space-evenly; margin-top:2em; width:100%;}
-.install div				{padding-left:5%; width:60%;}
-.install div:nth-of-type(1) {padding:0; width:40%;}
-.install.full div			{width:100%;}
-.install code 				{font-size:1.6em;}
+.block.edafe	{background:url('/data/stuff/edafe.png') no-repeat center center;}
+.block.david	{background:url('/data/stuff/david.png') no-repeat center center;}
+.block.brian	{background:url('/data/stuff/brian.png') no-repeat center center;}
+.block.john		{background:url('/data/stuff/john.png') no-repeat center center;}
+.block.steph	{background:url('/data/stuff/stephane.png') no-repeat center center;}
 
 
 /*
@@ -219,41 +235,63 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 	Blog:
 	
 	blog_info 		|	Blog author & date info
+	blog_title		|	Large episode number
+	blog_play		|	Wrapper for ep number and archive.org embed
 	blog_wrap 		|	Wrapper for a blog post
 	blog_wrap a		|	Fix long urls with these rules
+	blog_wrap h2	|	Large text like landing page
+	blog_wrap.pod	|	Wrapper for posts in episode list
+	blog_wrap.own	|	Wrapper for post in own page
 	paging_wrap		|	Wrapper for paging links
-	blog_bit		|	Blog posts that are hidden under the fold
+	spacer			|	Emoji seperator between sections
+	blog_bit		|	Blog text visible in episode list
+	blog_more		|	Blog text that are hidden under the fold
+	gwan_wrap		|	Wrapper for 'Go on' link
+	a.gwan			|	Link to episode own page
 	
 */
 
 
 .blog_info		{font-size:70%; position:absolute; right:0; top:0;}
 .blog_info a	{display:block;}
-.blog_info a:before {content:"🍙"; color:#ccc; margin-right:5px;}
-.blog_title		{font-size:3em; line-height:1em; color:#3ba8ff; padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_info a:before {content:"🍙"; color:var(--base_cast); margin-right:5px;}
+.blog_title		{font-size:3em; line-height:1em; text-transform:uppercase; padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
 .blog_title:nth-of-type(2) {margin-top:30px;}
-.blog_title:before {content:"👻"; color:#ff685d; margin-right:10px;}
-.blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:#000;}
+.blog_title:before {content:"👻"; color:var(--base_link_box); margin-right:10px;}
+.blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:var(--black);}
 
-.blog_wrap		{color:var(--white); font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
+.blog_wrap		{font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
 .blog_wrap h2	{font-family:"Rubik",Arial,sans-serif; font-size:2.5em; line-height:1em; padding-bottom:1em;}
 .blog_wrap a	{overflow-wrap:break-word; word-wrap:break-word; word-break:break-word; -ms-hyphens:auto; -moz-hyphens:auto; -webkit-hyphens:auto; hyphens:auto;}
 .blog_wrap a 	{color:var(--base); text-decoration:none;}
 .blog_wrap a:hover {color:var(--base_alt); cursor:pointer;}
+.blog_wrap.pod:nth-of-type(2),
+.blog_wrap.own	{padding-top:0;}
 
 .paging_wrap,
+.spacer,
+.blog_more,
 .blog_bit		{position:relative; margin:0 auto; width:860px;}
+.spacer:before	{content:"𝆗"; text-align:center; display:block; margin-top:15px; padding-bottom:30px; font-size:3.5em; color:var(--spacer);}
 
-.blog_bit p b	{color:#FFC107;}
-.blog_bit p b:before {content:"🌠"; margin-right:10px; color:#945cff;}
+.blog_bit,
+.blog_more		{box-sizing:border-box; padding:40px 40px 20px 40px; border:4px double var(--spacer); border-radius:0 40px;}
+.blog_more		{padding:40px;}
+.blog_bit p,
+.blog_more p	{white-space:pre-wrap;}
+.blog_more p	{font-size:90%; line-height:28px;}
+.blog_more p b	{font-size:1.2em; color:var(--base_alt);}
+.blog_more p b:before {content:"🌠"; margin-right:10px; color:var(--base_emoji);}
+
+.blog_bit p:first-of-type::first-letter {font-weight:900; border:1px dotted var(--base_link_box); padding:5px 10px; margin-right:5px; font-family:"Patua One",georgia,serif; background-color:var(--not_black);}
+
+.gwan_wrap		{text-align:center; padding:0; border:0;}
+a.gwan			{display:inline-block; background-color:var(--base_link_box); padding:0 20px; border-radius:0 0 4px 4px; color:var(--base_back); text-align:center; margin:0 auto;}
+a.gwan:hover	{background-color:var(--base); color:var(--base_back);}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em; padding-bottom:2em;}
 .paging_wrap a	{font-size:20px; display:block;}
-
 .paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
-
-.blog_wrap.pod:nth-of-type(2)	{padding-top:0;}
-
 
 
 /*
@@ -265,7 +303,8 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 	
 */
 
-.script_wrap		{font-size:16px; line-height:26px; background-color:var(--base_back_script); color:var(--base_font); padding:40px; font-family:georgia,serif; margin:32px 0; white-space:pre-line; word-wrap:break-word;}
+.script_wrap		{font-size:16px; line-height:26px; background-color:var(--base_back_script); color:var(--spacer); padding:40px; font-family:georgia,serif; margin:40px 0; white-space:pre-line; word-wrap:break-word; position:relative;}
+.script_wrap:before {content:"⌨ Script"; font-family:"Patua One",georgia,serif; position:absolute; top:-10px; background-color:var(--base_link_box); padding:10px 20px; color:var(--white); font-size:20px;}
 .script_wrap span	{font-family:'Patua One',georgia,serif; font-size:18px;}
 
 
@@ -317,27 +356,27 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 }
 
-.ep_showlinks	{border-top:1px solid #676767; padding-top:10px; margin-top:10px;}
-.ep_showlinks a	{display:block; font-size:85%; line-height:1.5em; color:#ccc;}
-.blog_bit p		{white-space:pre-wrap;}
+.ep_showlinks	{border-top:1px solid var(--base); padding-top:10px; margin-top:10px;}
+.ep_showlinks a	{display:block; font-size:85%; line-height:1.5em; color:var(--base_cast);}
+.ep_showlinks a:before {content:"⌁"; margin-right:5px; color:var(--base_link_box);}
 
-.show_box			{background-color:#2c1950; margin-top:40px;}
-.show_date			{padding:1em 2em; color:#ccc; text-transform:uppercase;}
-.show_wrap			{background-color:#111;}
+.show_box			{background-color:var(--base_cast_back); margin-top:40px;}
+.show_date			{padding:1em 2em; color:var(--base_cast); text-transform:uppercase;}
+.show_wrap			{background-color:var(--not_black);}
 .show_info			{display:inline-block; vertical-align:top; width:80%;}
 .show_info.source	{width:20%;}
 .show_music			{padding:1em 2em;}
-.show_music span	{display:block;}
+.show_music span	{display:block; color:var(--base_emoji);}
 .show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
-.show_music p:before{display:inline-block; color:#c2a2ff; margin-right:10px; content:"♪";}
+.show_music p:before{display:inline-block; color:var(--base_emoji); margin-right:10px; content:"♪";}
 
-.show_script a		{background-color:#123c3c;}
-.show_script a:hover{background-color:#176565;}
-.show_ogg a			{background-color:#7d510f;}
-.show_ogg a:hover	{background-color:#B26F09;}
+.show_script a		{background-color:var(--base_odt_back);}
+.show_script a:hover{background-color:var(--base_odt_back_alt);}
+.show_ogg a			{background-color:var(--base_ogg_back);}
+.show_ogg a:hover	{background-color:var(--base_ogg_back_alt);}
 .show_ogg a,
-.show_ogg a:hover	{color:#FFEB3B;}
-.show_script a:hover{color:#00ffff;}
+.show_ogg a:hover	{color:var(--base_ogg);}
+.show_script a:hover{color:var(--base_odt);}
 .show_script a,
 .show_ogg a			{display:block; padding:1em; font-size:24px;}
 
@@ -352,7 +391,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 		</ul>
 	</div>
 </div>
-<div class="blog_wrap" style="padding-top:0;">
+<div class="blog_wrap own">
 <!--	<div class="paging_wrap top_paging"><a href="../../blog/2017-03-19-ITStuff080317/">Previous</a>
  <a href="../../blog/2017-05-03-ITStuff030517/">Next</a>
 </div>-->
@@ -368,8 +407,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 
 
-	<div class="blog_bit">
-		<p>Cooking with AI
+	<div class="spacer"></div>
+	<div class="blog_more">
+		<p><b>Our topics include:</b>
+Cooking with AI
 Twitter eggs
 Terror in our electrical devices
 Two drone Pooper scooper
@@ -412,6 +453,10 @@ Bradford Coder Dojo <a href="https://bradford-coderdojo.github.io/">https://brad
 </div>
 		</div>
 	</div>
+	<div class="show_tube"><iframe width="100%" height="420" src="//www.youtube.com/embed/videoseries?list=PL38LwYBtzD1aeL10n7UOfB5cI-RY_SuXU
+
+" frameborder="0" allowfullscreen></iframe>
+</div>
 </div>
 
 
@@ -426,7 +471,7 @@ Bradford Coder Dojo <a href="https://bradford-coderdojo.github.io/">https://brad
 	<ul>
 		<li>Created with <a href="https://xriss.github.io/plated/" class="logo">plated^</a></li>
 		<li><a href="#">^.^</a></li>
-		<li><a href="https://github.com/xriss/gamecake/blob/master/LICENSE">Explaining the good stuff in IT & treating the bad stuff with the cynicism and contempt that it deserves.</a></li>
+		<li><a href="http://www.bcbradio.co.uk/">Broadcast for BCB 106.6 FM, Community Radio station for Bradford.</a></li>
 	</ul>
 </div>
 </body>
