@@ -364,6 +364,7 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 .footer span.tit a:hover{color:var(--base);}
 .footer_1 span			{margin-right:40px;}
 .footer ul.footer_info	{margin-bottom:40px;}
+.footer a img	{margin-top:4px;}
 a.top			{display:block; position:absolute; top:-25px; left:50%; right:50%; font-size:5em; color:var(--base_back_code);}
 a.top:hover		{color:var(--hr);}
 
