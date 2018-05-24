@@ -1,39 +1,29 @@
 #^title trim=ends
-Extras
+Archive
 
 
-#^body
+#^body form=raw
 <div class="blog_wrap">
 	<div class="wrap">
 		<div class="logo">
-			<h1>Extras</h1>
-			<p>
+			<h1>{title}</h1>
 				{extra1}
-			</p>
-			<p>
+			<div class="spacer"></div>
 				{extra2}
-			</p>
-			<p>
+			<div class="spacer"></div>
 				{extra3}
-			</p>
-			<p>
+			<div class="spacer"></div>
 				{extra4}
-			</p>
-			<p>
+			<div class="spacer"></div>
 				{extra5}
-			</p>
-			<p>
+			<div class="spacer"></div>
 				{extra6}
-			</p>
-			<p>
+			<div class="spacer"></div>
 				{extra7}
-			</p>
-			<p>
+			<div class="spacer"></div>
 				{extra8}
-			</p>
-			<p>
+			<div class="spacer"></div>
 				{extra9}
-			</p>
 		</div>
 	</div>
 </div>
@@ -41,14 +31,14 @@ Extras
 #^extra1
 <div class="blog_play">
 	<div class="blog_title">National Media Museum Lates: Interviews by shi</div>
-	<iframe class="archive" src="https://archive.org/embed/NMMLatesMusic-shi" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<iframe class="archive" src="https://archive.org/embed/NMMLatesMusic-shi&playlist=1" width="100%" height="150" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 	<p>Quick and dirty interviews with some of the fantastic exhibitors at the event which took place at Bradford's National Media Museum.</p>
 </div>
 
 #^extra2
 <div class="blog_play">
 	<div class="blog_title">Leeds Hack 2015 by Brian Ackroyd</div>
-	<iframe class="archive" src="https://archive.org/embed/LeedsHack2015-BrianAckroyd" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<iframe class="archive" src="https://archive.org/embed/LeedsHack2015-BrianAckroyd&playlist=1" width="100%" height="230" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 	<p>Interviews with the hackers and participants at Leeds Hack 2015 by our roving reporter, Brian Ackroyd for IT Stuff.</p>
 </div>
 
@@ -69,35 +59,35 @@ Extras
 #^extra5
 <div class="blog_play">
 	<div class="blog_title">2016 Playlist</div>
-	<iframe class="archive" src="https://archive.org/embed/ITStuff2016" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff2016&playlist=1" width="100%" height="280" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 	<p>All the episodes up till the latest month, broadcast within the year 2016.</p>
 </div>
 
 #^extra6
 <div class="blog_play">
 	<div class="blog_title">2015 Playlist</div>
-	<iframe class="archive" src="https://archive.org/embed/ITStuff2015" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff2015&playlist=1" width="100%" height="230" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 	<p>All the episodes up till the latest month, broadcast within the year 2015.</p>
 </div>
 
 #^extra7
 <div class="blog_play">
 	<div class="blog_title">2014 Playlist</div>
-	<iframe class="archive" src="https://archive.org/embed/ITStuff2014MayPod" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff2014MayPod&playlist=1" width="100%" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 	<p>All the episodes up till the latest month, broadcast within the year 2014.</p>
 </div>
 
 #^extra8
 <div class="blog_play">
 	<div class="blog_title">2013 Playlist</div>
-	<iframe class="archive" src="https://archive.org/embed/ITStuff2013" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff2013&playlist=1" width="100%" height="120" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 	<p>All the episodes available for the year 2013. This is incomplete. If anyone has recordings for the missing months, do get in touch!</p>
 </div>
 
 #^extra9
 <div class="blog_play">
 	<div class="blog_title">Xtras by Brian Ackroyd</div>
-	<iframe class="archive" src="https://archive.org/embed/XtrasByBrianAckroyd" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<iframe class="archive" src="https://archive.org/embed/XtrasByBrianAckroyd&playlist=1" width="100%" height="200" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 	<p>A collection of special bits for IT Stuff, courtesy of our own roving reporter, Brian Ackroyd.</p>
 </div>
 
@@ -106,7 +96,8 @@ Extras
 
 
 #^css same=append
-body		{background-color:#111;}
-.blog_play	{padding:2em; margin:0 auto; border-radius:0 0 18px 18px; border:0px double var(--base_back_alt);}
+body		{background-color:#111; background:url(/data/back04.jpg) no-repeat center center; background-size:cover; background-attachment:fixed;}
+.blog_play	{padding:2em; margin:0 auto; border-radius:0 0 18px 18px; border:0px double var(--base_back_alt); margin-top:3em;}
 .blog_title	{color:var(--white); font-size:2em;}
 .logo p		{margin-top:30px; margin-bottom:10px; font-size:1.5em;}
+.spacer:before	{margin-top:30px; padding:0;}

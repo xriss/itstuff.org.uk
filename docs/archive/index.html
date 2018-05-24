@@ -1,5 +1,5 @@
 <html>
-<head><title>Episode 020518</title>
+<head><title>Archive</title>
 <meta name="theme-color" content="#2a3133">
 <meta name="google-site-verification" content="wwHX7osRtV4Bkz8EpOeWaTCr4dYo8jgNqCFC-oCTCGs" />
 <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
@@ -111,7 +111,7 @@ body, html	{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscal
 
 */
 
-body 	{background-color:var(--base_back); color:var(--base_font); display:flex; flex-direction:column; font-family:"Rubik",Arial,sans-serif; font-size:13px; line-height:18px; position:relative; padding-top:4em;}
+body 	{background-color:var(--base_back); color:var(--base_font); display:flex; flex-direction:column; font-family:"Rubik",Arial,sans-serif; font-size:13px; line-height:18px; position:relative; padding-top:4em; scroll-behavior:smooth;}
 
 a		{-webkit-transition:all .2s ease-in-out; -moz-transition:all .2s ease-in-out; -o-transition:all .2s ease-in-out; -ms-transition:all .2s ease-in-out; transition:all .2s ease-in-out;}
 
@@ -128,6 +128,7 @@ h5 		{font-size:14px;}
 h6 		{font-size:13px;}
 
 b		{font-weight:bold;}
+i		{font-style:italic;}
 p 		{font-size:22px; line-height:34px; margin-bottom:34px;}
 
 strong	{font-weight:bold;}
@@ -156,15 +157,18 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	
 	content			|	Flex = *
 	default 		|	Clean default div, used only in Docs body
+	wrap			|	Landing page main wrapper
 	nav_wrap 		|	Navigation bar for entire site
+	play_wrap		|	Latest show wrapper
 	right 			|	Class for text-align right
 
 */
 
 .content	{flex:1 0 auto;}
 .default	{margin:0 auto;}
-.land_wrap	{position:relative; margin:0 auto; width:860px;}
+.wrap		{position:relative; margin:0 auto; width:860px;}
 .nav_wrap	{background-color:var(--base_back); left:0; padding:1.5em 3em; position:fixed; top:0; width:100%; z-index:100;}
+.play_wrap	{width:fit-content; margin:0 auto;}
 .right		{text-align:right;}
 
 
@@ -193,15 +197,33 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	
 	'Patua One' is only used here - @import found in ^.html
 	
-	logo	 		|	Splash page logo
-	logo p	 		|	Splash page about div
-	nav a.logo 		|	Logo in navigation bar
+	logo	 		|	Adds colour and style to this style
+						Currently used in footer and page titles
+						Footer - plated^
+						Pages  - Landing, About, Archive
+	logo h1			|	Page titles are large
+	logo p	 		|	Adds colour and style to paragraph
 	
 */
 
-.logo		{color:var(--base_link_box); font-family:"Rubik",Arial,sans-serif; margin-top:4em;}
+.logo		{color:var(--base_link_box); font-family:"Rubik",Arial,sans-serif; margin-top:3em;}
 .logo h1	{font-size:4em; margin-bottom:0.5em; font-weight:900;}
 .logo p		{color:var(--white); font-size:2em; line-height:1.2em;}
+
+
+/*	
+
+	Landing page:
+	
+	Front page natter
+	
+	listen_tit	 	|	Header for latest show
+	listen_date	 	|	Broadcast date in header
+	
+*/
+
+.listen_tit	{position:relative; margin:0 auto; margin-top:3.5em; width:960px; padding:10px 20px; background-color:var(--base_alt); color:var(--base_ogg_back); font-weight:900; text-transform:uppercase;}
+.listen_tit span.listen_date	{position:absolute; right:20px;}
 
 
 /*	
@@ -210,8 +232,10 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	
 	True representation of the actual crew
 	
-	block	 		|	default size
-	.name	 		|	peeps
+	presenter		|	wrapper for each presenter
+	block	 		|	default size for each pixel avatar
+	name	 		|	names of peeps
+	twit			|	twitter links
 	
 */
 
@@ -238,17 +262,23 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 	blog_info 		|	Blog author & date info
 	blog_title		|	Large episode number
 	blog_play		|	Wrapper for ep number and archive.org embed
+	
 	blog_wrap 		|	Wrapper for a blog post
 	blog_wrap a		|	Fix long urls with these rules
 	blog_wrap h2	|	Large text like landing page
 	blog_wrap.pod	|	Wrapper for posts in episode list
 	blog_wrap.own	|	Wrapper for post in own page
-	paging_wrap		|	Wrapper for paging links
+	
 	spacer			|	Emoji seperator between sections
 	blog_bit		|	Blog text visible in episode list
 	blog_more		|	Blog text that are hidden under the fold
-	gwan_wrap		|	Wrapper for 'Go on' link
-	a.gwan			|	Link to episode own page
+	first-letter	|	First letter of paragraph stylings
+	
+	read_wrap		|	Wrapper for 'Read on' link
+	a.read			|	Link to episode own page
+	
+	paging_wrap		|	Wrapper for paging links
+	top_paging		|	Paging options on top of site (currently hidden)
 	
 */
 
@@ -256,10 +286,10 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .blog_info		{font-size:70%; position:absolute; right:0; top:0;}
 .blog_info a	{display:block;}
 .blog_info a:before {content:"🍙"; color:var(--base_cast); margin-right:5px;}
-.blog_title		{font-size:4em; line-height:1em; text-transform:uppercase; padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_title		{font-size:4em; line-height:1em; text-transform:uppercase; padding:10px 20px; margin:0 auto; margin-bottom:30px; text-align:center;}
 .blog_title:nth-of-type(2) {margin-top:30px;}
 .blog_title:before {content:"👻"; color:var(--base_link_box); margin-right:10px;}
-.blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:var(--black);}
+.blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:var(--black); border:3px double var(--hr); border-bottom:0; border-left:0; border-right:0;}
 
 .blog_wrap		{font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
 .blog_wrap h2	{font-family:"Rubik",Arial,sans-serif; font-size:2.5em; line-height:1em; padding-bottom:1em;}
@@ -284,15 +314,15 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .blog_more p	{font-size:90%; line-height:28px;}
 .blog_more p b	{font-size:1.2em; color:var(--base_link_box); text-transform:uppercase; font-weight:normal;}
 /*.blog_more p b:before {content:"🌠"; margin-right:10px; color:var(--base_emoji);}*/
-
 .blog_bit p:first-of-type::first-letter {font-weight:900; border:1px dotted var(--base_link_box); padding:5px 10px; margin-right:5px; font-family:"Patua One",georgia,serif; background-color:var(--not_black);}
 
-.gwan_wrap		{text-align:center; padding:0; border:0;}
-a.gwan			{display:inline-block; background-color:var(--base_link_box); padding:0 20px; border-radius:0 0 4px 4px; color:var(--base_back); text-align:center; margin:0 auto;}
-a.gwan:hover	{background-color:var(--base); color:var(--base_back);}
+.read_wrap		{text-align:center; padding:0; border:0;}
+a.read			{display:inline-block; background-color:var(--base_link_box); padding:0 20px; border-radius:0 0 4px 4px; color:var(--base_back); text-align:center; margin:0 auto;}
+a.read:hover	{background-color:var(--base); color:var(--base_back);}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em; padding-bottom:2em;}
-.paging_wrap a	{font-size:20px; display:block;}
+.paging_wrap a	{font-size:20px; display:block; color:var(--white);}
+.paging_wrap a:hover	{color:var(--base);}
 .paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
 
@@ -301,11 +331,12 @@ a.gwan:hover	{background-color:var(--base); color:var(--base_back);}
 	Script:
 	
 	script_wrap 	|	Off-white wrapper
+	:before			|	Title of script section
 	span	 		|	Each paragraph will start with a bolder font
 	
 */
 
-.script_wrap		{font-size:16px; line-height:26px; background-color:var(--base_back_script); color:var(--spacer); padding:40px; font-family:georgia,serif; margin:40px 0; white-space:pre-line; word-wrap:break-word; position:relative;}
+.script_wrap		{font-size:16px; line-height:26px; background-color:var(--base_back_script); color:var(--spacer); padding:40px; font-family:georgia,serif; margin:3em 0 2em 0; white-space:pre-line; word-wrap:break-word; position:relative;}
 .script_wrap:before {content:"⌨ Script"; font-family:"Patua One",georgia,serif; position:absolute; top:-10px; background-color:var(--base_link_box); padding:10px 20px; color:var(--white); font-size:20px;}
 .script_wrap span	{font-family:'Patua One',georgia,serif; font-size:18px;}
 
@@ -322,17 +353,25 @@ a.gwan:hover	{background-color:var(--base); color:var(--base_back);}
 	to smaller than their content's default minimum size.
 	
 	footer	 		|	Flex = *
-	footer ul 		|	Footer links
+	footer ul 		|	Wrapper for individual footer links
+	footer li span	|	Content rows per column
+	tit				|	Title of each column
+	footer_1		|	First column
+	footer_info		|	Top footer section (What is IT STUFF? / Info)
+	top				|	A triangle link to the top of the page
 	
 */
 
-.footer			{flex-shrink:0; padding:4em; background:url(/data/back02.jpg) no-repeat center center; background-size:cover; margin-top:4em;}
+.footer			{flex-shrink:0; padding:4em; background:url(/data/back02.jpg) no-repeat center center; background-size:cover; margin-top:6em; border:3px double var(--hr); border-bottom:0; border-left:0; border-right:0; position:relative;}
 .footer ul		{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; width:1024px; margin:0 auto;}
 .footer li span {display:block; font-size:18px; line-height:24px;}
 .footer span.tit{text-transform:uppercase; border-bottom:1px solid; padding-bottom:10px; margin-bottom:10px;}
+.footer span.tit a		{font-weight:900;}
+.footer span.tit a:hover{color:var(--base);}
 .footer_1 span			{margin-right:40px;}
 .footer ul.footer_info	{margin-bottom:40px;}
-
+a.top			{display:block; position:absolute; top:-25px; left:50%; right:50%; font-size:5em; color:var(--base_back_code);}
+a.top:hover		{color:var(--hr);}
 
 /*
 
@@ -359,175 +398,124 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	
 	.main			{max-width:initial;}
 	.contents		{top:5.5em;}
+	
+	a.read			{font-size:1.75em; padding:20px;}
+	
+	.footer ul		{width:100%;}
+	.footer li span	{font-size:70%;}
+	.footer li.footer_1 span	{margin-bottom:20px; line-height:20px;}
 
 }
-
-.ep_showlinks	{border-top:1px solid var(--base); padding-top:10px; margin-top:10px;}
-.ep_showlinks a	{display:block; font-size:85%; line-height:1.5em; color:var(--base_cast);}
-.ep_showlinks a:before {content:"⌁"; margin-right:5px; color:var(--base_link_box);}
-
-.show_box			{background-color:var(--base_cast_back); margin-top:40px;}
-.show_date			{padding:1em 2em; color:var(--base_cast); text-transform:uppercase;}
-.show_date span		{color:var(--base_link_box);}
-.show_wrap			{background-color:var(--not_black);}
-.show_info			{display:inline-block; vertical-align:top; width:80%;}
-.show_info.source	{width:20%;}
-.show_music			{padding:1em 2em; padding-right:0;}
-.show_music span	{display:block; color:var(--base);}
-.show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
-.show_music p:before{display:inline-block; color:var(--base_emoji); margin-right:10px; content:"♪";}
-
-.show_script a		{background-color:var(--base_odt_back);}
-.show_script a:hover{background-color:var(--base_odt_back_alt);}
-.show_ogg a			{background-color:var(--base_ogg_back);}
-.show_ogg a:hover	{background-color:var(--base_ogg_back_alt);}
-.show_ogg a,
-.show_ogg a:hover	{color:var(--base_ogg);}
-.show_script a:hover{color:var(--base_odt);}
-.show_script a,
-.show_ogg a			{display:block; padding:1em; font-size:24px; background-color:var(--not_black); text-decoration:underline; text-align:center; color:var(--base_link_box); border:1px solid; margin:10px;}
+body		{background-color:#111; background:url(/data/back04.jpg) no-repeat center center; background-size:cover; background-attachment:fixed;}
+.blog_play	{padding:2em; margin:0 auto; border-radius:0 0 18px 18px; border:0px double var(--base_back_alt); margin-top:3em;}
+.blog_title	{color:var(--white); font-size:2em;}
+.logo p		{margin-top:30px; margin-bottom:10px; font-size:1.5em;}
+.spacer:before	{margin-top:30px; padding:0;}
 
 </style></head>
 <body><div class="content"><div class="nav_wrap">
 	<div class="nav">
 		<ul>
-			<li><a href="../../" class="logo">Home</a></li>
+			<li><a href="../">Home</a></li>
 			<li><a href="http://feeds.feedburner.com/itstuffbradford">RSS</a></li>
-			<li><a href="../../about">About</a></li>
-			<li><a href="../../blog">Episodes</a></li>
+			<li><a href="../about">About</a></li>
+			<li><a href="../blog">Episodes</a></li>
 		</ul>
 	</div>
 </div>
-<div class="blog_wrap own">
-<!--	<div class="paging_wrap top_paging"><a href="../../blog/2018-04-04-ITStuff040418/">Previous</a>
- </div>-->
-	
-<div class="blog_play">
-	<div class="blog_title">Episode 020518</div>
-	<iframe class="archive" src="https://archive.org/embed/ITStuff020518" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-</div>
-<div class="blog_bit">
-	<p>Calling all students! If you’re doing an essay about information technology and its role in the modern distopia, well come and have a load of this for free, because we are IT Stuff and that is our mission.</p>
-<p>And the stuff crew with all the stuff are Kriss, Edafe and Shi. </p>
-
-</div>
- 
-
-	<div class="spacer"></div>
-	<div class="blog_more">
-		<p><b>Our topics include:</b> 
-“Do you love reindeer?” &quot;Tofu totebag!&quot;
-TSB Bank down time
-Nintendo Switch hax
-Stack Overflow becomes self aware
-Facebook dating
-Weird billionaire club
-Farewell, Maplin</p>
-<p><a href="https://twitter.com/SouthendNewsNet/status/990276339365285889"><img src="maplin.jpg" width="350"></a>
-<em>Photo credit - Southend News Network</em></p>
-<p><b>Youtube of the Month: </b>
-Simone Giertz - I built a Westworld robot and it&#39;s HORRIFIC</p>
-<p><b>World of Stuff: </b>
-Radiooooooooo - pick a station, pick a decade
-Conserve the Sound - an online museum for vanishing and endangered sounds</p>
-<p><b>Singularity Watch </b>
-The RAND corporation says AI could trigger a nuclear apocalypse by 2040
-Bookies using AI to keep people gambling</p>
-<p><b>Local Events </b>
-Badonkadonk next week Weds 9th May upstairs in Turls Green
-Bradford Coder Dojo Saturday 19th May
-Feral Vector <a href="http://feral-vector.com/">http://feral-vector.com/</a> 31st may</p>
-
-		<div class="script_wrap">
-<span>BCB IT Stuff recording 2 May 2018 transmission 3/4 May 2018</span>
-
-<span>[0] Calling all students!</span> If you’re doing an essay about information technology and its role in the modern distopia, well come and have a load of this for free, because we are IT Stuff and that is our mission. And the stuff crew with all the stuff are Kriss Edafe and Shi. Er, in other student news, looks like the brand new Office for Students website has gone live -- and all the text is boilerplate. Oopsie. Instead of Lorem Ipsum it’s weird stuff like “Do you love reindeer?”
-
-<span>[2 Min] Right let’s get on.</span> So what’s in the show today? well in the spirit of the local elections let’s do this democratically. So what we’re looking for is the perfect IT Stuff combo, we want Fail and Funny. So, let’s play Fail and Funny!
-
-TSB Bank down more than a week so far, Fail? Funny? Nintendo Switch Hacked!
-Stack Overflow! Drupal? The RAND corp says AI could trigger a nuclear apocalypse by 2040! Bookies using AI to keep people gambling! PC Recycler gets 15 months in prison for selling Windows restore disks! Billy Mitchell the Donkey Kong guy banned for cheating!
-Hackers stole a casino’s database through the fishtank in the lobby? “hacked via a thermometer in an aquarium in the lobby. The attackers used that to get a foothold in the network They then found the high-roller database and then pulled that back across the network, out the thermostat, and up to the cloud." [ding!] Steam Spy shutting down
-Fail & Funny, let’s try the weird billionaire club. Jeff Bezos and the weird meetings at Amazon? Elon Musk boring for cyclists? What’s Zuck been up to? Zucky Cushion? Facebook Hate Speech button! Facebook Dating! 
-
-<span>[12 Min] If you thought Facebook was bad, </span>how about the story of how the cops made an arrest in the case of the Golden State Killer after 30 years. They uploaded the DNA profile to a commercial geneology site which offers to match you up with people you might be related to... and bingo! a match with someone researching her family tree, so they looked at her family tree to find people of the right age in the right place, and went round this guy’s house, and snatched his dna from something like a fag end or a plastic cup in his rubbish, and now he’s been arrested for a dozen murders 45 rapes and 120 burglaries. Except this was the second attempt, it turns out they previously put some other innocent old guy through hell before clearing him. So do we think GEDmatch’s privacy policy is GDPR compliant?
-
-<span>[14 Min] You're listening to IT Stuff here on BCB Radio,</span> and if you haven’t turned off yet, congratulations on your high pain threshold. Or you might be deaf, that’s good too. Let’s get on!
-
-<span>[15 Min] WORLD OF STUFF</span> http://radiooooo.com/
-
-<span>[20 Min] YOUPOOP</span> https://www.youtube.com/watch?v=_u9jjcbgMpk
-
-<span>[22 Min] Local Events</span>
-badonkadonk next week Weds 9th May upstairs in Turls Green; and Coder Dojo  Saturday 19th May (update yer website! https://bradford-coderdojo.github.io/) blog from the last session ;) Feral Vector http://feral-vector.com/ 31st may
-
-<span>[25 Min] So at the end of the show</span> let’s say farewell to this month’s defunct stuff, Maplin we’ll miss you, and the Windows stuff that’s being killed off in the new Windows 10 release - homegroups, phone companion, help viewer and Groove Music :(
-
-<span>Musicstuffs</span>
+<div class="blog_wrap">
+	<div class="wrap">
+		<div class="logo">
+			<h1>Archive</h1>
+				<div class="blog_play">
+	<div class="blog_title">National Media Museum Lates: Interviews by shi</div>
+	<iframe class="archive" src="https://archive.org/embed/NMMLatesMusic-shi&playlist=1" width="100%" height="150" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<p>Quick and dirty interviews with some of the fantastic exhibitors at the event which took place at Bradford's National Media Museum.</p>
 </div>
 
-		<div class="ep_links">
-	<span>Links</span>
-	<div class="ep_showlinks"><a href="https://bradford-coderdojo.github.io">Bradford Coder Dojo</a>
-<a href="https://www.theregister.co.uk/2018/04/24/ai_nuclear_war/">New US RAND report predicts a grim technological future</a>
-<a href="http://www.conservethesound.de/en/">Conserve the Sound</a>
-<a href="http://radiooooo.com/">Radiooooo</a>
-<a href="https://fail0verflow.com/blog/2018/shofel2/">Nintendo Switch hacked</a>
-
-</div>
+			<div class="spacer"></div>
+				<div class="blog_play">
+	<div class="blog_title">Leeds Hack 2015 by Brian Ackroyd</div>
+	<iframe class="archive" src="https://archive.org/embed/LeedsHack2015-BrianAckroyd&playlist=1" width="100%" height="230" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<p>Interviews with the hackers and participants at Leeds Hack 2015 by our roving reporter, Brian Ackroyd for IT Stuff.</p>
 </div>
 
-		<div class="show_box">
-	<div class="show_date"><span>Broadcast</span> 3rd & 4th May 2018
-
-
-</div>
-	<div class="show_wrap">
-		<div class="show_info music_wrap">
-			<div class="show_music">
-	<span>End Music</span>
-	<p>????? by ???</p>
-
+			<div class="spacer"></div>
+				<div class="blog_play">
+	<div class="blog_title">BCB Interview with Dave Spencer</div>
+	<iframe class="archive" src="https://archive.org/embed/BCBInterviewDaveSpencer" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<p>Listen in as Dave Spencer reveals all in this public service announcement on the recent Windows 10. A special interview by BCB Radio 106.6 FM, August 2015. On loop! Well, kinda.</p>
 </div>
 
-		</div><div class="show_info source">
-			<div class="show_script"><a href="https://github.com/meatstuff/itstuff/blob/master/odt/2018/itstuff020518.odt
-">script</a>
+			<div class="spacer"></div>
+				<div class="blog_play">
+	<div class="blog_title">Drive Time Interview with shi</div>
+	<iframe class="archive" src="https://archive.org/embed/DriveTimeInterviewWithShi" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<p>shi gets a surprise interview for the Drive Time show broadcast on BCB Radio 106.6 FM, July 2014. May or may not include pantomime. Bring peanuts.</p>
 </div>
-			<div class="show_ogg"><a href="https://ia601506.us.archive.org/34/items/ITStuff020518/itstuff020518.ogg">ogg</a>
 
+			<div class="spacer"></div>
+				<div class="blog_play">
+	<div class="blog_title">2016 Playlist</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff2016&playlist=1" width="100%" height="280" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<p>All the episodes up till the latest month, broadcast within the year 2016.</p>
 </div>
+
+			<div class="spacer"></div>
+				<div class="blog_play">
+	<div class="blog_title">2015 Playlist</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff2015&playlist=1" width="100%" height="230" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<p>All the episodes up till the latest month, broadcast within the year 2015.</p>
+</div>
+
+			<div class="spacer"></div>
+				<div class="blog_play">
+	<div class="blog_title">2014 Playlist</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff2014MayPod&playlist=1" width="100%" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<p>All the episodes up till the latest month, broadcast within the year 2014.</p>
+</div>
+
+			<div class="spacer"></div>
+				<div class="blog_play">
+	<div class="blog_title">2013 Playlist</div>
+	<iframe class="archive" src="https://archive.org/embed/ITStuff2013&playlist=1" width="100%" height="120" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<p>All the episodes available for the year 2013. This is incomplete. If anyone has recordings for the missing months, do get in touch!</p>
+</div>
+
+			<div class="spacer"></div>
+				<div class="blog_play">
+	<div class="blog_title">Xtras by Brian Ackroyd</div>
+	<iframe class="archive" src="https://archive.org/embed/XtrasByBrianAckroyd&playlist=1" width="100%" height="200" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<p>A collection of special bits for IT Stuff, courtesy of our own roving reporter, Brian Ackroyd.</p>
+</div>
+
+
+
+
+
 		</div>
 	</div>
-	<div class="show_tube">
-</div>
 </div>
-
-
-	</div>
-	<div class="paging_wrap"><a href="../../blog/2018-04-04-ITStuff040418/">Previous</a>
- </div>
-</div>
-
 </div>
 <div class="footer">
+	<a href="#" class="top">⏶</a>
 	<ul class="footer_info">
 		<li class="footer_1">
-			<span class="tit">What is IT STUFF?</span>
+			<span class="tit">What is <a href="../">IT STUFF</a>?</span>
 			<span>Your monthly tech comedy broadcast is presented by David, shi, Edafe, Kriss & Dick.</span>
-			<span>Listen live on BCB Radio (106.6 FM) every 4 weeks on Thursday, 6:00pm - 6:30pm GMT.</span>
+			<span>Listen <i>live</i> on BCB Radio (106.6 FM) every 4 weeks on Thursday, 6:00pm - 6:30pm GMT.</span>
 			<span>Repeated the next day on Friday at 1:30pm - 2:00pm GMT.</span>
 		</li>
 		<li>
 			<span class="tit">Info</span>
 			<span><a href="http://feeds.feedburner.com/itstuffbradford">Subscribe (RSS)</a></span>
-			<span><a href="../../blog">Episodes</a></span>
-			<span><a href="../../about">About</a></span>
+			<span><a href="../blog">Episodes</a></span>
+			<span><a href="../archive">Archive</a></span>
+			<span><a href="../about">About</a></span>
 		</li>
 	</ul>
 	<ul>
 		<li>Created with <a href="https://xriss.github.io/plated/" class="logo">plated^</a></li>
-		<li><a href="#">^.^</a></li>
 		<li><a href="http://www.bcbradio.co.uk/">Broadcast for BCB 106.6 FM, Community Radio station for Bradford.</a></li>
 	</ul>
 </div>

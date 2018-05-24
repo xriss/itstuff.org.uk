@@ -111,7 +111,7 @@ body, html	{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscal
 
 */
 
-body 	{background-color:var(--base_back); color:var(--base_font); display:flex; flex-direction:column; font-family:"Rubik",Arial,sans-serif; font-size:13px; line-height:18px; position:relative; padding-top:4em;}
+body 	{background-color:var(--base_back); color:var(--base_font); display:flex; flex-direction:column; font-family:"Rubik",Arial,sans-serif; font-size:13px; line-height:18px; position:relative; padding-top:4em; scroll-behavior:smooth;}
 
 a		{-webkit-transition:all .2s ease-in-out; -moz-transition:all .2s ease-in-out; -o-transition:all .2s ease-in-out; -ms-transition:all .2s ease-in-out; transition:all .2s ease-in-out;}
 
@@ -197,9 +197,12 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	
 	'Patua One' is only used here - @import found in ^.html
 	
-	logo	 		|	Splash page logo
-	logo p	 		|	Splash page about div
-	nav a.logo 		|	Logo in navigation bar
+	logo	 		|	Adds colour and style to this style
+						Currently used in footer and page titles
+						Footer - plated^
+						Pages  - Landing, About, Archive
+	logo h1			|	Page titles are large
+	logo p	 		|	Adds colour and style to paragraph
 	
 */
 
@@ -259,17 +262,23 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 	blog_info 		|	Blog author & date info
 	blog_title		|	Large episode number
 	blog_play		|	Wrapper for ep number and archive.org embed
+	
 	blog_wrap 		|	Wrapper for a blog post
 	blog_wrap a		|	Fix long urls with these rules
 	blog_wrap h2	|	Large text like landing page
 	blog_wrap.pod	|	Wrapper for posts in episode list
 	blog_wrap.own	|	Wrapper for post in own page
-	paging_wrap		|	Wrapper for paging links
+	
 	spacer			|	Emoji seperator between sections
 	blog_bit		|	Blog text visible in episode list
 	blog_more		|	Blog text that are hidden under the fold
+	first-letter	|	First letter of paragraph stylings
+	
 	read_wrap		|	Wrapper for 'Read on' link
 	a.read			|	Link to episode own page
+	
+	paging_wrap		|	Wrapper for paging links
+	top_paging		|	Paging options on top of site (currently hidden)
 	
 */
 
@@ -305,7 +314,6 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .blog_more p	{font-size:90%; line-height:28px;}
 .blog_more p b	{font-size:1.2em; color:var(--base_link_box); text-transform:uppercase; font-weight:normal;}
 /*.blog_more p b:before {content:"🌠"; margin-right:10px; color:var(--base_emoji);}*/
-
 .blog_bit p:first-of-type::first-letter {font-weight:900; border:1px dotted var(--base_link_box); padding:5px 10px; margin-right:5px; font-family:"Patua One",georgia,serif; background-color:var(--not_black);}
 
 .read_wrap		{text-align:center; padding:0; border:0;}
@@ -323,11 +331,12 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 	Script:
 	
 	script_wrap 	|	Off-white wrapper
+	:before			|	Title of script section
 	span	 		|	Each paragraph will start with a bolder font
 	
 */
 
-.script_wrap		{font-size:16px; line-height:26px; background-color:var(--base_back_script); color:var(--spacer); padding:40px; font-family:georgia,serif; margin:40px 0; white-space:pre-line; word-wrap:break-word; position:relative;}
+.script_wrap		{font-size:16px; line-height:26px; background-color:var(--base_back_script); color:var(--spacer); padding:40px; font-family:georgia,serif; margin:3em 0 2em 0; white-space:pre-line; word-wrap:break-word; position:relative;}
 .script_wrap:before {content:"⌨ Script"; font-family:"Patua One",georgia,serif; position:absolute; top:-10px; background-color:var(--base_link_box); padding:10px 20px; color:var(--white); font-size:20px;}
 .script_wrap span	{font-family:'Patua One',georgia,serif; font-size:18px;}
 
@@ -344,11 +353,16 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 	to smaller than their content's default minimum size.
 	
 	footer	 		|	Flex = *
-	footer ul 		|	Footer links
+	footer ul 		|	Wrapper for individual footer links
+	footer li span	|	Content rows per column
+	tit				|	Title of each column
+	footer_1		|	First column
+	footer_info		|	Top footer section (What is IT STUFF? / Info)
+	top				|	A triangle link to the top of the page
 	
 */
 
-.footer			{flex-shrink:0; padding:4em; background:url(/data/back02.jpg) no-repeat center center; background-size:cover; margin-top:6em; border:3px double var(--hr); border-bottom:0; border-left:0; border-right:0;}
+.footer			{flex-shrink:0; padding:4em; background:url(/data/back02.jpg) no-repeat center center; background-size:cover; margin-top:6em; border:3px double var(--hr); border-bottom:0; border-left:0; border-right:0; position:relative;}
 .footer ul		{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; width:1024px; margin:0 auto;}
 .footer li span {display:block; font-size:18px; line-height:24px;}
 .footer span.tit{text-transform:uppercase; border-bottom:1px solid; padding-bottom:10px; margin-bottom:10px;}
@@ -356,7 +370,8 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 .footer span.tit a:hover{color:var(--base);}
 .footer_1 span			{margin-right:40px;}
 .footer ul.footer_info	{margin-bottom:40px;}
-a.top			{font-size:2em;}
+a.top			{display:block; position:absolute; top:-25px; left:50%; right:50%; font-size:5em; color:var(--base_back_code);}
+a.top:hover		{color:var(--hr);}
 
 /*
 
@@ -432,16 +447,18 @@ only screen and (min-device-pixel-ratio: 1.5) {
 <!--	<div class="paging_wrap top_paging"><a href="../../blog/2014-01-18-Jan2014/">Previous</a>
  <a href="../../blog/2014-03-16-Mar2014/">Next</a>
 </div>-->
-	
-<div class="blog_play">
+	<div class="blog_play">
 	<div class="blog_title">Episode February 2014</div>
 	<iframe class="archive" src="https://archive.org/embed/ITStuff2014MayPod/ITStuff-2014-Feb-pod.ogg" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 </div>
+
 <div class="blog_bit">
 	<p>Today&#39;s show talks about the Year of Code, the humourless antics of the Department of Work &amp; Pensions and more government-related hullabaloo and the dangers of copycat sites, family filters that are doing none of us any good, spooks, spooks, spooks, the case of the missing Flappy Bird, support for the end of support for Windows XP and finally, inappropriate recommendations.</p>
 
 </div>
 
+
+
 
 
 	<div class="spacer"></div>
@@ -484,6 +501,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 </div>
 <div class="footer">
+	<a href="#" class="top">⏶</a>
 	<ul class="footer_info">
 		<li class="footer_1">
 			<span class="tit">What is <a href="../../">IT STUFF</a>?</span>
@@ -495,12 +513,12 @@ only screen and (min-device-pixel-ratio: 1.5) {
 			<span class="tit">Info</span>
 			<span><a href="http://feeds.feedburner.com/itstuffbradford">Subscribe (RSS)</a></span>
 			<span><a href="../../blog">Episodes</a></span>
+			<span><a href="../../archive">Archive</a></span>
 			<span><a href="../../about">About</a></span>
 		</li>
 	</ul>
 	<ul>
 		<li>Created with <a href="https://xriss.github.io/plated/" class="logo">plated^</a></li>
-		<li><a href="#" class="top">⏶</a></li>
 		<li><a href="http://www.bcbradio.co.uk/">Broadcast for BCB 106.6 FM, Community Radio station for Bradford.</a></li>
 	</ul>
 </div>
