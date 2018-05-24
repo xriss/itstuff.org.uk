@@ -46,8 +46,8 @@ IT Stuff - That's some good stuff!
 #^_blog_post_body_many
 <div class="blog_wrap pod">
 	{_blog_post_body}
-	<div class="blog_bit gwan_wrap">
-		<a href="{_dirname}" class="gwan">Go on</a><div class="blog_info">Installed by {_blog_post_json.author} on {_blog_post_json.datedash}</div>
+	<div class="blog_bit read_wrap">
+		<a href="{_dirname}" class="read">Read on</a><div class="blog_info">Installed by {_blog_post_json.author} on {_blog_post_json.datedash}</div>
 	</div>
 </div>
 
@@ -74,6 +74,9 @@ IT Stuff - That's some good stuff!
 	<span>End Music</span>
 	{music_name||}
 </div>
+<div class="show_info music_wrap">
+	{showmusic||}
+</div>
 
 #^showogg 
 {ogg_podcast||}
@@ -87,15 +90,14 @@ IT Stuff - That's some good stuff!
 #^showbox
 <div class="show_box">
 	<div class="show_date">{showdate||}</div>
+	<div class="show_tube">{showtube||}</div>
 	<div class="show_wrap">
-		<div class="show_info music_wrap">
-			{showmusic||}
-		</div><div class="show_info source">
+		<div class="show_info">
 			<div class="show_script">{showscript||}</div>
+		</div><div class="show_info">
 			<div class="show_ogg">{showogg||}</div>
 		</div>
 	</div>
-	<div class="show_tube">{showtube||}</div>
 </div>
 
 
@@ -106,12 +108,13 @@ IT Stuff - That's some good stuff!
 .ep_showlinks a:before {content:"⌁"; margin-right:5px; color:var(--base_link_box);}
 
 .show_box			{background-color:var(--base_cast_back); margin-top:40px;}
-.show_date			{padding:1em 2em; color:var(--base_cast); text-transform:uppercase;}
+.show_date			{padding:1em 2em; color:var(--base_cast); text-transform:uppercase; text-align:center;}
+.show_date span		{color:var(--base_link_box);}
 .show_wrap			{background-color:var(--not_black);}
-.show_info			{display:inline-block; vertical-align:top; width:80%;}
+.show_info			{display:inline-block; vertical-align:top; width:50%;}
 .show_info.source	{width:20%;}
-.show_music			{padding:1em 2em;}
-.show_music span	{display:block; color:var(--base_emoji);}
+.show_music			{padding:1em 2em; padding-right:0;}
+.show_music span	{display:block; color:var(--base);}
 .show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
 .show_music p:before{display:inline-block; color:var(--base_emoji); margin-right:10px; content:"♪";}
 
@@ -123,4 +126,4 @@ IT Stuff - That's some good stuff!
 .show_ogg a:hover	{color:var(--base_ogg);}
 .show_script a:hover{color:var(--base_odt);}
 .show_script a,
-.show_ogg a			{display:block; padding:1em; font-size:24px;}
+.show_ogg a			{display:block; padding:1em; font-size:24px; background-color:var(--not_black); text-decoration:underline; text-align:center; color:var(--base_link_box); border:1px solid; margin:10px;}

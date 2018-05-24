@@ -32,7 +32,7 @@
 	base_link		- Medium grey		|	Link navigation bar
 	base_code		- White				|	Code font
 	
-	base_cast_back	- Dark purple		|	Broadcast date background
+	base_cast_back	- Black				|	Broadcast date background
 	base_cast		- Grey				|	Broadcast date font
 	base_odt_back	- Vary dark cyan	|	Script download background
 	base_odt_back_alt	- Dark cyan		|	Background hover
@@ -69,7 +69,7 @@
   --base_link:#9a9a9a;
   --base_code:#fff;
 
-  --base_cast_back:#2c1950;
+  --base_cast_back:#000;
   --base_cast:#ccc;
   --base_odt_back:#123c3c;
   --base_odt_back_alt:#176565;
@@ -199,8 +199,9 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	
 */
 
-.logo		{color:var(--base); font-family:"Rubik",Arial,sans-serif;}
-.logo p		{color:var(--white); font-size:2em; line-height:1.05em;}
+.logo		{color:var(--base_link_box); font-family:"Rubik",Arial,sans-serif; margin-top:4em;}
+.logo h1	{font-size:4em; margin-bottom:0.5em; font-weight:900;}
+.logo p		{color:var(--white); font-size:2em; line-height:1.2em;}
 
 
 /*	
@@ -214,7 +215,7 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	
 */
 
-.presenter		{display:inline-block; vertical-align:top; text-align:center; margin-bottom:3em;}
+.presenter		{display:inline-block; vertical-align:top; text-align:center; margin-bottom:1em; margin-top:2em;}
 .name			{color:#fff; padding:10px 0 0 0;}
 a.twit			{display:block; color:#398A2A; font-size:0.8em; line-height:1em;}
 a.twit:hover	{text-decoration:none; color:#00ff00;}
@@ -255,7 +256,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .blog_info		{font-size:70%; position:absolute; right:0; top:0;}
 .blog_info a	{display:block;}
 .blog_info a:before {content:"🍙"; color:var(--base_cast); margin-right:5px;}
-.blog_title		{font-size:3em; line-height:1em; text-transform:uppercase; padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_title		{font-size:4em; line-height:1em; text-transform:uppercase; padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
 .blog_title:nth-of-type(2) {margin-top:30px;}
 .blog_title:before {content:"👻"; color:var(--base_link_box); margin-right:10px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:var(--black);}
@@ -279,9 +280,10 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .blog_more		{padding:40px;}
 .blog_bit p,
 .blog_more p	{white-space:pre-wrap;}
+.blog_bit p		{font-size:30px; line-height:38px;}
 .blog_more p	{font-size:90%; line-height:28px;}
-.blog_more p b	{font-size:1.2em; color:var(--base_alt);}
-.blog_more p b:before {content:"🌠"; margin-right:10px; color:var(--base_emoji);}
+.blog_more p b	{font-size:1.2em; color:var(--base_link_box); text-transform:uppercase; font-weight:normal;}
+/*.blog_more p b:before {content:"🌠"; margin-right:10px; color:var(--base_emoji);}*/
 
 .blog_bit p:first-of-type::first-letter {font-weight:900; border:1px dotted var(--base_link_box); padding:5px 10px; margin-right:5px; font-family:"Patua One",georgia,serif; background-color:var(--not_black);}
 
@@ -324,8 +326,12 @@ a.gwan:hover	{background-color:var(--base); color:var(--base_back);}
 	
 */
 
-.footer			{flex-shrink:0; padding:2em 4em;}
-.footer ul		{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; width:100%;}
+.footer			{flex-shrink:0; padding:4em; background:url(/data/back02.jpg) no-repeat center center; background-size:cover; margin-top:4em;}
+.footer ul		{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; width:1024px; margin:0 auto;}
+.footer li span {display:block; font-size:18px; line-height:24px;}
+.footer span.tit{text-transform:uppercase; border-bottom:1px solid; padding-bottom:10px; margin-bottom:10px;}
+.footer_1 span			{margin-right:40px;}
+.footer ul.footer_info	{margin-bottom:40px;}
 
 
 /*
@@ -362,11 +368,12 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 .show_box			{background-color:var(--base_cast_back); margin-top:40px;}
 .show_date			{padding:1em 2em; color:var(--base_cast); text-transform:uppercase;}
+.show_date span		{color:var(--base_link_box);}
 .show_wrap			{background-color:var(--not_black);}
 .show_info			{display:inline-block; vertical-align:top; width:80%;}
 .show_info.source	{width:20%;}
-.show_music			{padding:1em 2em;}
-.show_music span	{display:block; color:var(--base_emoji);}
+.show_music			{padding:1em 2em; padding-right:0;}
+.show_music span	{display:block; color:var(--base);}
 .show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
 .show_music p:before{display:inline-block; color:var(--base_emoji); margin-right:10px; content:"♪";}
 
@@ -378,7 +385,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .show_ogg a:hover	{color:var(--base_ogg);}
 .show_script a:hover{color:var(--base_odt);}
 .show_script a,
-.show_ogg a			{display:block; padding:1em; font-size:24px;}
+.show_ogg a			{display:block; padding:1em; font-size:24px; background-color:var(--not_black); text-decoration:underline; text-align:center; color:var(--base_link_box); border:1px solid; margin:10px;}
 
 </style></head>
 <body><div class="content"><div class="nav_wrap">
@@ -416,7 +423,7 @@ Stack Overflow becomes self aware
 Facebook dating
 Weird billionaire club
 Farewell, Maplin</p>
-<p><a href="https://twitter.com/SouthendNewsNet/status/990276339365285889"><img src="maplin.jpg"></a>
+<p><a href="https://twitter.com/SouthendNewsNet/status/990276339365285889"><img src="maplin.jpg" width="350"></a>
 <em>Photo credit - Southend News Network</em></p>
 <p><b>Youtube of the Month: </b>
 Simone Giertz - I built a Westworld robot and it&#39;s HORRIFIC</p>
@@ -431,7 +438,34 @@ Badonkadonk next week Weds 9th May upstairs in Turls Green
 Bradford Coder Dojo Saturday 19th May
 Feral Vector <a href="http://feral-vector.com/">http://feral-vector.com/</a> 31st may</p>
 
-		
+		<div class="script_wrap">
+<span>BCB IT Stuff recording 2 May 2018 transmission 3/4 May 2018</span>
+
+<span>[0] Calling all students!</span> If you’re doing an essay about information technology and its role in the modern distopia, well come and have a load of this for free, because we are IT Stuff and that is our mission. And the stuff crew with all the stuff are Kriss Edafe and Shi. Er, in other student news, looks like the brand new Office for Students website has gone live -- and all the text is boilerplate. Oopsie. Instead of Lorem Ipsum it’s weird stuff like “Do you love reindeer?”
+
+<span>[2 Min] Right let’s get on.</span> So what’s in the show today? well in the spirit of the local elections let’s do this democratically. So what we’re looking for is the perfect IT Stuff combo, we want Fail and Funny. So, let’s play Fail and Funny!
+
+TSB Bank down more than a week so far, Fail? Funny? Nintendo Switch Hacked!
+Stack Overflow! Drupal? The RAND corp says AI could trigger a nuclear apocalypse by 2040! Bookies using AI to keep people gambling! PC Recycler gets 15 months in prison for selling Windows restore disks! Billy Mitchell the Donkey Kong guy banned for cheating!
+Hackers stole a casino’s database through the fishtank in the lobby? “hacked via a thermometer in an aquarium in the lobby. The attackers used that to get a foothold in the network They then found the high-roller database and then pulled that back across the network, out the thermostat, and up to the cloud." [ding!] Steam Spy shutting down
+Fail & Funny, let’s try the weird billionaire club. Jeff Bezos and the weird meetings at Amazon? Elon Musk boring for cyclists? What’s Zuck been up to? Zucky Cushion? Facebook Hate Speech button! Facebook Dating! 
+
+<span>[12 Min] If you thought Facebook was bad, </span>how about the story of how the cops made an arrest in the case of the Golden State Killer after 30 years. They uploaded the DNA profile to a commercial geneology site which offers to match you up with people you might be related to... and bingo! a match with someone researching her family tree, so they looked at her family tree to find people of the right age in the right place, and went round this guy’s house, and snatched his dna from something like a fag end or a plastic cup in his rubbish, and now he’s been arrested for a dozen murders 45 rapes and 120 burglaries. Except this was the second attempt, it turns out they previously put some other innocent old guy through hell before clearing him. So do we think GEDmatch’s privacy policy is GDPR compliant?
+
+<span>[14 Min] You're listening to IT Stuff here on BCB Radio,</span> and if you haven’t turned off yet, congratulations on your high pain threshold. Or you might be deaf, that’s good too. Let’s get on!
+
+<span>[15 Min] WORLD OF STUFF</span> http://radiooooo.com/
+
+<span>[20 Min] YOUPOOP</span> https://www.youtube.com/watch?v=_u9jjcbgMpk
+
+<span>[22 Min] Local Events</span>
+badonkadonk next week Weds 9th May upstairs in Turls Green; and Coder Dojo  Saturday 19th May (update yer website! https://bradford-coderdojo.github.io/) blog from the last session ;) Feral Vector http://feral-vector.com/ 31st may
+
+<span>[25 Min] So at the end of the show</span> let’s say farewell to this month’s defunct stuff, Maplin we’ll miss you, and the Windows stuff that’s being killed off in the new Windows 10 release - homegroups, phone companion, help viewer and Groove Music :(
+
+<span>Musicstuffs</span>
+</div>
+
 		<div class="ep_links">
 	<span>Links</span>
 	<div class="ep_showlinks"><a href="https://bradford-coderdojo.github.io">Bradford Coder Dojo</a>
@@ -465,7 +499,8 @@ Feral Vector <a href="http://feral-vector.com/">http://feral-vector.com/</a> 31s
 </div>
 		</div>
 	</div>
-	<div class="show_tube"></div>
+	<div class="show_tube">
+</div>
 </div>
 
 
@@ -476,6 +511,20 @@ Feral Vector <a href="http://feral-vector.com/">http://feral-vector.com/</a> 31s
 
 </div>
 <div class="footer">
+	<ul class="footer_info">
+		<li class="footer_1">
+			<span class="tit">What is IT STUFF?</span>
+			<span>Your monthly tech comedy broadcast is presented by David, shi, Edafe, Kriss & Dick.</span>
+			<span>Listen live on BCB Radio (106.6 FM) every 4 weeks on Thursday, 6:00pm - 6:30pm GMT.</span>
+			<span>Repeated the next day on Friday at 1:30pm - 2:00pm GMT.</span>
+		</li>
+		<li>
+			<span class="tit">Info</span>
+			<span><a href="http://feeds.feedburner.com/itstuffbradford">Subscribe (RSS)</a></span>
+			<span><a href="../../blog">Episodes</a></span>
+			<span><a href="../../about">About</a></span>
+		</li>
+	</ul>
 	<ul>
 		<li>Created with <a href="https://xriss.github.io/plated/" class="logo">plated^</a></li>
 		<li><a href="#">^.^</a></li>

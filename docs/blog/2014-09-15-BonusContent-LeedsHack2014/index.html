@@ -32,7 +32,7 @@
 	base_link		- Medium grey		|	Link navigation bar
 	base_code		- White				|	Code font
 	
-	base_cast_back	- Dark purple		|	Broadcast date background
+	base_cast_back	- Black				|	Broadcast date background
 	base_cast		- Grey				|	Broadcast date font
 	base_odt_back	- Vary dark cyan	|	Script download background
 	base_odt_back_alt	- Dark cyan		|	Background hover
@@ -69,7 +69,7 @@
   --base_link:#9a9a9a;
   --base_code:#fff;
 
-  --base_cast_back:#2c1950;
+  --base_cast_back:#000;
   --base_cast:#ccc;
   --base_odt_back:#123c3c;
   --base_odt_back_alt:#176565;
@@ -128,6 +128,7 @@ h5 		{font-size:14px;}
 h6 		{font-size:13px;}
 
 b		{font-weight:bold;}
+i		{font-style:italic;}
 p 		{font-size:22px; line-height:34px; margin-bottom:34px;}
 
 strong	{font-weight:bold;}
@@ -156,15 +157,18 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	
 	content			|	Flex = *
 	default 		|	Clean default div, used only in Docs body
+	wrap			|	Landing page main wrapper
 	nav_wrap 		|	Navigation bar for entire site
+	play_wrap		|	Latest show wrapper
 	right 			|	Class for text-align right
 
 */
 
 .content	{flex:1 0 auto;}
 .default	{margin:0 auto;}
-.land_wrap	{position:relative; margin:0 auto; width:860px;}
+.wrap		{position:relative; margin:0 auto; width:860px;}
 .nav_wrap	{background-color:var(--base_back); left:0; padding:1.5em 3em; position:fixed; top:0; width:100%; z-index:100;}
+.play_wrap	{width:fit-content; margin:0 auto;}
 .right		{text-align:right;}
 
 
@@ -199,8 +203,24 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	
 */
 
-.logo		{color:var(--base); font-family:"Rubik",Arial,sans-serif;}
-.logo p		{color:var(--white); font-size:2em; line-height:1.05em;}
+.logo		{color:var(--base_link_box); font-family:"Rubik",Arial,sans-serif; margin-top:3em;}
+.logo h1	{font-size:4em; margin-bottom:0.5em; font-weight:900;}
+.logo p		{color:var(--white); font-size:2em; line-height:1.2em;}
+
+
+/*	
+
+	Landing page:
+	
+	Front page natter
+	
+	listen_tit	 	|	Header for latest show
+	listen_date	 	|	Broadcast date in header
+	
+*/
+
+.listen_tit	{position:relative; margin:0 auto; margin-top:3.5em; width:960px; padding:10px 20px; background-color:var(--base_alt); color:var(--base_ogg_back); font-weight:900; text-transform:uppercase;}
+.listen_tit span.listen_date	{position:absolute; right:20px;}
 
 
 /*	
@@ -209,12 +229,14 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	
 	True representation of the actual crew
 	
-	block	 		|	default size
-	.name	 		|	peeps
+	presenter		|	wrapper for each presenter
+	block	 		|	default size for each pixel avatar
+	name	 		|	names of peeps
+	twit			|	twitter links
 	
 */
 
-.presenter		{display:inline-block; vertical-align:top; text-align:center; margin-bottom:3em;}
+.presenter		{display:inline-block; vertical-align:top; text-align:center; margin-bottom:1em; margin-top:2em;}
 .name			{color:#fff; padding:10px 0 0 0;}
 a.twit			{display:block; color:#398A2A; font-size:0.8em; line-height:1em;}
 a.twit:hover	{text-decoration:none; color:#00ff00;}
@@ -246,8 +268,8 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 	spacer			|	Emoji seperator between sections
 	blog_bit		|	Blog text visible in episode list
 	blog_more		|	Blog text that are hidden under the fold
-	gwan_wrap		|	Wrapper for 'Go on' link
-	a.gwan			|	Link to episode own page
+	read_wrap		|	Wrapper for 'Read on' link
+	a.read			|	Link to episode own page
 	
 */
 
@@ -255,10 +277,10 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .blog_info		{font-size:70%; position:absolute; right:0; top:0;}
 .blog_info a	{display:block;}
 .blog_info a:before {content:"🍙"; color:var(--base_cast); margin-right:5px;}
-.blog_title		{font-size:3em; line-height:1em; text-transform:uppercase; padding:10px 20px; margin:0 auto; margin-bottom:30px; width:860px;}
+.blog_title		{font-size:4em; line-height:1em; text-transform:uppercase; padding:10px 20px; margin:0 auto; margin-bottom:30px; text-align:center;}
 .blog_title:nth-of-type(2) {margin-top:30px;}
 .blog_title:before {content:"👻"; color:var(--base_link_box); margin-right:10px;}
-.blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:var(--black);}
+.blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:var(--black); border:3px double var(--hr); border-bottom:0; border-left:0; border-right:0;}
 
 .blog_wrap		{font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
 .blog_wrap h2	{font-family:"Rubik",Arial,sans-serif; font-size:2.5em; line-height:1em; padding-bottom:1em;}
@@ -279,18 +301,20 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .blog_more		{padding:40px;}
 .blog_bit p,
 .blog_more p	{white-space:pre-wrap;}
+.blog_bit p		{font-size:30px; line-height:38px;}
 .blog_more p	{font-size:90%; line-height:28px;}
-.blog_more p b	{font-size:1.2em; color:var(--base_alt);}
-.blog_more p b:before {content:"🌠"; margin-right:10px; color:var(--base_emoji);}
+.blog_more p b	{font-size:1.2em; color:var(--base_link_box); text-transform:uppercase; font-weight:normal;}
+/*.blog_more p b:before {content:"🌠"; margin-right:10px; color:var(--base_emoji);}*/
 
 .blog_bit p:first-of-type::first-letter {font-weight:900; border:1px dotted var(--base_link_box); padding:5px 10px; margin-right:5px; font-family:"Patua One",georgia,serif; background-color:var(--not_black);}
 
-.gwan_wrap		{text-align:center; padding:0; border:0;}
-a.gwan			{display:inline-block; background-color:var(--base_link_box); padding:0 20px; border-radius:0 0 4px 4px; color:var(--base_back); text-align:center; margin:0 auto;}
-a.gwan:hover	{background-color:var(--base); color:var(--base_back);}
+.read_wrap		{text-align:center; padding:0; border:0;}
+a.read			{display:inline-block; background-color:var(--base_link_box); padding:0 20px; border-radius:0 0 4px 4px; color:var(--base_back); text-align:center; margin:0 auto;}
+a.read:hover	{background-color:var(--base); color:var(--base_back);}
 
 .paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em; padding-bottom:2em;}
-.paging_wrap a	{font-size:20px; display:block;}
+.paging_wrap a	{font-size:20px; display:block; color:var(--white);}
+.paging_wrap a:hover	{color:var(--base);}
 .paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
 
 
@@ -324,9 +348,15 @@ a.gwan:hover	{background-color:var(--base); color:var(--base_back);}
 	
 */
 
-.footer			{flex-shrink:0; padding:2em 4em;}
-.footer ul		{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; width:100%;}
-
+.footer			{flex-shrink:0; padding:4em; background:url(/data/back02.jpg) no-repeat center center; background-size:cover; margin-top:6em; border:3px double var(--hr); border-bottom:0; border-left:0; border-right:0;}
+.footer ul		{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; width:1024px; margin:0 auto;}
+.footer li span {display:block; font-size:18px; line-height:24px;}
+.footer span.tit{text-transform:uppercase; border-bottom:1px solid; padding-bottom:10px; margin-bottom:10px;}
+.footer span.tit a		{font-weight:900;}
+.footer span.tit a:hover{color:var(--base);}
+.footer_1 span			{margin-right:40px;}
+.footer ul.footer_info	{margin-bottom:40px;}
+a.top			{font-size:2em;}
 
 /*
 
@@ -353,6 +383,12 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	
 	.main			{max-width:initial;}
 	.contents		{top:5.5em;}
+	
+	a.read			{font-size:1.75em; padding:20px;}
+	
+	.footer ul		{width:100%;}
+	.footer li span	{font-size:70%;}
+	.footer li.footer_1 span	{margin-bottom:20px; line-height:20px;}
 
 }
 
@@ -361,12 +397,13 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .ep_showlinks a:before {content:"⌁"; margin-right:5px; color:var(--base_link_box);}
 
 .show_box			{background-color:var(--base_cast_back); margin-top:40px;}
-.show_date			{padding:1em 2em; color:var(--base_cast); text-transform:uppercase;}
+.show_date			{padding:1em 2em; color:var(--base_cast); text-transform:uppercase; text-align:center;}
+.show_date span		{color:var(--base_link_box);}
 .show_wrap			{background-color:var(--not_black);}
-.show_info			{display:inline-block; vertical-align:top; width:80%;}
+.show_info			{display:inline-block; vertical-align:top; width:50%;}
 .show_info.source	{width:20%;}
-.show_music			{padding:1em 2em;}
-.show_music span	{display:block; color:var(--base_emoji);}
+.show_music			{padding:1em 2em; padding-right:0;}
+.show_music span	{display:block; color:var(--base);}
 .show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
 .show_music p:before{display:inline-block; color:var(--base_emoji); margin-right:10px; content:"♪";}
 
@@ -378,13 +415,13 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .show_ogg a:hover	{color:var(--base_ogg);}
 .show_script a:hover{color:var(--base_odt);}
 .show_script a,
-.show_ogg a			{display:block; padding:1em; font-size:24px;}
+.show_ogg a			{display:block; padding:1em; font-size:24px; background-color:var(--not_black); text-decoration:underline; text-align:center; color:var(--base_link_box); border:1px solid; margin:10px;}
 
 </style></head>
 <body><div class="content"><div class="nav_wrap">
 	<div class="nav">
 		<ul>
-			<li><a href="../../" class="logo">Home</a></li>
+			<li><a href="../../">Home</a></li>
 			<li><a href="http://feeds.feedburner.com/itstuffbradford">RSS</a></li>
 			<li><a href="../../about">About</a></li>
 			<li><a href="../../blog">Episodes</a></li>
@@ -419,17 +456,16 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	<div class="show_date"><span>Broadcast</span> 15th September 2014
 
 </div>
+	<div class="show_tube"></div>
 	<div class="show_wrap">
-		<div class="show_info music_wrap">
-			
-		</div><div class="show_info source">
+		<div class="show_info">
 			<div class="show_script"></div>
+		</div><div class="show_info">
 			<div class="show_ogg"><a href="https://ia902303.us.archive.org/28/items/LeedsHack2014-XtrasByBrianAckroyd/LeedsHack2014FullPodcast.ogg">ogg</a>
 
 </div>
 		</div>
 	</div>
-	<div class="show_tube"></div>
 </div>
 
 
@@ -441,9 +477,23 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 </div>
 <div class="footer">
+	<ul class="footer_info">
+		<li class="footer_1">
+			<span class="tit">What is <a href="../../">IT STUFF</a>?</span>
+			<span>Your monthly tech comedy broadcast is presented by David, shi, Edafe, Kriss & Dick.</span>
+			<span>Listen <i>live</i> on BCB Radio (106.6 FM) every 4 weeks on Thursday, 6:00pm - 6:30pm GMT.</span>
+			<span>Repeated the next day on Friday at 1:30pm - 2:00pm GMT.</span>
+		</li>
+		<li>
+			<span class="tit">Info</span>
+			<span><a href="http://feeds.feedburner.com/itstuffbradford">Subscribe (RSS)</a></span>
+			<span><a href="../../blog">Episodes</a></span>
+			<span><a href="../../about">About</a></span>
+		</li>
+	</ul>
 	<ul>
 		<li>Created with <a href="https://xriss.github.io/plated/" class="logo">plated^</a></li>
-		<li><a href="#">^.^</a></li>
+		<li><a href="#" class="top">⏶</a></li>
 		<li><a href="http://www.bcbradio.co.uk/">Broadcast for BCB 106.6 FM, Community Radio station for Bradford.</a></li>
 	</ul>
 </div>

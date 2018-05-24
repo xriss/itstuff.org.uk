@@ -4,41 +4,44 @@ IT STUFF
 
 #^body
 <div class="blog_wrap">
-	<div class="land_wrap">
+	<div class="wrap">
 		<div class="logo">
 			<h1>{title}</h1>
 			<p>
 				Explaining the good stuff in IT & treating the bad stuff with the cynicism and contempt that it deserves.
 			</p>
-			{peeps}
 		</div>
+	</div>
+	{broadcast}
+</div>
+
+
+#^----------------------------------------------------------------------
+
+	Imports blog folder/directory and blogdata can be called *anything*
+		
+#^blogdata import=blog
+
+#^----------------------------------------------------------------------
+
+	Gets a specific chunk from that page; eg. blogdata.cat gets the 'cat' chunk
+	0 means the first post
+	_blog_export means all of the posts from front page of the block
+	
+#^broadcast root=blogdata._blog_export.0
+<div class="play_wrap">
+	<div class="listen_tit">
+		Listen to our latest show <span class="listen_date">{showdate}</span>
+	</div>
+	{blog_play}
+	<div class="blog_bit read_wrap">
+		<a href="{_dirname}" class="read">Read on</a>
 	</div>
 </div>
 
-
-#^peeps
-<div class="presenter">
-	<div class="block dave"></div>
-	<div class="name">Dave</div>
-	<a href="http://twitter.com/idlemoor" class="twit" target="_blank">@idlemoor</a>
-</div><div class="presenter">
-	<div class="block shi"></div>
-	<div class="name">shi</div>
-	<a href="http://twitter.com/shi" class="twit" target="_blank">@shi</a>
-</div><div class="presenter">
-	<div class="block edafe"></div>
-	<div class="name">edafe</div>
-	<a href="http://twitter.com/ekoner" class="twit" target="_blank">@ekoner</a>
-</div><div class="presenter">
-	<div class="block kriss"></div>
-	<div class="name">Kriss</div>
-	<a href="http://twitter.com/wetgenes" class="twit" target="_blank">@wetgenes</a>
-</div><div class="presenter">
-	<div class="block dick"></div>
-	<div class="name">Dick</div>
-	<a href="http://twitter.com/DickWThomas" class="twit" target="_blank">@DickWThomas</a>
-</div>
-
-
 #^css same=append
-body		{background-color:#111;}
+body		{background-color:#111; background:url(/data/back01.jpg) no-repeat center center; background-size:cover; background-attachment:fixed;}
+.blog_wrap	{padding-bottom:6em;}
+.blog_play	{padding:2em; margin:0 auto; border-radius:0 0 18px 18px; border:3px double var(--base_back_alt); border-top:0;}
+.blog_title	{width:820px;}
+a.read		{color:var(--black);}
