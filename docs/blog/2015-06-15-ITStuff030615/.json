@@ -3,7 +3,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -20,6 +25,14 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia601506.us.archive.org/34/items/ITStuff020518/itstuff020518.ogg"
+      }
+     ]
+    },
     "title": "Episode 020518",
     "unixtime": 1525219200
    },
@@ -96,7 +109,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -113,6 +131,14 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia601503.us.archive.org/11/items/ITStuff040418/itstuff040418.ogg"
+      }
+     ]
+    },
     "title": "Episode 040418",
     "unixtime": 1522800000
    },
@@ -190,7 +216,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -207,6 +238,14 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia802803.us.archive.org/7/items/ITStuff070318/itstuff070318.ogg"
+      }
+     ]
+    },
     "title": "Radio Venus Special",
     "unixtime": 1520380800
    },
@@ -284,7 +323,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -301,6 +345,14 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia600108.us.archive.org/14/items/ITStuff070218/itstuff070218.ogg"
+      }
+     ]
+    },
     "title": "Episode 070218",
     "unixtime": 1517961600
    },
@@ -377,7 +429,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -394,6 +451,14 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia600106.us.archive.org/4/items/ITStuff131217/itstuff131217.ogg"
+      }
+     ]
+    },
     "title": "Episode 131217",
     "unixtime": 1513123200
    },
@@ -471,7 +536,12 @@
  ],
  "_blog_json": {
   "dir": "blog/.",
-  "posts_per_page": 5
+  "feed": {
+   "title": "Title"
+  },
+  "posts_per_feed": 20,
+  "posts_per_page": 5,
+  "url": "/"
  },
  "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
  "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -488,6 +558,14 @@
    0,
    0
   ],
+  "feed": {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia601500.us.archive.org/21/items/ITStuff030615/ITStuff-030615.ogg"
+    }
+   ]
+  },
   "title": "Episode 030615",
   "unixtime": 1434326400
  },

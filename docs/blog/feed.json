@@ -1,0 +1,328 @@
+{
+ "feed_url": "/blog/feed.json",
+ "home_page_url": "/",
+ "items": [
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia601506.us.archive.org/34/items/ITStuff020518/itstuff020518.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 020518</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff020518\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Calling all students! If you’re doing an essay about information technology and its role in the modern distopia, well come and have a load of this for free, because we are IT Stuff and that is our mission.</p>\n<p>And the stuff crew with all the stuff are Kriss, Edafe and Shi. </p>\n\r\n</div>\r\n \r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2018-05-02-ITStuff020518\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2018-05-02</div>\n\t</div>\n</div>\n",
+   "date_published": "2018-05-02T00:00:00.000Z",
+   "id": "blog/2018-05-02-ITStuff020518",
+   "title": "Episode 020518",
+   "url": "/blog/2018-05-02-ITStuff020518"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia601503.us.archive.org/11/items/ITStuff040418/itstuff040418.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 040418</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff040418\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Hallo lifeforms welcome to IT Stuff, car crash radio about the car crash of technology. Living the future with us today are co-presenters Kriss, Shi and our very special guest, Edafe.</p>\n\r\n</div>\r\n \r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2018-04-04-ITStuff040418\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2018-04-04</div>\n\t</div>\n</div>\n",
+   "date_published": "2018-04-04T00:00:00.000Z",
+   "id": "blog/2018-04-04-ITStuff040418",
+   "title": "Episode 040418",
+   "url": "/blog/2018-04-04-ITStuff040418"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia802803.us.archive.org/7/items/ITStuff070318/itstuff070318.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Radio Venus Special</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff070318\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Hello, hello, hello out there. It is time for your favourite internet show about the internet – IT STUFF, with yours sincerely, shi.</p>\n<p>I’m missing my usual cohort of presenters – it is, after all, International Women’s Day so you know, I need to work twice as hard to earn the same amount of recognition. </p>\n\r\n</div>\r\n \r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2018-03-07-ITStuff070318\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2018-03-07</div>\n\t</div>\n</div>\n",
+   "date_published": "2018-03-07T00:00:00.000Z",
+   "id": "blog/2018-03-07-ITStuff070318",
+   "title": "Radio Venus Special",
+   "url": "/blog/2018-03-07-ITStuff070318"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia600108.us.archive.org/14/items/ITStuff070218/itstuff070218.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 070218</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff070218\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>This sensory induced e-sports episode will get us all the audience we don&#39;t deserve. Are we prepared to do this? </p>\n\r\n</div>\r\n \r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2018-02-07-ITStuff070218\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2018-02-07</div>\n\t</div>\n</div>\n",
+   "date_published": "2018-02-07T00:00:00.000Z",
+   "id": "blog/2018-02-07-ITStuff070218",
+   "title": "Episode 070218",
+   "url": "/blog/2018-02-07-ITStuff070218"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia600106.us.archive.org/4/items/ITStuff131217/itstuff131217.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 131217</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff131217\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Hello hello! So due to us all having made so much money from Bitcoin, we can&#39;t be bothered with Bradford any more and we&#39;re all moving somewhere more fitting to our new status as rich people. </p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2017-12-13-ITStuff131217\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2017-12-13</div>\n\t</div>\n</div>\n",
+   "date_published": "2017-12-13T00:00:00.000Z",
+   "id": "blog/2017-12-13-ITStuff131217",
+   "title": "Episode 131217",
+   "url": "/blog/2017-12-13-ITStuff131217"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia801502.us.archive.org/16/items/ITStuff151117/itstuff151117.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 151117</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff151117\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>IT Stuff is installing updates, zero percent completed, do not turn off your radio.</p>\n<p>In this month&#39;s Stuff Update we&#39;ll be mocking the powerful and then plugging the empowerment of our local events. So that&#39;s the usual then. Save you looking at the knowlege base innit.</p>\n<p>Do not turn off your radio. Eighteen percent completed.</p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2017-11-15-ITStuff151117\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2017-11-15</div>\n\t</div>\n</div>\n",
+   "date_published": "2017-11-15T00:00:00.000Z",
+   "id": "blog/2017-11-15-ITStuff151117",
+   "title": "Episode 151117",
+   "url": "/blog/2017-11-15-ITStuff151117"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia801500.us.archive.org/15/items/ITStuff181017/itstuff181017.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 181017</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff181017\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Welcome to Negativity Month! Wherein the first half of the show we&#39;ll celebrate the misery of autumn with negative technology stories and security fails.</p>\n<p>We conclude the show with AI and local events in an attempt to cheer ourselves up. Will it work?</p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2017-10-18-ITStuff181017\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2017-10-18</div>\n\t</div>\n</div>\n",
+   "date_published": "2017-10-18T00:00:00.000Z",
+   "id": "blog/2017-10-18-ITStuff181017",
+   "title": "Episode 181017",
+   "url": "/blog/2017-10-18-ITStuff181017"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia801507.us.archive.org/10/items/ITStuff200917/itstuff200917.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 200917</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff200917\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Hello everybody, this is IT Stuff on BCB Radio. We get together once a month and we talk about the wonder, the magic of information technology, tomorrow’s world today ... with a few bugs here and there.</p>\n<p>Today we are joined by <b>John Hudson</b> with a special report on the recent Wuthering Bytes event!</p>\n<p>Ooh and this month&#39;s secret phrase is, &quot;<i>watermelon head puppets</i>&quot;.</p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2017-09-20-ITStuff200917\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2017-09-20</div>\n\t</div>\n</div>\n",
+   "date_published": "2017-09-20T00:00:00.000Z",
+   "id": "blog/2017-09-20-ITStuff200917",
+   "title": "Episode 200917",
+   "url": "/blog/2017-09-20-ITStuff200917"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia601505.us.archive.org/12/items/ITStuff230817/itstuff230817.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 230817</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff230817\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Hey hey hey it&#39;s time for IT Stuff. And the big question this month: is it a terms of service violation to threaten nuclear war on Twitter?</p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2017-08-23-ITStuff230817\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2017-08-23</div>\n\t</div>\n</div>\n",
+   "date_published": "2017-08-23T00:00:00.000Z",
+   "id": "blog/2017-08-23-ITStuff230817",
+   "title": "Episode 230817",
+   "url": "/blog/2017-08-23-ITStuff230817"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia601507.us.archive.org/15/items/ITStuff260717/itstuff260717.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 260717</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff260717\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>We&#39;ve got Artificial Intelligence, Artificial Information, local spammers and plenty of death foretold!</p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2017-07-27-ITStuff260717\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2017-07-27</div>\n\t</div>\n</div>\n",
+   "date_published": "2017-07-27T00:00:00.000Z",
+   "id": "blog/2017-07-27-ITStuff260717",
+   "title": "Episode 260717",
+   "url": "/blog/2017-07-27-ITStuff260717"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia601504.us.archive.org/7/items/ITStuff310517/itstuff310517.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 310517</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff310517\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Today&#39;s delirious rambling is an incident themed special Stuff!</p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2017-05-31-ITStuff310517\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2017-05-31</div>\n\t</div>\n</div>\n",
+   "date_published": "2017-05-31T00:00:00.000Z",
+   "id": "blog/2017-05-31-ITStuff310517",
+   "title": "Episode 310517",
+   "url": "/blog/2017-05-31-ITStuff310517"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia601501.us.archive.org/6/items/ITStuff030517/itstuff030517.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 030517</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff030517\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>What a treat! It&#39;s the IT Stuff Artificial Intelligence Special!</p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2017-05-03-ITStuff030517\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2017-05-03</div>\n\t</div>\n</div>\n",
+   "date_published": "2017-05-03T00:00:00.000Z",
+   "id": "blog/2017-05-03-ITStuff030517",
+   "title": "Episode 030517",
+   "url": "/blog/2017-05-03-ITStuff030517"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia801503.us.archive.org/3/items/ITStuff050417/itstuff050417.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 050417</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff050417\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>This month takes us through these topics - some brief, others not so brief.</p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2017-04-05-ITStuff050417\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2017-04-05</div>\n\t</div>\n</div>\n",
+   "date_published": "2017-04-05T00:00:00.000Z",
+   "id": "blog/2017-04-05-ITStuff050417",
+   "title": "Episode 050417",
+   "url": "/blog/2017-04-05-ITStuff050417"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia601509.us.archive.org/33/items/ITStuff080317/itstuff080317.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 080317</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff080317\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Oh boy, have we got some tech news for you this month! Are you sitting comfortably?</p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2017-03-19-ITStuff080317\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2017-03-19</div>\n\t</div>\n</div>\n",
+   "date_published": "2017-03-19T00:00:00.000Z",
+   "id": "blog/2017-03-19-ITStuff080317",
+   "title": "Episode 080317",
+   "url": "/blog/2017-03-19-ITStuff080317"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia801504.us.archive.org/0/items/ITStuff080217/itstuff080217.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 080217</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff080217\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Another month, another show. Listen to us babble about the digitals. </p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2017-02-08-ITStuff080217\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2017-02-08</div>\n\t</div>\n</div>\n",
+   "date_published": "2017-02-08T00:00:00.000Z",
+   "id": "blog/2017-02-08-ITStuff080217",
+   "title": "Episode 080217",
+   "url": "/blog/2017-02-08-ITStuff080217"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia601505.us.archive.org/19/items/ITStuff110117/itstuff110117.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 110117</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff110117\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Hi everybody, you have stumbled across IT Stuff, the delicious show that digs information technology. Are we reddit to go?</p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2017-01-11-ITStuff110117\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2017-01-11</div>\n\t</div>\n</div>\n",
+   "date_published": "2017-01-11T00:00:00.000Z",
+   "id": "blog/2017-01-11-ITStuff110117",
+   "title": "Episode 110117",
+   "url": "/blog/2017-01-11-ITStuff110117"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia601503.us.archive.org/15/items/ITStuff141216/itstuff141216.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 141216</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff141216\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Wahey! It&#39;s that time again, you know, the good stuffs time with yer ol&#39; band of geeks, spilling out the deeds on this month&#39;s information technology scene.</p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2016-12-14-ITStuff141216\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2016-12-14</div>\n\t</div>\n</div>\n",
+   "date_published": "2016-12-14T00:00:00.000Z",
+   "id": "blog/2016-12-14-ITStuff141216",
+   "title": "Episode 141216",
+   "url": "/blog/2016-12-14-ITStuff141216"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia601509.us.archive.org/2/items/ITStuff16116/itstuff161116.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 161116</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff16116\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Woah, it&#39;s November already? Buckle up boys and girls, it has been a hell of a month in technology!</p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2016-11-16-ITStuff161116\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2016-11-16</div>\n\t</div>\n</div>\n",
+   "date_published": "2016-11-16T00:00:00.000Z",
+   "id": "blog/2016-11-16-ITStuff161116",
+   "title": "Episode 161116",
+   "url": "/blog/2016-11-16-ITStuff161116"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia601500.us.archive.org/31/items/ITStuff201016/itstuff201016.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 201016</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff201016\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Welcome to I T Stuff for October 2016, our mature and serious reflection on the world of information technology.</p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2016-11-03-ITStuff201016\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2016-11-03</div>\n\t</div>\n</div>\n",
+   "date_published": "2016-11-03T00:00:00.000Z",
+   "id": "blog/2016-11-03-ITStuff201016",
+   "title": "Episode 201016",
+   "url": "/blog/2016-11-03-ITStuff201016"
+  },
+  {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia601500.us.archive.org/20/items/ITStuff210916/itstuff210916.ogg"
+    }
+   ],
+   "author": {
+    "name": "shi"
+   },
+   "content_html": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Episode 210916</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/ITStuff210916\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Hey, hey, hey listeners! Another month of tech has whizzed us by but here&#39;s a few stuff that&#39;s caught our radar at Stuff HQ.</p>\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"/blog/2016-10-02-ITStuff210916\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2016-10-02</div>\n\t</div>\n</div>\n",
+   "date_published": "2016-10-02T00:00:00.000Z",
+   "id": "blog/2016-10-02-ITStuff210916",
+   "title": "Episode 210916",
+   "url": "/blog/2016-10-02-ITStuff210916"
+  }
+ ],
+ "title": "Title",
+ "version": "https://jsonfeed.org/version/1"
+}

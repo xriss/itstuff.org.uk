@@ -3,7 +3,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -20,6 +25,14 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia601506.us.archive.org/34/items/ITStuff020518/itstuff020518.ogg"
+      }
+     ]
+    },
     "title": "Episode 020518",
     "unixtime": 1525219200
    },
@@ -96,7 +109,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -113,6 +131,14 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia601503.us.archive.org/11/items/ITStuff040418/itstuff040418.ogg"
+      }
+     ]
+    },
     "title": "Episode 040418",
     "unixtime": 1522800000
    },
@@ -190,7 +216,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -207,6 +238,14 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia802803.us.archive.org/7/items/ITStuff070318/itstuff070318.ogg"
+      }
+     ]
+    },
     "title": "Radio Venus Special",
     "unixtime": 1520380800
    },
@@ -284,7 +323,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -301,6 +345,14 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia600108.us.archive.org/14/items/ITStuff070218/itstuff070218.ogg"
+      }
+     ]
+    },
     "title": "Episode 070218",
     "unixtime": 1517961600
    },
@@ -377,7 +429,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -394,6 +451,14 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia600106.us.archive.org/4/items/ITStuff131217/itstuff131217.ogg"
+      }
+     ]
+    },
     "title": "Episode 131217",
     "unixtime": 1513123200
    },
@@ -471,7 +536,12 @@
  ],
  "_blog_json": {
   "dir": "blog/.",
-  "posts_per_page": 5
+  "feed": {
+   "title": "Title"
+  },
+  "posts_per_feed": 20,
+  "posts_per_page": 5,
+  "url": "/"
  },
  "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
  "_blog_page_newer": "{_root}blog/page9.html",
@@ -501,7 +571,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -518,6 +593,14 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia902605.us.archive.org/7/items/ITStuff221014/ITStuff-221014.ogg"
+      }
+     ]
+    },
     "title": "Episode 221014",
     "unixtime": 1414713600
    },
@@ -591,7 +674,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -608,6 +696,14 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia902307.us.archive.org/22/items/ITStuff230914/ITStuff-230914.ogg"
+      }
+     ]
+    },
     "title": "Episode 230914",
     "unixtime": 1412294400
    },
@@ -681,7 +777,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -698,12 +799,20 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia902303.us.archive.org/28/items/LeedsHack2014-XtrasByBrianAckroyd/LeedsHack2014FullPodcast.ogg"
+      }
+     ]
+    },
     "title": "Bonus Content! Leeds Hack 2014 - Xtras by Brian Ackroyd",
     "unixtime": 1410739200
    },
    "_blog_post_newer": "{_root}blog/2014-10-03-ITStuff230914/",
    "_blog_post_older": "{_root}blog/2014-09-04-ITStuff260814/",
-   "_body": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Bonus Content! Leeds Hack 2014 - Xtras by Brian Ackroyd</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/LeedsHack2014-XtrasByBrianAckroyd\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Xtra, Xtra, Hear all about it! This is a &quot;Bonus Content!&quot; podcast featuring all the interviews of the hackers and participants at <a href=\"http://leedshack.org/\">Leeds Hack 2014</a> by none other than our roving reporter, Brian Ackroyd for IT Stuff.</p>\n<p>You can hear Brian&#39;s report in <a href=\"http://itstuff.org.uk/blog/ITStuff260814\">IT Stuff Episode 260814</a> and in upcoming episodes!</p>\n<p>More of Xtras by Brian Ackroyd is found <a href=\"http://itstuff.org.uk/welcome#xtras\">in this dedicated playlist</a>.</p>\n\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"{_root}blog/2014-09-15-BonusContent-LeedsHack2014\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2014-09-15</div>\n\t</div>\n</div>\n",
+   "_body": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Bonus Content! Leeds Hack 2014 - Xtras by Brian Ackroyd</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/LeedsHack2014-XtrasByBrianAckroyd\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Xtra, Xtra, Hear all about it! This is a &quot;Bonus Content!&quot; podcast featuring all the interviews of the hackers and participants at <a href=\"http://leedshack.org/\">Leeds Hack 2014</a> by none other than our roving reporter, Brian Ackroyd for IT Stuff.</p>\n<p>You can hear Brian's report in <a href=\"http://itstuff.org.uk/blog/ITStuff260814\">IT Stuff Episode 260814</a> and in upcoming episodes!</p>\n<p>More of Xtras by Brian Ackroyd is found <a href=\"http://itstuff.org.uk/welcome#xtras\">in this dedicated playlist</a>.</p>\n\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"{_root}blog/2014-09-15-BonusContent-LeedsHack2014\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2014-09-15</div>\n\t</div>\n</div>\n",
    "_dirname": "{_root}blog/2014-09-15-BonusContent-LeedsHack2014",
    "_filename": "{_root}blog/2014-09-15-BonusContent-LeedsHack2014/index.html",
    "_flags": {
@@ -733,7 +842,7 @@
    "_site": "{_root}",
    "_sourcename": "blog/2014-09-15-BonusContent-LeedsHack2014/index.html",
    "anal": "<script>\n  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\n\n  ga('create', 'UA-53515833-1', 'auto');\n  ga('send', 'pageview');\n\n</script>\n\n ",
-   "blog_bit": "<p>Xtra, Xtra, Hear all about it! This is a &quot;Bonus Content!&quot; podcast featuring all the interviews of the hackers and participants at <a href=\"http://leedshack.org/\">Leeds Hack 2014</a> by none other than our roving reporter, Brian Ackroyd for IT Stuff.</p>\n<p>You can hear Brian&#39;s report in <a href=\"http://itstuff.org.uk/blog/ITStuff260814\">IT Stuff Episode 260814</a> and in upcoming episodes!</p>\n<p>More of Xtras by Brian Ackroyd is found <a href=\"http://itstuff.org.uk/welcome#xtras\">in this dedicated playlist</a>.</p>\n\n",
+   "blog_bit": "<p>Xtra, Xtra, Hear all about it! This is a &quot;Bonus Content!&quot; podcast featuring all the interviews of the hackers and participants at <a href=\"http://leedshack.org/\">Leeds Hack 2014</a> by none other than our roving reporter, Brian Ackroyd for IT Stuff.</p>\n<p>You can hear Brian's report in <a href=\"http://itstuff.org.uk/blog/ITStuff260814\">IT Stuff Episode 260814</a> and in upcoming episodes!</p>\n<p>More of Xtras by Brian Ackroyd is found <a href=\"http://itstuff.org.uk/welcome#xtras\">in this dedicated playlist</a>.</p>\n\n",
    "blog_bit_wrap": "<div class=\"blog_bit\">\r\n\t{blog_bit}\r\n</div>\r\n\r\n\r\n\r",
    "blog_list": "{_it._body}\n\n",
    "blog_play": "<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">{_blog_post_json.title}</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/LeedsHack2014-XtrasByBrianAckroyd\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r",
@@ -771,7 +880,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -788,6 +902,14 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia801400.us.archive.org/3/items/ITStuff260814/ITStuff-260814.ogg"
+      }
+     ]
+    },
     "title": "Episode 260814",
     "unixtime": 1409788800
    },
@@ -865,7 +987,12 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "posts_per_page": 5
+    "feed": {
+     "title": "Title"
+    },
+    "posts_per_feed": 20,
+    "posts_per_page": 5,
+    "url": "/"
    },
    "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
    "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -882,6 +1009,14 @@
      0,
      0
     ],
+    "feed": {
+     "attachments": [
+      {
+       "mime_type": "audio/ogg",
+       "url": "https://ia902309.us.archive.org/12/items/ITStuff2014Aug/ITStuff-2014-Aug-pod.ogg"
+      }
+     ]
+    },
     "title": "Episode August 2014",
     "unixtime": 1406678400
    },

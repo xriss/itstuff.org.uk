@@ -1,7 +1,12 @@
 {
  "_blog_json": {
   "dir": "blog/.",
-  "posts_per_page": 5
+  "feed": {
+   "title": "Title"
+  },
+  "posts_per_feed": 20,
+  "posts_per_page": 5,
+  "url": "/"
  },
  "_blog_page_body": "{_list:blog_list}\n<div class=\"blog_wrap\" style=\"padding-top:0;\">\n\t<div class=\"paging_wrap\">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>\n</div>\n",
  "_blog_post_body": "{blog_play}\r\n{blog_bit_wrap}\r\n\r\n\r",
@@ -18,6 +23,14 @@
    0,
    0
   ],
+  "feed": {
+   "attachments": [
+    {
+     "mime_type": "audio/ogg",
+     "url": "https://ia902705.us.archive.org/7/items/ITStuff171214/ITStuff-171214.ogg"
+    }
+   ]
+  },
   "title": "Episode 171214",
   "unixtime": 1419984000
  },
