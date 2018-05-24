@@ -3,9 +3,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
@@ -110,9 +107,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
@@ -218,9 +212,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
@@ -326,9 +317,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
@@ -433,9 +421,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
@@ -541,9 +526,6 @@
  ],
  "_blog_json": {
   "dir": "blog/.",
-  "feed": {
-   "title": "Title"
-  },
   "posts_per_feed": 64,
   "posts_per_page": 5,
   "title": "IT Stuff - Feed",

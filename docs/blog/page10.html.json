@@ -3,9 +3,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
@@ -110,9 +107,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
@@ -218,9 +212,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
@@ -326,9 +317,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
@@ -433,9 +421,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
@@ -541,9 +526,6 @@
  ],
  "_blog_json": {
   "dir": "blog/.",
-  "feed": {
-   "title": "Title"
-  },
   "posts_per_feed": 64,
   "posts_per_page": 5,
   "title": "IT Stuff - Feed",
@@ -577,9 +559,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
@@ -681,9 +660,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
@@ -785,9 +761,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
@@ -821,7 +794,7 @@
    },
    "_blog_post_newer": "{_root}blog/2014-10-03-ITStuff230914/",
    "_blog_post_older": "{_root}blog/2014-09-04-ITStuff260814/",
-   "_body": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Bonus Content! Leeds Hack 2014 - Xtras by Brian Ackroyd</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/LeedsHack2014-XtrasByBrianAckroyd\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Xtra, Xtra, Hear all about it! This is a &quot;Bonus Content!&quot; podcast featuring all the interviews of the hackers and participants at <a href=\"http://leedshack.org/\">Leeds Hack 2014</a> by none other than our roving reporter, Brian Ackroyd for IT Stuff.</p>\n<p>You can hear Brian's report in <a href=\"http://itstuff.org.uk/blog/ITStuff260814\">IT Stuff Episode 260814</a> and in upcoming episodes!</p>\n<p>More of Xtras by Brian Ackroyd is found <a href=\"http://itstuff.org.uk/welcome#xtras\">in this dedicated playlist</a>.</p>\n\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"{_root}blog/2014-09-15-BonusContent-LeedsHack2014\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2014-09-15</div>\n\t</div>\n</div>\n",
+   "_body": "<div class=\"blog_wrap pod\">\n\t<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">Bonus Content! Leeds Hack 2014 - Xtras by Brian Ackroyd</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/LeedsHack2014-XtrasByBrianAckroyd\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r\r\n<div class=\"blog_bit\">\r\n\t<p>Xtra, Xtra, Hear all about it! This is a &quot;Bonus Content!&quot; podcast featuring all the interviews of the hackers and participants at <a href=\"http://leedshack.org/\">Leeds Hack 2014</a> by none other than our roving reporter, Brian Ackroyd for IT Stuff.</p>\n<p>You can hear Brian&#39;s report in <a href=\"http://itstuff.org.uk/blog/ITStuff260814\">IT Stuff Episode 260814</a> and in upcoming episodes!</p>\n<p>More of Xtras by Brian Ackroyd is found <a href=\"http://itstuff.org.uk/welcome#xtras\">in this dedicated playlist</a>.</p>\n\n\r\n</div>\r\n\r\n\r\n\r\r\n\r\n\r\n\t<div class=\"blog_bit read_wrap\">\n\t\t<a href=\"{_root}blog/2014-09-15-BonusContent-LeedsHack2014\" class=\"read\">Read on</a><div class=\"blog_info\">Installed by shi on 2014-09-15</div>\n\t</div>\n</div>\n",
    "_dirname": "{_root}blog/2014-09-15-BonusContent-LeedsHack2014",
    "_filename": "{_root}blog/2014-09-15-BonusContent-LeedsHack2014/index.html",
    "_flags": {
@@ -851,7 +824,7 @@
    "_site": "{_root}",
    "_sourcename": "blog/2014-09-15-BonusContent-LeedsHack2014/index.html",
    "anal": "<script>\n  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\n\n  ga('create', 'UA-53515833-1', 'auto');\n  ga('send', 'pageview');\n\n</script>\n\n ",
-   "blog_bit": "<p>Xtra, Xtra, Hear all about it! This is a &quot;Bonus Content!&quot; podcast featuring all the interviews of the hackers and participants at <a href=\"http://leedshack.org/\">Leeds Hack 2014</a> by none other than our roving reporter, Brian Ackroyd for IT Stuff.</p>\n<p>You can hear Brian's report in <a href=\"http://itstuff.org.uk/blog/ITStuff260814\">IT Stuff Episode 260814</a> and in upcoming episodes!</p>\n<p>More of Xtras by Brian Ackroyd is found <a href=\"http://itstuff.org.uk/welcome#xtras\">in this dedicated playlist</a>.</p>\n\n",
+   "blog_bit": "<p>Xtra, Xtra, Hear all about it! This is a &quot;Bonus Content!&quot; podcast featuring all the interviews of the hackers and participants at <a href=\"http://leedshack.org/\">Leeds Hack 2014</a> by none other than our roving reporter, Brian Ackroyd for IT Stuff.</p>\n<p>You can hear Brian&#39;s report in <a href=\"http://itstuff.org.uk/blog/ITStuff260814\">IT Stuff Episode 260814</a> and in upcoming episodes!</p>\n<p>More of Xtras by Brian Ackroyd is found <a href=\"http://itstuff.org.uk/welcome#xtras\">in this dedicated playlist</a>.</p>\n\n",
    "blog_bit_wrap": "<div class=\"blog_bit\">\r\n\t{blog_bit}\r\n</div>\r\n\r\n\r\n\r",
    "blog_list": "{_it._body}\n\n",
    "blog_play": "<div class=\"blog_play\">\r\n\t<div class=\"blog_title\">{_blog_post_json.title}</div>\r\n\t<iframe class=\"archive\" src=\"https://archive.org/embed/LeedsHack2014-XtrasByBrianAckroyd\" width=\"100%\" height=\"30\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>\r\n</div>\r\n\r",
@@ -889,9 +862,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
@@ -997,9 +967,6 @@
   {
    "_blog_json": {
     "dir": "blog/.",
-    "feed": {
-     "title": "Title"
-    },
     "posts_per_feed": 64,
     "posts_per_page": 5,
     "title": "IT Stuff - Feed",
