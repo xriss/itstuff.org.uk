@@ -51,11 +51,14 @@ for _,filename in ipairs( findfiles("./plated/source/blog","^%^%.html") ) do
 	end
 	
 	str=str:gsub("^(#%^_blog_post_json%s*{)",function(s)
-		return s.."\natachments="..wjson.encode(attachments)..",\n"
+		return s.."\nfeed:{\natachments:"..wjson.encode(attachments).."\n},\n"
 	end)
-	
-	local fp=assert(io.open(filename,"w"))
-	fp:write(str)
-	fp:close()
-	
+
+	if true then
+		print(str)
+	else
+		local fp=assert(io.open(filename,"w"))
+		fp:write(str)
+		fp:close()
+	end
 end
