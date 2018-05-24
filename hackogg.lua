@@ -54,7 +54,7 @@ for _,filename in ipairs( findfiles("./plated/source/blog","^%^%.html") ) do
 		return s.."\nfeed:{\nattachments:"..wjson.encode(attachments).."\n},\n"
 	end)
 
-	if false then
+	if true then
 		print(str)
 	else
 		local fp=assert(io.open(filename,"w"))
