@@ -306,9 +306,9 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .blog_more p	{white-space:pre-wrap;}
 .blog_bit p		{font-size:30px; line-height:38px;}
 .blog_more p	{font-size:90%; line-height:28px;}
-.blog_more p b	{font-size:1.2em; color:var(--base_link_box); text-transform:uppercase; font-weight:normal;}
+.blog_more p b	{font-size:1.2em; color:var(--base_link_box); text-transform:uppercase; font-weight:normal; background-color:var(--not_black); padding:5px 15px; margin-bottom:5px; display:inline-block; margin-left:-20px; border-left:5px solid var(--base_odt_back_alt);}
 /*.blog_more p b:before {content:"🌠"; margin-right:10px; color:var(--base_emoji);}*/
-.blog_bit p:first-of-type::first-letter {font-weight:900; border:1px dotted var(--base_link_box); padding:5px 10px; margin-right:5px; font-family:"Patua One",georgia,serif; background-color:var(--not_black);}
+.blog_bit p:first-of-type::first-letter {float:left; border:1px dotted var(--base_back); padding:10px 15px; margin-right:15px; font-family:"Patua One",georgia,serif; background-color:var(--base_odt_back_alt); font-size:3em; line-height:1em;}
 
 .read_wrap		{text-align:center; padding:0; border:0;}
 a.read			{display:inline-block; background-color:var(--base_link_box); padding:0 20px; border-radius:0 0 4px 4px; color:var(--base_back); text-align:center; margin:0 auto;}
