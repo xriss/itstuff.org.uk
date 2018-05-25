@@ -304,7 +304,7 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .blog_more		{padding:40px;}
 .blog_bit p,
 .blog_more p	{white-space:pre-wrap;}
-.blog_bit p		{font-size:30px; line-height:38px;}
+.blog_bit p		{font-size:30px; line-height:38px; clear:both;}
 .blog_more p	{font-size:90%; line-height:28px;}
 .blog_more p b	{font-size:1.2em; color:var(--base_link_box); text-transform:uppercase; font-weight:normal; background-color:var(--not_black); padding:5px 15px; margin-bottom:5px; display:inline-block; margin-left:-20px; border-left:5px solid var(--base_odt_back_alt);}
 /*.blog_more p b:before {content:"🌠"; margin-right:10px; color:var(--base_emoji);}*/
