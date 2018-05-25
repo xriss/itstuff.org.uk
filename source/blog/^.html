@@ -1,0 +1,132 @@
+#^title trim=ends
+IT Stuff - That's some good stuff!
+
+
+#^_blog_json
+{
+	posts_per_page:5,
+	posts_per_feed:64,
+	url:"http://itstuff.org.uk/",
+	title:"IT Stuff - Feed",
+}
+
+#^_blog_page_body
+{_list:blog_list}
+<div class="blog_wrap" style="padding-top:0;">
+	<div class="paging_wrap">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>
+</div>
+
+#^-Paging for main blog list page
+#^link_older_page
+<a href="{_it}">Previous</a>
+
+#^link_newer_page
+<a href="{_it}">Next</a>
+
+
+#^-This is for the blog list
+#^blog_list
+{_it._body}
+
+
+#^-This is a single blog post viewed on its own page
+#^_blog_post_body_one
+<div class="blog_wrap own">
+<!--	<div class="paging_wrap top_paging">{_blog_post_older:link_older_post} {_blog_post_newer:link_newer_post}</div>-->
+	{_blog_post_body}
+	<div class="spacer"></div>
+	<div class="blog_more">
+		{blog_more||}
+		{script||}
+		{showlinks||}
+		{showbox||}
+	</div>
+	<div class="paging_wrap">{_blog_post_older:link_older_post} {_blog_post_newer:link_newer_post}</div>
+</div>
+
+
+#^-This is for the blog list
+#^_blog_post_body_many
+<div class="blog_wrap pod">
+	{_blog_post_body}
+	<div class="blog_bit read_wrap">
+		<a href="{_dirname}" class="read">Read on</a><div class="blog_info">Installed by {_blog_post_json.author} on {_blog_post_json.datedash}</div>
+	</div>
+</div>
+
+#^link_older_post
+<a href="{_it}">Previous</a>
+
+#^link_newer_post
+<a href="{_it}">Next</a>
+
+#^showlinks 
+<div class="ep_links">
+	<span>Links</span>
+	<div class="ep_showlinks">{show_links||}</div>
+</div>
+
+#^showtube 
+<iframe width="100%" height="420" src="//www.youtube.com/embed/{music_video}" frameborder="0" allowfullscreen></iframe>
+
+#^showdate
+<span>Broadcast</span> {show_date}
+
+#^showmusic 
+<div class="show_music">
+	<span>End Music</span>
+	{music_name||}
+</div>
+<div class="show_info music_wrap">
+	{showmusic||}
+</div>
+
+#^showogg 
+{ogg_podcast||}
+
+#^script2 
+<a href="{odtlink2}"> {odtname2||}</a>
+
+#^showscript 
+<a href="{odtlink||}">script</a>
+
+#^showbox
+<div class="show_box">
+	<div class="show_date">{showdate||}</div>
+	<div class="show_tube">{showtube||}</div>
+	<div class="show_wrap">
+		<div class="show_info">
+			<div class="show_script">{showscript||}</div>
+		</div><div class="show_info">
+			<div class="show_ogg">{showogg||}</div>
+		</div>
+	</div>
+</div>
+
+
+#^css same=append
+
+.ep_showlinks	{border-top:1px solid var(--base); padding-top:10px; margin-top:10px;}
+.ep_showlinks a	{display:block; font-size:85%; line-height:1.5em; color:var(--base_cast);}
+.ep_showlinks a:before {content:"⌁"; margin-right:5px; color:var(--base_link_box);}
+
+.show_box			{background-color:var(--base_cast_back); margin-top:40px;}
+.show_date			{padding:1em 2em; color:var(--base_cast); text-transform:uppercase; text-align:center;}
+.show_date span		{color:var(--base_link_box);}
+.show_wrap			{background-color:var(--not_black);}
+.show_info			{display:inline-block; vertical-align:top; width:50%;}
+.show_info.source	{width:20%;}
+.show_music			{padding:1em 2em; padding-right:0;}
+.show_music span	{display:block; color:var(--base);}
+.show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
+.show_music p:before{display:inline-block; color:var(--base_emoji); margin-right:10px; content:"♪";}
+
+.show_script a		{background-color:var(--base_odt_back);}
+.show_script a:hover{background-color:var(--base_odt_back_alt);}
+.show_ogg a			{background-color:var(--base_ogg_back);}
+.show_ogg a:hover	{background-color:var(--base_ogg_back_alt);}
+.show_ogg a,
+.show_ogg a:hover	{color:var(--base_ogg);}
+.show_script a:hover{color:var(--base_odt);}
+.show_script a,
+.show_ogg a			{display:block; padding:1em; font-size:24px; background-color:var(--not_black); text-decoration:underline; text-align:center; color:var(--base_link_box); border:1px solid; margin:10px;}
