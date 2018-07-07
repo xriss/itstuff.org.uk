@@ -404,11 +404,19 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	
 	.main			{max-width:initial;}
 	.contents		{top:5.5em;}
+	.block			{width:170px;}
 	
 	a.read			{font-size:1.75em; padding:20px;}
 	
 	.footer ul		{width:100%;}
 	.footer li span	{font-size:70%;}
 	.footer li.footer_1 span	{margin-bottom:20px; line-height:20px;}
+	.footer_about	{font-size:70%;}
+	.footer_about li.footer_1	{margin-right:2em;}
+	.footer a img	{display:none;}
+	
+	.play_wrap		{width:900px;}
+	.listen_tit		{font-size:60%; width:900px;}
+	.listen_tit span.listen_date	{font-size:20px; top:20px;}
 
 }
