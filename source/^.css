@@ -416,7 +416,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	.footer a img	{display:none;}
 	
 	.play_wrap		{width:900px;}
-	.listen_tit		{font-size:20px; width:900px;}
+	.listen_tit		{font-size:40%; width:900px;}
 	.listen_tit span.listen_date	{font-size:20px; top:20px;}
 
 }
