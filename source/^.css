@@ -303,6 +303,12 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .blog_bit		{position:relative; margin:0 auto; width:860px;}
 .spacer:before	{content:"𝆗"; text-align:center; display:block; margin-top:15px; padding-bottom:30px; font-size:3.5em; color:var(--spacer);}
 
+.tone 			{position:fixed; top:100px; right:0;}
+.dave_tone		{position:absolute; right:20px; top:-50px; background:url('/data/dave_tone.png')no-repeat; background-size:contain; background-position:center; width:220px; height:220px;}
+.kriss_tone		{position:absolute; right:-60px; top:250px; background:url('/data/kriss_tone.png')no-repeat; background-size:contain; background-position:center; width:240px; height:240px;}
+.dick_tone		{position:absolute; right:-100px; top:560px; background:url('/data/dick_tone.png')no-repeat; background-size:contain; background-position:center; width:240px; height:240px;}
+.shi_tone		{position:absolute; left:-70px; bottom:-110px; background:url('/data/shi_tone.png')no-repeat; background-size:contain; background-position:center; width:220px; height:220px;}
+
 .blog_bit,
 .blog_more		{box-sizing:border-box; padding:40px 40px 20px 40px; border:4px double var(--spacer); border-radius:0 40px;}
 .blog_more		{padding:40px;}
