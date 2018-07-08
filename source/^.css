@@ -241,7 +241,7 @@ audio		{width:780px;}
 .name			{color:#fff; padding:10px 0 0 0;}
 a.twit			{display:block; color:#398A2A; font-size:0.8em; line-height:1em;}
 a.twit:hover	{text-decoration:none; color:#00ff00;}
-.block			{width:150px; height:190px;}
+.block			{width:170px; height:190px;}
 .block.dave		{background:url('/data/stuff/dave.png') no-repeat center center;}
 .block.shi		{background:url('/data/stuff/shi.png') no-repeat center center;}
 .block.kriss	{background:url('/data/stuff/kriss.png') no-repeat center center;}
@@ -301,20 +301,20 @@ a.twit:hover	{text-decoration:none; color:#00ff00;}
 .spacer,
 .blog_more,
 .blog_bit		{position:relative; margin:0 auto; width:860px;}
-.spacer:before	{content:"𝆗"; text-align:center; display:block; margin-top:15px; padding-bottom:30px; font-size:3.5em; color:var(--spacer);}
+.spacer:before	{content:"\01D197"; text-align:center; display:block; margin-top:15px; padding-bottom:30px; font-size:3.5em; color:var(--spacer);}
 
 .tone 			{position:fixed; top:100px; right:0;}
-.dave_tone		{position:absolute; right:20px; top:-50px; background:url('/data/dave_tone.png')no-repeat; background-size:contain; background-position:center; width:220px; height:220px;}
+.dave_tone		{position:absolute; right:20px; top:-50px; background:url('/data/dave_tone.png')no-repeat; background-size:contain; background-position:center; width:260px; height:260px;}
 .kriss_tone		{position:absolute; right:-60px; top:250px; background:url('/data/kriss_tone.png')no-repeat; background-size:contain; background-position:center; width:240px; height:240px;}
 .dick_tone		{position:absolute; right:-100px; top:560px; background:url('/data/dick_tone.png')no-repeat; background-size:contain; background-position:center; width:240px; height:240px;}
 .shi_tone		{position:absolute; left:-70px; bottom:-110px; background:url('/data/shi_tone.png')no-repeat; background-size:contain; background-position:center; width:220px; height:220px;}
 
 .blog_bit,
-.blog_more		{box-sizing:border-box; padding:40px 40px 20px 40px; border:4px double var(--spacer); border-radius:0 40px;}
-.blog_more		{padding:40px;}
+.blog_more		{box-sizing:border-box; padding:40px; border:4px double var(--spacer); border-radius:0 40px;}
 .blog_bit p,
 .blog_more p	{white-space:pre-wrap;}
 .blog_bit p		{font-size:30px; line-height:38px; clear:both;}
+.blog_bit p:last-of-type	{margin-bottom:0;}
 .blog_more p	{font-size:90%; line-height:28px;}
 .blog_more p b	{font-size:1.2em; color:var(--base_link_box); text-transform:uppercase; font-weight:normal; background-color:var(--not_black); padding:5px 15px; margin-bottom:5px; display:inline-block; margin-left:-20px; border-left:5px solid var(--base_odt_back_alt);}
 /*.blog_more p b:before {content:"🌠"; margin-right:10px; color:var(--base_emoji);}*/
@@ -375,7 +375,7 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 .footer_1 span			{margin-right:40px;}
 .footer ul.footer_info	{margin-bottom:40px;}
 .footer a img	{margin-top:4px;}
-a.top			{display:block; position:absolute; top:-25px; left:50%; right:50%; font-size:5em; color:var(--base_link);}
+a.top			{display:block; position:absolute; top:-25px; left:50%; right:50%; font-size:5em; color:var(--base_link_box);}
 a.top:hover		{color:var(--hr);}
 
 /*
@@ -410,13 +410,13 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	
 	.main			{max-width:initial;}
 	.contents		{top:5.5em;}
-	.block			{width:170px;}
 	
 	a.read			{font-size:1.75em; padding:20px;}
 	
 	.footer ul		{width:100%;}
 	.footer li span	{font-size:70%;}
 	.footer li.footer_1 span	{margin-bottom:20px; line-height:20px;}
+	.footer_1 span			{margin-right:2.5em;}
 	.footer_about	{font-size:70%;}
 	.footer_about li.footer_1	{margin-right:2em;}
 	.footer a img	{display:none;}
@@ -424,5 +424,11 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	.play_wrap		{width:900px;}
 	.listen_tit		{font-size:40%; width:900px;}
 	.listen_tit span.listen_date	{font-size:20px; top:20px;}
+	
+	.dave_tone		{width:220px; height:220px;}
+	.blog_bit p:first-of-type::first-letter {padding:45px 15px; margin-right:15px; font-size:4em;}
+	.blog_bit p,
+	.blog_more p	{line-height:40px;}
+
 
 }
