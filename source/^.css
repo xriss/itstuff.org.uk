@@ -219,9 +219,9 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 .listen_tit	{position:relative; margin:0 auto; margin-top:3.5em; width:960px; padding:10px 20px; background-color:var(--base_alt); color:var(--base_ogg_back); font-weight:900; text-transform:uppercase;}
 .listen_tit span.listen_date	{position:absolute; right:20px;}
 
-audio::-webkit-media-controls-panel	{background-color:var(--black);}
-audio::-moz-media-controls-panel	{background-color:var(--black);}
-audio::-o-media-controls-panel		{background-color:var(--black);}
+audio::-webkit-media-controls-panel	{background-color:initial;}
+audio::-moz-media-controls-panel	{background-color:initial;}
+audio::-o-media-controls-panel		{background-color:initial;}
 audio		{width:780px;}
 
 /*	
