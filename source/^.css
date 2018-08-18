@@ -152,6 +152,7 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	content			|	Flex = *
 	default 		|	Clean default div, used only in Docs body
 	wrap			|	Landing page main wrapper
+	wrap.ctr		|	Default wrapper with center text-align
 	nav_wrap 		|	Navigation bar for entire site
 	play_wrap		|	Latest show wrapper
 	right 			|	Class for text-align right
@@ -161,6 +162,7 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 .content	{flex:1 0 auto;}
 .default	{margin:0 auto;}
 .wrap		{position:relative; margin:0 auto; width:860px;}
+.wrap.ctr	{text-align:center;}
 .nav_wrap	{background-color:var(--base_back); left:0; padding:1.5em 3em; position:fixed; top:0; width:100%; z-index:100;}
 .play_wrap	{width:960px; margin:0 auto;}
 .right		{text-align:right;}
@@ -223,34 +225,6 @@ audio::-webkit-media-controls-panel	{background-color:initial;}
 audio::-moz-media-controls-panel	{background-color:initial;}
 audio::-o-media-controls-panel		{background-color:initial;}
 audio		{width:780px;}
-
-/*	
-
-	Pixel peeps:
-	
-	True representation of the actual crew
-	
-	presenter		|	wrapper for each presenter
-	block	 		|	default size for each pixel avatar
-	name	 		|	names of peeps
-	twit			|	twitter links
-	
-*/
-
-.presenter		{display:inline-block; vertical-align:top; text-align:center; margin-bottom:1em; margin-top:2em;}
-.name			{color:#fff; padding:10px 0 0 0;}
-a.twit			{display:block; color:#398A2A; font-size:0.8em; line-height:1em;}
-a.twit:hover	{text-decoration:none; color:#00ff00;}
-.block			{width:170px; height:190px;}
-.block.dave		{background:url('/data/stuff/dave.png') no-repeat center center;}
-.block.shi		{background:url('/data/stuff/shi.png') no-repeat center center;}
-.block.kriss	{background:url('/data/stuff/kriss.png') no-repeat center center;}
-.block.dick		{background:url('/data/stuff/dick.png') no-repeat center center;}
-.block.edafe	{background:url('/data/stuff/edafe.png') no-repeat center center;}
-.block.david	{background:url('/data/stuff/david.png') no-repeat center center;}
-.block.brian	{background:url('/data/stuff/brian.png') no-repeat center center;}
-.block.john		{background:url('/data/stuff/john.png') no-repeat center center;}
-.block.steph	{background:url('/data/stuff/stephane.png') no-repeat center center;}
 
 
 /*
@@ -344,6 +318,45 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 .script_wrap		{font-size:16px; line-height:26px; background-color:var(--base_back_script); color:var(--spacer); padding:40px; font-family:georgia,serif; margin:3em 0 2em 0; white-space:pre-line; word-wrap:break-word; position:relative;}
 .script_wrap:before {content:"⌨ Script"; font-family:"Patua One",georgia,serif; position:absolute; top:-10px; background-color:var(--base_link_box); padding:10px 20px; color:var(--white); font-size:20px;}
 .script_wrap span	{font-family:'Patua One',georgia,serif; font-size:18px;}
+
+
+/*	
+
+	Pixel peeps:
+	
+	True representation of the actual crew
+	
+	host_wrap		|	wrapper for current presenters
+	presenter		|	wrapper for each presenter
+	block	 		|	default size for each pixel avatar
+	span	 		|	names of peeps
+	
+*/
+
+.host_wrap				{padding:40px 0; border-bottom:4px double var(--spacer); border-radius:40px; margin-bottom:3em;}
+.host_wrap:after		{content:"Your IT STUFF Hosts"; position:absolute; bottom:-25px; left:50%; transform:translateX(-50%); background-color:var(--base_link_box); padding:5px 30px; color:var(--white); font-family:"Patua One",georgia,serif; font-size:20px;}
+
+.presenter				{display:inline-block; vertical-align:top; text-align:center; margin-bottom:3em; margin-top:2em;}
+.presenter a			{display:block;}
+.presenter a span		{display:block; width:100%; color:var(--white); position:absolute; bottom:-45px; left:50%; transform:translateX(-50%);}
+.presenter a:hover span	{text-decoration:none; color:#00ff00;}
+
+.block			{display:block; width:170px; height:190px; position:relative;}
+.block.dave		{background:url('/data/stuff/dave.png') no-repeat -15px center;}
+.block.shi		{background:url('/data/stuff/shi.png') no-repeat -15px center;}
+.block.kriss	{background:url('/data/stuff/kriss.png') no-repeat -15px center;}
+.block.dick		{background:url('/data/stuff/dick.png') no-repeat -15px center;}
+.block.edafe	{background:url('/data/stuff/edafe.png') no-repeat -15px center;}
+.block.david	{background:url('/data/stuff/david.png') no-repeat -15px center;}
+.block.brian	{background:url('/data/stuff/brian.png') no-repeat -15px center;}
+.block.john		{background:url('/data/stuff/john.png') no-repeat -15px center;}
+.block.steph	{background:url('/data/stuff/stephane.png') no-repeat -15px center;}
+
+.block:hover			{border-radius:200px;}
+.block.dave:hover		{background:url('/data/stuff/dave_over.png') no-repeat center center;}
+.block.shi:hover		{background:url('/data/stuff/shi_over.png') no-repeat center center;}
+.block.kriss:hover		{background:url('/data/stuff/kriss_over.png') no-repeat center center;}
+.block.dick:hover		{background:url('/data/stuff/dick_over.png') no-repeat center center;}
 
 
 /*
