@@ -131,6 +131,8 @@ IT Stuff - That's some good stuff!
 .show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
 .show_music p:before{display:inline-block; color:var(--base_emoji); margin-right:10px; content:"♪";}
 
+.show_script,
+.show_ogg			{position:relative;}
 .show_script a		{background-color:var(--base_odt_back);}
 .show_script a:hover{background-color:var(--base_odt_back_alt);}
 .show_ogg a			{background-color:var(--base_ogg_back);}
@@ -140,3 +142,6 @@ IT Stuff - That's some good stuff!
 .show_script a:hover{color:var(--base_odt);}
 .show_script a,
 .show_ogg a			{display:block; padding:1em; font-size:24px; background-color:var(--not_black); text-decoration:underline; text-align:center; color:var(--base_link_box); border:1px solid; margin:10px;}
+
+.show_script:after,
+.show_ogg:after		{content:"\0021E3"; position:absolute; top:50%; left:60%; transform:translateY(-50%); color:var(--white); font-size:20px; font-weight:bold;}
