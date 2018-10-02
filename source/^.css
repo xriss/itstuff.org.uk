@@ -377,6 +377,8 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 	footer_1		|	First column
 	footer_info		|	Top footer section (What is IT STUFF? / Info)
 	top				|	A triangle link to the top of the page
+	meat			|	Social media links
+	tv				|	Youtube
 	
 */
 
@@ -387,10 +389,14 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 .footer span.tit a		{font-weight:900;}
 .footer span.tit a:hover{color:var(--base);}
 .footer_1 span			{margin-right:40px;}
-.footer ul.footer_info	{margin-bottom:40px;}
+.footer ul.footer_info	{margin-bottom:30px;}
 .footer a img	{margin-top:4px;}
 a.top			{display:block; position:absolute; top:-25px; left:50%; right:50%; font-size:5em; color:var(--base_link_box);}
 a.top:hover		{color:var(--hr);}
+
+.meat a 		{display:inline-block; vertical-align:top; width:20px; height:20px; background-color:var(--base); margin-top:10px; margin-right:10px; border-radius:30px;}
+.meat a:hover	{background-color:var(--base_alt);}
+a.tv			{background-color:var(--base_link_box);}
 
 /*
 
