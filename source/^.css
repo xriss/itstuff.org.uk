@@ -285,6 +285,16 @@ audio		{width:780px;}
 .dick_tone		{position:absolute; right:-100px; top:560px; background:url('/data/dick_tone.png')no-repeat; background-size:contain; background-position:center; width:240px; height:240px;}
 .shi_tone		{position:absolute; left:-70px; bottom:-110px; background:url('/data/shi_tone.png')no-repeat; background-size:contain; background-position:center; width:220px; height:220px;}
 
+.dave_tone,
+.kriss_tone,
+.dick_tone,
+.shi_tone		{-webkit-transition:all .2s ease-in-out; -moz-transition:all .2s ease-in-out; -o-transition:all .2s ease-in-out; -ms-transition:all .2s ease-in-out; transition:all .2s ease-in-out;}
+
+.dave_tone:hover	{transform:rotate(20deg);}
+.kriss_tone:hover	{transform:rotate(-20deg);}
+.dick_tone:hover	{transform:rotate(-40deg);}
+.shi_tone:hover		{transform:rotate(-20deg);}
+
 .blog_bit,
 .blog_more		{box-sizing:border-box; padding:40px; border:4px double var(--spacer); border-radius:0 40px;}
 .blog_bit p,
@@ -329,6 +339,7 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 	True representation of the actual crew
 	
 	host_wrap		|	wrapper for current presenters
+	con_wrap		|	wrapper for guests and contributors
 	presenter		|	wrapper for each presenter
 	block	 		|	default size for each pixel avatar
 	span	 		|	names of peeps
@@ -336,7 +347,10 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 */
 
 .host_wrap				{padding:40px 0; border-bottom:4px double var(--spacer); border-radius:40px; margin-bottom:3em;}
-.host_wrap:after		{content:"Your IT STUFF Hosts"; position:absolute; bottom:-25px; left:50%; transform:translateX(-50%); background-color:var(--base_link_box); padding:5px 30px; color:var(--white); font-family:"Patua One",georgia,serif; font-size:20px;}
+.host_wrap:after		{content:"Your IT STUFF Hosts"; position:absolute; bottom:-25px; left:50%; transform:translateX(-50%); background-color:var(--base_odt_back_alt); padding:5px 30px; color:var(--white); font-family:"Patua One",georgia,serif; font-size:20px; border-radius:4px;}
+
+.con_wrap				{padding:40px 0; border-bottom:4px double var(--spacer); border-radius:40px; margin-bottom:3em;}
+.con_wrap:after			{content:"Guests & Contributors"; position:absolute; bottom:-25px; left:50%; transform:translateX(-50%); background-color:var(--spacer); padding:5px 30px; color:var(--white); font-family:"Patua One",georgia,serif; font-size:20px; border-radius:4px;}
 
 .presenter				{display:inline-block; vertical-align:top; text-align:center; margin-bottom:3em; margin-top:2em;}
 .presenter a			{display:block;}
@@ -384,7 +398,7 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 	
 */
 
-.footer			{flex-shrink:0; padding:4em; background:url(/data/back02.jpg) no-repeat center center; background-size:cover; margin-top:6em; border:3px double var(--hr); border-bottom:0; border-left:0; border-right:0; position:relative;}
+.footer			{flex-shrink:0; padding:4em; background:url(/data/back02.jpg) no-repeat center 400px; background-size:cover; background-attachment:fixed; margin-top:6em; border:3px double var(--hr); border-bottom:0; border-left:0; border-right:0; position:relative;}
 .footer ul		{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; width:1024px; margin:0 auto;}
 .footer li span {display:block; font-size:18px; line-height:24px;}
 .footer span.tit{text-transform:uppercase; border-bottom:1px solid; padding-bottom:10px; margin-bottom:10px;}
