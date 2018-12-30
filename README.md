@@ -44,13 +44,13 @@ You can test and build your website locally in your preferred browser by running
     
 ```shell
 
-plated/upgrade	
+./upgrade	
 # Run this first to install the node required dependencies.
 
-plated/build
+./build
 # Run this at least once to build your website.
 
-plated/start
+./start
 # Leave this running in a separate tab, it should watch and rebuild your new changes.
 # Make sure nothing else is using port http://0.0.0.0:8000.
 
@@ -59,7 +59,7 @@ plated/start
 # Make sure your browser is not caching content, otherwise your changes will not show up.
 
 
-plated/publish
+./publish
 # Run this to push changes to Github.
 # Doing this will re-build and update your current website with the new changes.
 # Depending on Github, it may take a while for new changes to show up but it shouldn't be too long.
@@ -94,42 +94,42 @@ Run the following to pull the latest version of Plated-Example into an existing 
 
 Plated is a node app.
 
-Please make sure node is available and node dependencies have been installed using ```plated/upgrade```.
+Please make sure node is available and node dependencies have been installed using ```./upgrade```.
 
 The following scripts may be run from this project's **root directory**.
 
 ```shell
 
-plated/upgrade	
+./upgrade	
 # This will install or upgrade plated to the latest version using npm.
 # Run this once for the scripts to work.
 # Run this later to upgrade to the latest version.
 
-plated/build
+./build
 # Run this at least once to build your website.
 
-plated/start
+./start
 # Leave this running in a separate tab, it should watch and rebuild your new changes.
 
-plated/watch
+./watch
 # Watches plated/source and continuously builds the website when files are changed.
-# Optional if ```plated/start``` is running
+# Optional if ```./start``` is running
 
-plated/serv
+./serv
 # Start a simple static server locally.
 # Visit http://0.0.0.0:8000/new-repo/ in your browser to view your site.
-# Optional if ```plated/start``` is running
+# Optional if ```./start``` is running
 
-plated/publish
+./publish
 # Builds your website and then does a git add/commit/pull/push of all files to Github.
 # Run this after if you prefer the traditional git commands.
 
-plated/pull
+./pull
 # Pull the latest changes direct from the plated-example repository.
 # Attempts to ignore possible conflicts outside of this plated directory.
 # This should pick up small bug fixes in these scripts without breaking anything else.
 
-plated/settings
+./settings
 # This contains settings used by all the other scripts and should not be run directly.
 
 ```
