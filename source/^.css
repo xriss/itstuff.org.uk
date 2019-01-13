@@ -435,6 +435,7 @@ only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
 
+	html			{min-height:100%;}
 	body			{padding-top:7em; min-height:1px; max-height:999999px;}
 	.nav_wrap		{padding:3em;}
 	.nav			{font-size:1.5em;}
@@ -449,7 +450,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	
 	a.read			{font-size:1.75em; padding:20px;}
 	
-	.footer			{background-attachment:initial;}
+	.footer			{background:url(/data/back02.jpg) no-repeat center center; background-attachment:initial;}
 	.footer ul		{width:100%;}
 	.footer li span	{font-size:70%;}
 	.footer li.footer_1 span	{margin-bottom:20px; line-height:20px;}
