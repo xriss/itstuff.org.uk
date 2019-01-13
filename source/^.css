@@ -451,7 +451,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	a.read			{font-size:1.75em; padding:20px;}
 	
 	.footer			{background:url(/data/back02.jpg) no-repeat center center; background-attachment:initial;}
-	.footer ul		{width:100%;}
+	.footer ul		{width:100%; max-width:95%;}
 	.footer li span	{font-size:70%;}
 	.footer li.footer_1 span	{margin-bottom:20px; line-height:20px;}
 	.footer_1 span			{margin-right:2.5em;}
