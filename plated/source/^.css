@@ -329,7 +329,7 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 .script_wrap		{font-size:16px; line-height:26px; background-color:var(--base_back_script); color:var(--spacer); padding:40px; font-family:georgia,serif; margin:3em 0 2em 0; white-space:pre-line; word-wrap:break-word; position:relative;}
 .script_wrap:before {content:"⌨ Script"; font-family:"Patua One",georgia,serif; position:absolute; top:-10px; background-color:var(--base_link_box); padding:10px 20px; color:var(--white); font-size:20px;}
 .script_wrap span	{font-family:'Patua One',georgia,serif; font-size:18px;}
-.script_wrap span:first-of-type {padding:30px 0 20px; display:block; color:var(--base_link);}
+.script_wrap span:first-of-type {padding:20px 0 0 0; margin-bottom:-20px; display:block; color:var(--base_link);}
 
 
 /*	
