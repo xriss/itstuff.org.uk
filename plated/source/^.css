@@ -297,6 +297,7 @@ audio		{width:780px;}
 
 .blog_bit,
 .blog_more		{box-sizing:border-box; padding:40px; border:4px double var(--spacer); border-radius:0 40px;}
+.blog_more img	{max-width:780px;}
 .blog_bit p,
 .blog_more p	{white-space:pre-wrap;}
 .blog_bit p		{font-size:30px; line-height:38px; clear:both;}
