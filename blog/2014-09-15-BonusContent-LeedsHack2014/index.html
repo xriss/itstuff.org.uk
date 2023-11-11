@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Bonus Content! Leeds Hack 2014 - Xtras by Brian Ackroyd</title>
+<meta name="theme-color" content="#2a3133">
+<meta name="google-site-verification" content="wwHX7osRtV4Bkz8EpOeWaTCr4dYo8jgNqCFC-oCTCGs" />
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700" rel="stylesheet">
+<link rel="icon" type="image/png" href="../../favicon16.png" sizes="16x16">  
+<link rel="icon" type="image/png" href="../../favicon32.png" sizes="32x32">  
+<link rel="icon" type="image/png" href="../../favicon96.png" sizes="96x96">  
+<style>
+
+/*
+
+	Variables:
+	
+	------------------------------------------------------------------
+	The bright highlight used for the logo and links on hover
+	------------------------------------------------------------------
+	
+	base 			- Kinda cyan		|	Highlight colour
+	base_alt 		- Warm gold			|	Link hover
+	
+	------------------------------------------------------------------
+	Basic colours for background and fonts
+	------------------------------------------------------------------
+	
+	base_back		- Almost black		|	Main body background
+	base_back_alt 	- Dark white		|	Docs column background
+	base_back_code	- Dark blue grey	|	Code background
+	base_back_script- Off white			|	Script background
+	base_link_box	- Tongue red		|	Link box background
+	base_src		- Light grey		|	Source link background
+	
+	base_font		- White				|	Body font
+	base_link		- Medium grey		|	Link navigation bar
+	base_code		- White				|	Code font
+	
+	base_cast_back	- Black				|	Broadcast date background
+	base_cast		- Grey				|	Broadcast date font
+	base_odt_back	- Vary dark cyan	|	Script download background
+	base_odt_back_alt	- Dark cyan		|	Background hover
+	base_odt		- Kinda cyan		|	Script download link
+	base_ogg_back	- Very dark gold	|	Ogg download background
+	base_ogg_back_alt	- Dark gold		|	Background hover
+	base_ogg		- Warm gold			|	Ogg download link
+	base_emoji		- Light purple		|	End music font & emojis
+	
+	------------------------------------------------------------------
+	Extra bits
+	------------------------------------------------------------------
+	
+	spacer			- Dark grey			|	Spacer and borders
+	white 			- White				|	White
+	black			- Black				|	Black
+	not_black		- Not black			|	Not black
+	hr		 		- Blue				|	Horizontal line
+
+*/
+
+:root {
+  --base:#00ffff;
+  --base_alt:#FFC107;
+  
+  --base_back:#141b1b;
+  --base_back_alt:#efefef;
+  --base_back_code:#282a36;
+  --base_back_script:#F7F4FD; 
+  --base_link_box:#ff382a;
+  --base_src:#d8d8d8;
+  
+  --base_font:#fff;
+  --base_link:#9a9a9a;
+  --base_code:#fff;
+
+  --base_cast_back:#000;
+  --base_cast:#ccc;
+  --base_odt_back:#123c3c;
+  --base_odt_back_alt:#176565;
+  --base_odt:#00ffff;
+  --base_ogg_back:#7d510f;
+  --base_ogg_back_alt:#B26F09;
+  --base_ogg:#FFC107;
+  --base_emoji:#945cff;
+  
+  --spacer:#495252;
+  --white:#fff;
+  --black:#000;
+  --not_black:#111;
+  --hr:#1400ff;
+}
+
+
+/*
+
+	Reset & base css
+	
+	body	|	100vh - Avoid the IE 10-11 `min-height` bug.
+
+*/
+
+*{box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box;}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:top;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+a,img		{border:0; outline:none;}textarea:focus,input:focus{outline:0;}*:focus{outline:0;}
+body, html	{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; min-width:100%; min-height:100%; width:100%; height:100%; height:100vh; margin:0 auto;}
+
+
+/*
+
+	Main styles for the entire site
+	
+	a		|	Transition css animations
+
+*/
+
+body 	{background-color:var(--base_back); color:var(--base_font); display:flex; flex-direction:column; font-family:"Rubik",Arial,sans-serif; font-size:13px; line-height:18px; position:relative; padding-top:4em; scroll-behavior:smooth;}
+
+a		{-webkit-transition:all .2s ease-in-out; -moz-transition:all .2s ease-in-out; -o-transition:all .2s ease-in-out; -ms-transition:all .2s ease-in-out; transition:all .2s ease-in-out;}
+
+a 		{color:var(--base_font); text-decoration:none;}
+a:hover {color:var(--base); cursor:pointer;}
+a img 	{border:none;}
+
+h1 		{font-size:30px; margin-bottom:26px;}
+h1 a	{font-weight:bold;}
+h2 		{font-size:24px;}
+h3 		{font-size:18px;}
+h4 		{font-size:16px;}
+h5 		{font-size:14px;}
+h6 		{font-size:13px;}
+
+b		{font-weight:bold;}
+i		{font-style:italic;}
+p 		{font-size:22px; line-height:34px; margin-bottom:34px;}
+
+strong	{font-weight:bold;}
+em		{font-style:italic;}
+
+li		{list-style:none;}
+
+.line, hr			{border-top:1px dashed var(--hr); margin-top:40px; margin-bottom:20px; position:relative;}
+
+blockquote 			{font-family:georgia,serif; font-style:italic; padding:13px 13px 21px 15px; margin-bottom:18px;}
+blockquote:before	{color:#eee; content:"\201C"; font-family:georgia,serif; font-size:40px; margin-left:-10px;}
+blockquote p 		{font-size:14px; font-style:italic; font-weight:300; line-height:18px; margin-bottom:0;}
+
+code, pre 			{color:var(--base_code); font-family:monospace;}
+code				{background:var(--base_back_code);  border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; font-size:12px; padding:1px 3px;}
+pre					{background-color:var(--base_back_code); border-radius:6px; font-size:11px; line-height:16px; margin:32px 0 18px 0; padding:14px; white-space:pre-wrap; word-wrap:break-word; }
+pre:first-of-type	{margin-top:0;}
+pre code 			{background:transparent; font-size:14px; line-height:26px; padding:0;}
+sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
+
+
+/*
+
+	Wrappers:
+	
+	* Prevent Chrome, Opera, and Safari from letting these items shrink 
+	to smaller than their content's default minimum size.
+	
+	content			|	Flex = *
+	default 		|	Clean default div, used only in Docs body
+	wrap			|	Landing page main wrapper
+	wrap.ctr		|	Default wrapper with center text-align
+	nav_wrap 		|	Navigation bar for entire site
+	play_wrap		|	Latest show wrapper
+	right 			|	Class for text-align right
+
+*/
+
+.content	{flex:1 0 auto;}
+.default	{margin:0 auto;}
+.wrap		{position:relative; margin:0 auto; width:860px;}
+.wrap.ctr	{text-align:center;}
+.nav_wrap	{background-color:var(--base_back); left:0; padding:1.5em 3em; position:fixed; top:0; width:100%; z-index:100;}
+.play_wrap	{width:960px; margin:0 auto;}
+.right		{text-align:right;}
+
+
+/*
+
+	Navigation bar:
+	
+	The main navigation bar is made up of a wrapper div that holds the
+	main logo link and an unordered list of all the other pages.
+	
+	nav		 		|	Main div for logo and links
+	nav ul	 		|	Listing of links
+	nav a 			|	Links with padding
+
+*/
+
+.nav		{align-items:center; display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; -moz-box-align:center; -ms-box-align:center; -webkit-box-align:center;}
+.nav ul		{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:center; width:100%;}
+.nav a		{color:var(--base_link); font-size:1.5em; margin:0 1rem;}
+.nav a:hover{color:var(--base);}
+
+
+/*	
+
+	Logo:
+	
+	'Patua One' is only used here - @import found in ^.html
+	
+	logo	 		|	Adds colour and style to this style
+						Currently used in footer and page titles
+						Footer - plated^
+						Pages  - Landing, About, Archive
+	logo h1			|	Page titles are large
+	logo p	 		|	Adds colour and style to paragraph
+	
+*/
+
+.logo		{color:var(--base_link_box); font-family:"Rubik",Arial,sans-serif; margin-top:3em;}
+.logo h1	{font-size:4em; margin-bottom:0.5em; font-weight:900;}
+.logo p		{color:var(--white); font-size:2em; line-height:1.2em;}
+
+
+/*	
+
+	Landing page:
+	
+	Front page natter
+	
+	listen_tit	 	|	Header for latest show
+	listen_date	 	|	Broadcast date in header
+	
+*/
+
+.listen_tit	{position:relative; margin:0 auto; margin-top:3.5em; width:960px; padding:10px 20px; background-color:var(--base_alt); color:var(--base_ogg_back); font-weight:900; text-transform:uppercase;}
+.listen_tit span.listen_date	{position:absolute; right:20px;}
+
+audio::-webkit-media-controls-panel	{background-color:initial;}
+audio::-moz-media-controls-panel	{background-color:initial;}
+audio::-o-media-controls-panel		{background-color:initial;}
+audio		{width:780px;}
+
+
+/*
+
+	Blog:
+	
+	blog_info 		|	Blog author & date info
+	blog_title		|	Large episode number
+	blog_play		|	Wrapper for ep number and archive.org embed
+	
+	blog_wrap 		|	Wrapper for a blog post
+	blog_wrap a		|	Fix long urls with these rules
+	blog_wrap h2	|	Large text like landing page
+	blog_wrap.pod	|	Wrapper for posts in episode list
+	blog_wrap.own	|	Wrapper for post in own page
+	
+	spacer			|	Emoji seperator between sections
+	blog_bit		|	Blog text visible in episode list
+	blog_more		|	Blog text that are hidden under the fold
+	first-letter	|	First letter of paragraph stylings
+	
+	read_wrap		|	Wrapper for 'Read on' link
+	a.read			|	Link to episode own page
+	
+	paging_wrap		|	Wrapper for paging links
+	top_paging		|	Paging options on top of site (currently hidden)
+	
+*/
+
+
+.blog_info		{font-size:70%; position:absolute; right:0; top:0;}
+.blog_info a	{display:block;}
+.blog_info a:before {content:"🍙"; color:var(--base_cast); margin-right:5px;}
+.blog_title		{font-size:4em; line-height:1em; text-transform:uppercase; padding:10px 20px; margin:0 auto; margin-bottom:30px; text-align:center;}
+.blog_title:nth-of-type(2) {margin-top:30px;}
+.blog_title:before {content:"♫"; color:var(--base_link_box); margin-right:10px;}
+.blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:var(--black); border:3px double var(--hr); border-bottom:0; border-left:0; border-right:0; text-align:center;}
+.blog_play p	{text-align:left; line-height:1.3em;}
+
+.blog_wrap		{font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
+.blog_wrap h2	{font-family:"Rubik",Arial,sans-serif; font-size:2.5em; line-height:1em; padding-bottom:1em;}
+.blog_wrap a	{overflow-wrap:break-word; word-wrap:break-word; word-break:break-word; -ms-hyphens:auto; -moz-hyphens:auto; -webkit-hyphens:auto; hyphens:auto;}
+.blog_wrap a 	{color:var(--base); text-decoration:none;}
+.blog_wrap a:hover {color:var(--base_alt); cursor:pointer;}
+.blog_wrap.pod:nth-of-type(2),
+.blog_wrap.own	{padding-top:0;}
+
+.paging_wrap,
+.spacer,
+.blog_more,
+.blog_bit		{position:relative; margin:0 auto; width:860px;}
+.spacer:before	{content:"\01D197"; text-align:center; display:block; margin-top:15px; padding-bottom:30px; font-size:3.5em; color:var(--spacer);}
+.blog_bit		{min-height:200px;}
+
+.tone 			{position:fixed; top:100px; right:0;}
+.dave_tone		{position:absolute; right:20px; top:-50px; background:url('/data/dave_tone.png')no-repeat; background-size:contain; background-position:center; width:260px; height:260px;}
+.kriss_tone		{position:absolute; right:-60px; top:250px; background:url('/data/kriss_tone.png')no-repeat; background-size:contain; background-position:center; width:240px; height:240px;}
+.dick_tone		{position:absolute; right:-100px; top:560px; background:url('/data/dick_tone.png')no-repeat; background-size:contain; background-position:center; width:240px; height:240px;}
+.shi_tone		{position:absolute; left:-70px; bottom:-110px; background:url('/data/shi_tone.png')no-repeat; background-size:contain; background-position:center; width:220px; height:220px;}
+
+.dave_tone,
+.kriss_tone,
+.dick_tone,
+.shi_tone		{-webkit-transition:all .2s ease-in-out; -moz-transition:all .2s ease-in-out; -o-transition:all .2s ease-in-out; -ms-transition:all .2s ease-in-out; transition:all .2s ease-in-out;}
+
+.dave_tone:hover	{transform:rotate(20deg);}
+.kriss_tone:hover	{transform:rotate(-20deg);}
+.dick_tone:hover	{transform:rotate(-40deg);}
+.shi_tone:hover		{transform:rotate(-20deg);}
+
+.blog_bit,
+.blog_more		{box-sizing:border-box; padding:40px; border:4px double var(--spacer); border-radius:0 40px;}
+.blog_more img	{max-width:780px;}
+.blog_bit p,
+.blog_more p	{white-space:pre-wrap;}
+.blog_bit p		{font-size:30px; line-height:38px; clear:both;}
+.blog_bit p:last-of-type	{margin-bottom:0;}
+.blog_more p	{font-size:90%; line-height:28px;}
+.blog_more p b	{font-size:1.2em; color:var(--base_link_box); text-transform:uppercase; font-weight:normal; background-color:var(--not_black); padding:5px 15px; margin-bottom:5px; display:inline-block; margin-left:-20px; border-left:5px solid var(--base_odt_back_alt);}
+/*.blog_more p b:before {content:"🌠"; margin-right:10px; color:var(--base_emoji);}*/
+.blog_bit p:first-of-type::first-letter {float:left; border:1px dotted var(--base_back); padding:35px 15px; margin-right:15px; font-family:"Patua One",georgia,serif; background-color:var(--base_odt_back_alt); font-size:3em;}
+
+.read_wrap		{text-align:center; padding:0; border:0; min-height:initial;}
+a.read			{display:inline-block; background-color:var(--base_link_box); padding:0 20px; border-radius:0 0 4px 4px; color:var(--base_back); text-align:center; margin:0 auto;}
+a.read:hover	{background-color:var(--base); color:var(--base_back);}
+
+.paging_wrap	{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; margin-top:5em; padding-bottom:2em;}
+.paging_wrap a	{font-size:20px; display:block; color:var(--white);}
+.paging_wrap a:hover	{color:var(--base);}
+.paging_wrap.top_paging {margin:0 auto; position:absolute; left:-50%; right:-50%; top:380px;}
+
+
+/*
+
+	Script:
+	
+	script_wrap 	|	Off-white wrapper
+	:before			|	Title of script section
+	span	 		|	Each paragraph will start with a bolder font
+	
+*/
+
+.script_wrap		{font-size:16px; line-height:26px; background-color:var(--base_back_script); color:var(--spacer); padding:40px; font-family:georgia,serif; margin:3em 0 2em 0; white-space:pre-line; word-wrap:break-word; position:relative;}
+.script_wrap:before {content:"⌨ Script"; font-family:"Patua One",georgia,serif; position:absolute; top:-10px; background-color:var(--base_link_box); padding:10px 20px; color:var(--white); font-size:20px;}
+.script_wrap span	{font-family:'Patua One',georgia,serif; font-size:18px;}
+.script_wrap span:first-of-type {padding:20px 0 0 0; margin-bottom:-20px; display:block; color:var(--base_link);}
+
+
+/*	
+
+	Pixel peeps:
+	
+	True representation of the actual crew
+	
+	host_wrap		|	wrapper for current presenters
+	con_wrap		|	wrapper for guests and contributors
+	presenter		|	wrapper for each presenter
+	block	 		|	default size for each pixel avatar
+	span	 		|	names of peeps
+	
+*/
+
+.host_wrap				{padding:40px 0; border-bottom:4px double var(--spacer); border-radius:40px; margin-bottom:3em;}
+.host_wrap:after		{content:"Your IT STUFF Hosts"; position:absolute; bottom:-25px; left:50%; transform:translateX(-50%); background-color:var(--base_odt_back_alt); padding:5px 30px; color:var(--white); font-family:"Patua One",georgia,serif; font-size:20px; border-radius:4px;}
+
+.con_wrap				{padding:40px 0; border-bottom:4px double var(--spacer); border-radius:40px; margin-bottom:3em;}
+.con_wrap:after			{content:"Guests & Contributors"; position:absolute; bottom:-25px; left:50%; transform:translateX(-50%); background-color:var(--spacer); padding:5px 30px; color:var(--white); font-family:"Patua One",georgia,serif; font-size:20px; border-radius:4px;}
+
+.presenter				{display:inline-block; vertical-align:top; text-align:center; margin-bottom:3em; margin-top:2em;}
+.presenter a			{display:block;}
+.presenter a span		{display:block; width:100%; color:var(--white); position:absolute; bottom:-45px; left:50%; transform:translateX(-50%);}
+.presenter a:hover span	{text-decoration:none; color:#00ff00;}
+
+.host_wrap .presenter	{margin-right:1.5em;}
+.host_wrap .presenter.last	{margin-right:0;}
+
+.block			{display:block; width:170px; height:190px; position:relative; border-radius:200px;}
+.block.dave		{background:url('/data/stuff/dave_alt.png') no-repeat -15px center;}
+.block.shi		{background:url('/data/stuff/shi_alt.png') no-repeat -15px center;}
+.block.kriss	{background:url('/data/stuff/kriss_alt.png') no-repeat -15px center;}
+.block.dick		{background:url('/data/stuff/dick_alt.png') no-repeat -15px center;}
+.block.edafe	{background:url('/data/stuff/edafe.png') no-repeat -15px center;}
+.block.david	{background:url('/data/stuff/david.png') no-repeat -15px center;}
+.block.brian	{background:url('/data/stuff/brian.png') no-repeat -15px center;}
+.block.john		{background:url('/data/stuff/john.png') no-repeat -15px center;}
+.block.steph	{background:url('/data/stuff/stephane.png') no-repeat -15px center;}
+
+.block:hover			{border-radius:200px;}
+.block.dave:hover		{background:url('/data/stuff/dave_over.png') no-repeat center center;}
+.block.shi:hover		{background:url('/data/stuff/shi_over.png') no-repeat center center;}
+.block.kriss:hover		{background:url('/data/stuff/kriss_over.png') no-repeat center center;}
+.block.dick:hover		{background:url('/data/stuff/dick_over.png') no-repeat center center;}
+
+
+/*
+
+	Footer:
+	
+	Sticky footer with flexbox
+	
+	https://css-tricks.com/couple-takes-sticky-footer/
+	
+	* Prevent Chrome, Opera, and Safari from letting these items shrink 
+	to smaller than their content's default minimum size.
+	
+	footer	 		|	Flex = *
+	footer ul 		|	Wrapper for individual footer links
+	footer li span	|	Content rows per column
+	tit				|	Title of each column
+	footer_1		|	First column
+	footer_info		|	Top footer section (What is IT STUFF? / Info)
+	top				|	A triangle link to the top of the page
+	meat			|	Social media links
+	tv				|	Youtube
+	
+*/
+
+.footer			{flex-shrink:0; padding:4em; background:url(/data/back02.jpg) no-repeat center 400px; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-attachment:fixed; margin-top:6em; border:3px double var(--hr); border-bottom:0; border-left:0; border-right:0; position:relative;}
+.footer ul		{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; width:1024px; margin:0 auto;}
+.footer li span {display:block; font-size:18px; line-height:24px;}
+.footer span.tit{text-transform:uppercase; border-bottom:1px solid; padding-bottom:10px; margin-bottom:10px;}
+.footer span.tit a		{font-weight:900;}
+.footer span.tit a:hover{color:var(--base);}
+.footer_1 span			{margin-right:40px;}
+.footer ul.footer_info	{margin-bottom:30px;}
+.footer a img	{margin-top:4px;}
+a.top			{display:block; position:absolute; top:-25px; left:50%; right:50%; font-size:5em; color:var(--base_link_box);}
+a.top:hover		{color:var(--hr);}
+
+.meat a 		{display:inline-block; vertical-align:top; width:20px; height:20px; background-color:var(--base); margin-top:10px; margin-right:10px; border-radius:30px;}
+.meat a:hover	{background-color:var(--base_alt);}
+a.tv			{background-color:var(--base_link_box);}
+
+/*
+
+	Media queries
+	
+	main			|	Wrapper for documentation page
+	contents		|	Wrapper for documentation table of contents
+	
+*/
+
+@-moz-document url-prefix() {
+
+	.blog_bit p:first-of-type::first-letter	{padding:25px 15px;}
+
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+	html			{min-height:100%;}
+	body			{padding-top:7em; min-height:1px; max-height:999999px;}
+	.nav_wrap		{padding:3em;}
+	.nav			{font-size:1.5em;}
+	.blog_info		{font-size:1em;}
+	.blog_wrap h2	{font-size:3em;}
+	p 				{font-size:1.5em; line-height:1.5em; margin-bottom:1.5em;}
+	.footer			{font-size:1.5em;}
+	.paging_wrap	{font-size:1.5em;}
+	
+	.main			{max-width:initial;}
+	.contents		{top:5.5em;}
+	
+	a.read			{font-size:1.75em; padding:20px;}
+	
+	.footer			{background:url(/data/back02.jpg) no-repeat center center; background-attachment:initial;}
+	.footer ul		{width:100%; max-width:95%;}
+	.footer li span	{font-size:70%;}
+	.footer li		{width:40%;}
+	.footer li.footer_1	{width:60%;}
+	.footer li.footer_1 span	{margin-bottom:20px; line-height:20px;}
+	.footer_1 span			{margin-right:2.5em;}
+	.footer_about	{font-size:70%;}
+	.footer_about li.footer_1	{margin-right:2em;}
+	.footer a img	{display:none;}
+	
+	.play_wrap		{width:900px;}
+	.listen_tit		{font-size:40%; width:900px;}
+	.listen_tit span.listen_date	{font-size:20px; top:20px;}
+	
+	.dave_tone		{width:220px; height:220px;}
+	.blog_bit p:first-of-type::first-letter {padding:45px 15px; margin-right:15px; font-size:4em;}
+	.blog_bit p,
+	.blog_more p	{line-height:40px;}
+
+
+}
+
+.ep_showlinks	{border-top:1px solid var(--base); padding-top:10px; margin-top:10px;}
+.ep_showlinks a	{display:block; font-size:85%; line-height:1.5em; color:var(--base_cast);}
+.ep_showlinks a:before {content:"⌁"; margin-right:5px; color:var(--base_link_box);}
+
+.show_box			{background-color:var(--base_cast_back); margin-top:40px;}
+.show_date			{padding:1em 2em; color:var(--base_cast); text-transform:uppercase; text-align:center;}
+.show_date span		{color:var(--base_link_box);}
+.show_wrap			{background-color:var(--not_black);}
+.show_info			{display:inline-block; vertical-align:top; width:50%;}
+.show_info.source	{width:20%;}
+.show_music			{padding:1em 2em; padding-right:0;}
+.show_music span	{display:block; color:var(--base);}
+.show_music p 		{display:inline-block; vertical-align:top; width:49%; margin:0; font-size:16px; line-height:20px; box-sizing:border-box; padding:10px 40px 10px 0;}
+.show_music p:before{display:inline-block; color:var(--base_emoji); margin-right:10px; content:"♪";}
+
+.show_script,
+.show_ogg			{position:relative;}
+.show_script a		{background-color:var(--base_odt_back);}
+.show_script a:hover{background-color:var(--base_odt_back_alt);}
+.show_ogg a			{background-color:var(--base_ogg_back);}
+.show_ogg a:hover	{background-color:var(--base_ogg_back_alt);}
+.show_ogg a,
+.show_ogg a:hover	{color:var(--base_ogg);}
+.show_script a:hover{color:var(--base_odt);}
+.show_script a,
+.show_ogg a			{display:block; padding:1em; font-size:24px; background-color:var(--not_black); text-decoration:underline; text-align:center; color:var(--base_link_box); border:1px solid; margin:10px;}
+
+.show_script:after,
+.show_ogg:after		{content:"\0021E3"; position:absolute; top:50%; left:60%; transform:translateY(-50%); color:var(--white); font-size:20px; font-weight:bold;}
+
+</style></head>
+<body><div class="content"><div class="nav_wrap">
+	<div class="nav">
+		<ul>
+			<li><a href="../../">Home</a></li>
+			<li><a href="http://feeds.feedburner.com/itstuffbradford">RSS</a></li>
+			<li><a href="../../about">About</a></li>
+			<li><a href="../../blog">Episodes</a></li>
+		</ul>
+	</div>
+</div>
+<div class="blog_wrap own">
+<!--	<div class="paging_wrap top_paging"><a href="../../blog/2014-09-04-ITStuff260814/">Previous</a>
+ <a href="../../blog/2014-10-03-ITStuff230914/">Next</a>
+</div>-->
+	<div class="blog_play">
+	<div class="blog_title">Bonus Content! Leeds Hack 2014 - Xtras by Brian Ackroyd</div>
+	<audio controls>
+	  <source src="https://ia902303.us.archive.org/28/items/LeedsHack2014-XtrasByBrianAckroyd/LeedsHack2014FullPodcast.ogg" type="audio/ogg">
+	Your browser does not support the audio element.
+	</audio>
+</div>
+
+
+<div class="blog_bit">
+	<p>Xtra, Xtra, Hear all about it! This is a &quot;Bonus Content!&quot; podcast featuring all the interviews of the hackers and participants at <a href="http://leedshack.org/">Leeds Hack 2014</a> by none other than our roving reporter, Brian Ackroyd for IT Stuff.</p>
+<p>You can hear Brian's report in <a href="http://itstuff.org.uk/blog/ITStuff260814">IT Stuff Episode 260814</a> and in upcoming episodes!</p>
+<p>More of Xtras by Brian Ackroyd is found <a href="http://itstuff.org.uk/welcome#xtras">in this dedicated playlist</a>.</p>
+
+
+</div>
+
+
+
+
+
+	<div class="spacer"></div>
+	<div class="blog_more">
+		
+		
+		
+		<div class="show_box">
+	<div class="show_date"><span>Broadcast</span> 15th September 2014
+
+</div>
+	<div class="show_tube"></div>
+	<div class="show_wrap">
+		<div class="show_info">
+			<div class="show_script"></div>
+		</div><div class="show_info">
+			<div class="show_ogg"><a href="https://ia902303.us.archive.org/28/items/LeedsHack2014-XtrasByBrianAckroyd/LeedsHack2014FullPodcast.ogg">ogg</a>
+
+</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+	<div class="tone"><div class="dave_tone"></div><div class="kriss_tone"></div><div class="dick_tone"></div></div><div class="shi_tone"></div>
+	<div class="paging_wrap"><a href="../../blog/2014-09-04-ITStuff260814/">Previous</a>
+ <a href="../../blog/2014-10-03-ITStuff230914/">Next</a>
+</div>
+</div>
+
+</div>
+<div class="footer">
+	<a href="#" class="top">&#8673;</a>
+	<ul class="footer_info">
+		<li class="footer_1">
+			<span class="tit">What is <a href="../../">IT STUFF</a>?</span>
+			<span>Your monthly tech comedy broadcast is presented by David, shi, Kriss &amp; Dick.</span>
+			<span>Listen <i>live</i> on BCB Radio (106.6 FM) every 4 weeks on Thursday, 6:00pm - 6:30pm.</span>
+			<span>Repeated the next day on Friday at 1:30pm - 2:00pm.</span>
+			<div class="meat"><a class="twit" href="https://twitter.com/itstuffradio"></a><a class="tv" href="https://www.youtube.com/channel/UCZNBdwhgMg64D5ohlRLMPyQ"></a></div>
+		</li>
+		<li>
+			<span class="tit">Info</span>
+			<span><a href="http://feeds.feedburner.com/itstuffbradford" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt=""/> Subscribe (RSS)</a></span>
+			<span><a href="../../blog">Episodes</a></span>
+			<span><a href="../../archive">Archive</a></span>
+			<span><a href="../../about">About</a></span>
+		</li>
+	</ul>
+	<ul class="footer_about">
+		<li class="footer_1">Created with <a href="https://xriss.github.io/plated/" class="logo">plated^</a></li>
+		<li><a href="http://www.bcbradio.co.uk/">Broadcast for BCB 106.6 FM, Community Radio station for Bradford.</a></li>
+	</ul>
+</div>
+</body>
+</html>
