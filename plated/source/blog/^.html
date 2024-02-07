@@ -13,7 +13,7 @@ IT Stuff - That's some good stuff!
 #^_blog_page_body
 {_list:blog_list}
 <div class="blog_wrap" style="padding-top:0;">
-	<div class="paging_wrap">{_blog_page_older:link_older_page} {_blog_page_newer:link_newer_page}</div>
+	<div class="paging_wrap">{_blog_page_older:link_older_page||} {_blog_page_newer:link_newer_page||}</div>
 </div>
 
 #^-Paging for main blog list page
@@ -42,7 +42,7 @@ IT Stuff - That's some good stuff!
 		{showbox||}
 	</div>
 	<div class="tone"><div class="dave_tone"></div><div class="kriss_tone"></div><div class="dick_tone"></div></div><div class="shi_tone"></div>
-	<div class="paging_wrap">{_blog_post_older:link_older_post} {_blog_post_newer:link_newer_post}</div>
+	<div class="paging_wrap">{_blog_post_older:link_older_post||} {_blog_post_newer:link_newer_post||}</div>
 </div>
 
 

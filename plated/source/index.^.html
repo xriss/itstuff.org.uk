@@ -15,6 +15,27 @@ IT STUFF
 	{broadcast}
 </div>
 
+#^broadcast
+<!--	Delete this chunk when broadcast_old / blog_import is fixed	-->
+<div class="play_wrap">
+	<div class="listen_tit">
+		Listen to our latest show <span class="listen_date">Broadcast 1st & 2nd April 2020</span>
+	</div>
+	{blog_play}
+	<div class="blog_bit read_wrap">
+		<a href="{_root}blog/2020-03-31-ITStuff310320" class="read">Read on</a>
+	</div>
+</div>
+
+#^blog_play
+<!--	Delete this chunk when broadcast_old / blog_import is fixed	-->
+<div class="blog_play">
+	<div class="blog_title">Episode 310320</div>
+	<audio controls>
+	  <source src="https://ia601405.us.archive.org/33/items/ITStuff310320/310320.ogg" type="audio/ogg">
+	Your browser does not support the audio element.
+	</audio>
+</div>
 
 #^----------------------------------------------------------------------
 
@@ -28,7 +49,8 @@ IT STUFF
 	0 means the first post
 	_blog_export means all of the posts from front page of the block
 	
-#^broadcast root=blogdata._blog_export.0
+#^broadcast_old root=blogdata._blog_export.0
+<!--	Rename to broadcast when blog_import is fixed	-->
 <div class="play_wrap">
 	<div class="listen_tit">
 		Listen to our latest show <span class="listen_date">{showdate}</span>
@@ -40,7 +62,7 @@ IT STUFF
 </div>
 
 #^css same=append
-body		{background-color:#111; background:url(/data/back01.jpg) no-repeat center center; background-size:cover; background-attachment:fixed;}
+body		{background-color:#111; background:url({_root}data/back01.jpg) no-repeat center center; background-size:cover; background-attachment:fixed;}
 .blog_wrap	{padding-bottom:6em;}
 .blog_play	{padding:2em; margin:0 auto; border-radius:0 0 18px 18px; border:3px double var(--base_back_alt); border-top:0;}
 .blog_title	{width:820px;}
