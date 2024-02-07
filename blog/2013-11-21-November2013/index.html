@@ -3,8 +3,6 @@
 <head><meta charset="utf-8"><title>21st November 2013</title>
 <meta name="theme-color" content="#2a3133">
 <meta name="google-site-verification" content="wwHX7osRtV4Bkz8EpOeWaTCr4dYo8jgNqCFC-oCTCGs" />
-<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700" rel="stylesheet">
 <link rel="icon" type="image/png" href="../../favicon16.png" sizes="16x16">  
 <link rel="icon" type="image/png" href="../../favicon32.png" sizes="32x32">  
 <link rel="icon" type="image/png" href="../../favicon96.png" sizes="96x96">  
@@ -107,6 +105,61 @@ a,img		{border:0; outline:none;}textarea:focus,input:focus{outline:0;}*:focus{ou
 body, html	{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; min-width:100%; min-height:100%; width:100%; height:100%; height:100vh; margin:0 auto;}
 
 
+/*	RubikBlack - weight 900	*/
+@font-face {
+    font-family: 'RubikBlack';
+    src: url('../../data/font/RubikBlack.eot');								/* IE9 Compat Modes */
+    src: url('../../data/font/RubikBlack.eot') format('embedded-opentype'),	/* IE6-IE8 */
+         url('../../data/font/RubikBlack.woff2') format('woff2'),				/* Super Modern Browsers */
+         url('../../data/font/RubikBlack.woff') format('woff'),				/* Modern Browsers */
+         url('../../data/font/RubikBlack.ttf') format('truetype'),				/* Safari, Android, iOS */
+         url('../../data/font/RubikBlack.svg#RubikBlack') format('svg');		/* Legacy iOS */
+}
+
+/*	RubikBold - weight 700	*/
+@font-face {
+    font-family: 'RubikBold';
+    src: url('../../data/font/RubikBold.eot');
+    src: url('../../data/font/RubikBold.eot') format('embedded-opentype'),
+         url('../../data/font/RubikBold.woff2') format('woff2'),
+         url('../../data/font/RubikBold.woff') format('woff'),
+         url('../../data/font/RubikBold.ttf') format('truetype'),
+         url('../../data/font/RubikBold.svg#RubikBold') format('svg');
+}
+
+/*	RubikRegular - weight 400	*/
+@font-face {
+    font-family: 'RubikRegular';
+    src: url('../../data/font/RubikRegular.eot');
+    src: url('../../data/font/RubikRegular.eot') format('embedded-opentype'),
+         url('../../data/font/RubikRegular.woff2') format('woff2'),
+         url('../../data/font/RubikRegular.woff') format('woff'),
+         url('../../data/font/RubikRegular.ttf') format('truetype'),
+         url('../../data/font/RubikRegular.svg#RubikRegular') format('svg');
+}
+
+/*	RubikLight - weight 300	*/
+@font-face {
+    font-family: 'RubikLight';
+    src: url('../../data/font/RubikLight.eot');
+    src: url('../../data/font/RubikLight.eot') format('embedded-opentype'),
+         url('../../data/font/RubikLight.woff2') format('woff2'),
+         url('../../data/font/RubikLight.woff') format('woff'),
+         url('../../data/font/RubikLight.ttf') format('truetype'),
+         url('../../data/font/RubikLight.svg#RubikLight') format('svg');
+}
+
+/*	PatuaOneRegular	*/
+@font-face {
+    font-family: 'PatuaOneRegular';
+    src: url('../../data/font/PatuaOneRegular.eot');
+    src: url('../../data/font/PatuaOneRegular.eot') format('embedded-opentype'),
+         url('../../data/font/PatuaOneRegular.woff2') format('woff2'),
+         url('../../data/font/PatuaOneRegular.woff') format('woff'),
+         url('../../data/font/PatuaOneRegular.ttf') format('truetype'),
+         url('../../data/font/PatuaOneRegular.svg#PatuaOneRegular') format('svg');
+}
+
 /*
 
 	Main styles for the entire site
@@ -115,7 +168,7 @@ body, html	{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscal
 
 */
 
-body 	{background-color:var(--base_back); color:var(--base_font); display:flex; flex-direction:column; font-family:"Rubik",Arial,sans-serif; font-size:13px; line-height:18px; position:relative; padding-top:4em; scroll-behavior:smooth;}
+body 	{background-color:var(--base_back); color:var(--base_font); display:flex; flex-direction:column; font-family:"RubikRegular",Arial,sans-serif; font-size:13px; line-height:18px; position:relative; padding-top:4em; scroll-behavior:smooth;}
 
 a		{-webkit-transition:all .2s ease-in-out; -moz-transition:all .2s ease-in-out; -o-transition:all .2s ease-in-out; -ms-transition:all .2s ease-in-out; transition:all .2s ease-in-out;}
 
@@ -214,8 +267,8 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	
 */
 
-.logo		{color:var(--base_link_box); font-family:"Rubik",Arial,sans-serif; margin-top:3em;}
-.logo h1	{font-size:4em; margin-bottom:0.5em; font-weight:900;}
+.logo		{color:var(--base_link_box); margin-top:3em;}
+.logo h1	{font-size:4em; margin-bottom:0.5em; font-family:"RubikBold",Arial,sans-serif;}
 .logo p		{color:var(--white); font-size:2em; line-height:1.2em;}
 
 
@@ -230,7 +283,7 @@ sup 				{font-size:0.83em; line-height:0; vertical-align:super;}
 	
 */
 
-.listen_tit	{position:relative; margin:0 auto; margin-top:3.5em; width:960px; padding:10px 20px; background-color:var(--base_alt); color:var(--base_ogg_back); font-weight:900; text-transform:uppercase;}
+.listen_tit	{position:relative; margin:0 auto; margin-top:3.5em; width:960px; padding:10px 20px; background-color:var(--base_alt); color:var(--base_ogg_back); font-family:"RubikBold",Arial,sans-serif; text-transform:uppercase;}
 .listen_tit span.listen_date	{position:absolute; right:20px;}
 
 audio::-webkit-media-controls-panel	{background-color:initial;}
@@ -276,8 +329,8 @@ audio		{width:780px;}
 .blog_play		{padding:5.5em 20px; margin-bottom:4em; background-color:var(--black); border:3px double var(--hr); border-bottom:0; border-left:0; border-right:0; text-align:center;}
 .blog_play p	{text-align:left; line-height:1.3em;}
 
-.blog_wrap		{font-family:"Rubik",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
-.blog_wrap h2	{font-family:"Rubik",Arial,sans-serif; font-size:2.5em; line-height:1em; padding-bottom:1em;}
+.blog_wrap		{font-family:"RubikRegular",Arial,sans-serif; font-size:20px; line-height:33px; margin:auto; padding:4em 0 2em 0; position:relative;}
+.blog_wrap h2	{font-family:"RubikRegular",Arial,sans-serif; font-size:2.5em; line-height:1em; padding-bottom:1em;}
 .blog_wrap a	{overflow-wrap:break-word; word-wrap:break-word; word-break:break-word; -ms-hyphens:auto; -moz-hyphens:auto; -webkit-hyphens:auto; hyphens:auto;}
 .blog_wrap a 	{color:var(--base); text-decoration:none;}
 .blog_wrap a:hover {color:var(--base_alt); cursor:pointer;}
@@ -292,10 +345,10 @@ audio		{width:780px;}
 .blog_bit		{min-height:200px;}
 
 .tone 			{position:fixed; top:100px; right:0;}
-.dave_tone		{position:absolute; right:20px; top:-50px; background:url('/data/dave_tone.png')no-repeat; background-size:contain; background-position:center; width:260px; height:260px;}
-.kriss_tone		{position:absolute; right:-60px; top:250px; background:url('/data/kriss_tone.png')no-repeat; background-size:contain; background-position:center; width:240px; height:240px;}
-.dick_tone		{position:absolute; right:-100px; top:560px; background:url('/data/dick_tone.png')no-repeat; background-size:contain; background-position:center; width:240px; height:240px;}
-.shi_tone		{position:absolute; left:-70px; bottom:-110px; background:url('/data/shi_tone.png')no-repeat; background-size:contain; background-position:center; width:220px; height:220px;}
+.dave_tone		{position:absolute; right:20px; top:-50px; background:url('../../data/dave_tone.png')no-repeat; background-size:contain; background-position:center; width:260px; height:260px;}
+.kriss_tone		{position:absolute; right:-60px; top:250px; background:url('../../data/kriss_tone.png')no-repeat; background-size:contain; background-position:center; width:240px; height:240px;}
+.dick_tone		{position:absolute; right:-100px; top:560px; background:url('../../data/dick_tone.png')no-repeat; background-size:contain; background-position:center; width:240px; height:240px;}
+.shi_tone		{position:absolute; left:-70px; bottom:-110px; background:url('../../data/shi_tone.png')no-repeat; background-size:contain; background-position:center; width:220px; height:220px;}
 
 .dave_tone,
 .kriss_tone,
@@ -317,7 +370,7 @@ audio		{width:780px;}
 .blog_more p	{font-size:90%; line-height:28px;}
 .blog_more p b	{font-size:1.2em; color:var(--base_link_box); text-transform:uppercase; font-weight:normal; background-color:var(--not_black); padding:5px 15px; margin-bottom:5px; display:inline-block; margin-left:-20px; border-left:5px solid var(--base_odt_back_alt);}
 /*.blog_more p b:before {content:"🌠"; margin-right:10px; color:var(--base_emoji);}*/
-.blog_bit p:first-of-type::first-letter {float:left; border:1px dotted var(--base_back); padding:35px 15px; margin-right:15px; font-family:"Patua One",georgia,serif; background-color:var(--base_odt_back_alt); font-size:3em;}
+.blog_bit p:first-of-type::first-letter {float:left; border:1px dotted var(--base_back); padding:35px 15px; margin-right:15px; font-family:"PatuaOneRegular",georgia,serif; background-color:var(--base_odt_back_alt); font-size:3em;}
 
 .read_wrap		{text-align:center; padding:0; border:0; min-height:initial;}
 a.read			{display:inline-block; background-color:var(--base_link_box); padding:0 20px; border-radius:0 0 4px 4px; color:var(--base_back); text-align:center; margin:0 auto;}
@@ -340,8 +393,8 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 */
 
 .script_wrap		{font-size:16px; line-height:26px; background-color:var(--base_back_script); color:var(--spacer); padding:40px; font-family:georgia,serif; margin:3em 0 2em 0; white-space:pre-line; word-wrap:break-word; position:relative;}
-.script_wrap:before {content:"⌨ Script"; font-family:"Patua One",georgia,serif; position:absolute; top:-10px; background-color:var(--base_link_box); padding:10px 20px; color:var(--white); font-size:20px;}
-.script_wrap span	{font-family:'Patua One',georgia,serif; font-size:18px;}
+.script_wrap:before {content:"⌨ Script"; font-family:"PatuaOneRegular",georgia,serif; position:absolute; top:-10px; background-color:var(--base_link_box); padding:10px 20px; color:var(--white); font-size:20px;}
+.script_wrap span	{font-family:"PatuaOneRegular",georgia,serif; font-size:18px;}
 .script_wrap span:first-of-type {padding:20px 0 0 0; margin-bottom:-20px; display:block; color:var(--base_link);}
 
 
@@ -360,10 +413,10 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 */
 
 .host_wrap				{padding:40px 0; border-bottom:4px double var(--spacer); border-radius:40px; margin-bottom:3em;}
-.host_wrap:after		{content:"Your IT STUFF Hosts"; position:absolute; bottom:-25px; left:50%; transform:translateX(-50%); background-color:var(--base_odt_back_alt); padding:5px 30px; color:var(--white); font-family:"Patua One",georgia,serif; font-size:20px; border-radius:4px;}
+.host_wrap:after		{content:"Your IT STUFF Hosts"; position:absolute; bottom:-25px; left:50%; transform:translateX(-50%); background-color:var(--base_odt_back_alt); padding:5px 30px; color:var(--white); font-family:"PatuaOneRegular",georgia,serif; font-size:20px; border-radius:4px;}
 
 .con_wrap				{padding:40px 0; border-bottom:4px double var(--spacer); border-radius:40px; margin-bottom:3em;}
-.con_wrap:after			{content:"Guests & Contributors"; position:absolute; bottom:-25px; left:50%; transform:translateX(-50%); background-color:var(--spacer); padding:5px 30px; color:var(--white); font-family:"Patua One",georgia,serif; font-size:20px; border-radius:4px;}
+.con_wrap:after			{content:"Guests & Contributors"; position:absolute; bottom:-25px; left:50%; transform:translateX(-50%); background-color:var(--spacer); padding:5px 30px; color:var(--white); font-family:"PatuaOneRegular",georgia,serif; font-size:20px; border-radius:4px;}
 
 .presenter				{display:inline-block; vertical-align:top; text-align:center; margin-bottom:3em; margin-top:2em;}
 .presenter a			{display:block;}
@@ -374,21 +427,21 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 .host_wrap .presenter.last	{margin-right:0;}
 
 .block			{display:block; width:170px; height:190px; position:relative; border-radius:200px;}
-.block.dave		{background:url('/data/stuff/dave_alt.png') no-repeat -15px center;}
-.block.shi		{background:url('/data/stuff/shi_alt.png') no-repeat -15px center;}
-.block.kriss	{background:url('/data/stuff/kriss_alt.png') no-repeat -15px center;}
-.block.dick		{background:url('/data/stuff/dick_alt.png') no-repeat -15px center;}
-.block.edafe	{background:url('/data/stuff/edafe.png') no-repeat -15px center;}
-.block.david	{background:url('/data/stuff/david.png') no-repeat -15px center;}
-.block.brian	{background:url('/data/stuff/brian.png') no-repeat -15px center;}
-.block.john		{background:url('/data/stuff/john.png') no-repeat -15px center;}
-.block.steph	{background:url('/data/stuff/stephane.png') no-repeat -15px center;}
+.block.dave		{background:url('../../data/stuff/dave_alt.png') no-repeat -15px center;}
+.block.shi		{background:url('../../data/stuff/shi_alt.png') no-repeat -15px center;}
+.block.kriss	{background:url('../../data/stuff/kriss_alt.png') no-repeat -15px center;}
+.block.dick		{background:url('../../data/stuff/dick_alt.png') no-repeat -15px center;}
+.block.edafe	{background:url('../../data/stuff/edafe.png') no-repeat -15px center;}
+.block.david	{background:url('../../data/stuff/david.png') no-repeat -15px center;}
+.block.brian	{background:url('../../data/stuff/brian.png') no-repeat -15px center;}
+.block.john		{background:url('../../data/stuff/john.png') no-repeat -15px center;}
+.block.steph	{background:url('../../data/stuff/stephane.png') no-repeat -15px center;}
 
 .block:hover			{border-radius:200px;}
-.block.dave:hover		{background:url('/data/stuff/dave_over.png') no-repeat center center;}
-.block.shi:hover		{background:url('/data/stuff/shi_over.png') no-repeat center center;}
-.block.kriss:hover		{background:url('/data/stuff/kriss_over.png') no-repeat center center;}
-.block.dick:hover		{background:url('/data/stuff/dick_over.png') no-repeat center center;}
+.block.dave:hover		{background:url('../../data/stuff/dave_over.png') no-repeat center center;}
+.block.shi:hover		{background:url('../../data/stuff/shi_over.png') no-repeat center center;}
+.block.kriss:hover		{background:url('../../data/stuff/kriss_over.png') no-repeat center center;}
+.block.dick:hover		{background:url('../../data/stuff/dick_over.png') no-repeat center center;}
 
 
 /*
@@ -414,11 +467,11 @@ a.read:hover	{background-color:var(--base); color:var(--base_back);}
 	
 */
 
-.footer			{flex-shrink:0; padding:4em; background:url(/data/back02.jpg) no-repeat center 400px; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-attachment:fixed; margin-top:6em; border:3px double var(--hr); border-bottom:0; border-left:0; border-right:0; position:relative;}
+.footer			{flex-shrink:0; padding:4em; background:url(../../data/back02.jpg) no-repeat center 400px; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-attachment:fixed; margin-top:6em; border:3px double var(--hr); border-bottom:0; border-left:0; border-right:0; position:relative;}
 .footer ul		{display:flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; justify-content:space-between; width:1024px; margin:0 auto;}
 .footer li span {display:block; font-size:18px; line-height:24px;}
 .footer span.tit{text-transform:uppercase; border-bottom:1px solid; padding-bottom:10px; margin-bottom:10px;}
-.footer span.tit a		{font-weight:900;}
+.footer span.tit a		{font-family:"RubikBold",Arial,sans-serif;}
 .footer span.tit a:hover{color:var(--base);}
 .footer_1 span			{margin-right:40px;}
 .footer ul.footer_info	{margin-bottom:30px;}
@@ -466,7 +519,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	
 	a.read			{font-size:1.75em; padding:20px;}
 	
-	.footer			{background:url(/data/back02.jpg) no-repeat center center; background-attachment:initial;}
+	.footer			{background:url(../../data/back02.jpg) no-repeat center center; background-attachment:initial;}
 	.footer ul		{width:100%; max-width:95%;}
 	.footer li span	{font-size:70%;}
 	.footer li		{width:40%;}
